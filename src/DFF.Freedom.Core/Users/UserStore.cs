@@ -5,6 +5,9 @@ using DFF.Freedom.Authorization.Roles;
 
 namespace DFF.Freedom.Users
 {
+    /// <summary>
+    /// ”√ªß¥Ê¥¢¿‡
+    /// </summary>
     public class UserStore : AbpUserStore<Role, User>
     {
         public UserStore(
