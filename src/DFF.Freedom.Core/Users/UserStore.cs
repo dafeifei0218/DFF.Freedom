@@ -10,6 +10,16 @@ namespace DFF.Freedom.Users
     /// </summary>
     public class UserStore : AbpUserStore<Role, User>
     {
+        /// <summary>
+        /// 构造函数
+        /// </summary>
+        /// <param name="userRepository">用户仓储</param>
+        /// <param name="userLoginRepository">用户登录仓储</param>
+        /// <param name="userRoleRepository">用户角色仓储</param>
+        /// <param name="roleRepository">角色仓储</param>
+        /// <param name="userPermissionSettingRepository">用户权限设置仓储</param>
+        /// <param name="unitOfWorkManager">工作单元管理</param>
+        /// <param name="userClaimRepository">用户请求仓储</param>
         public UserStore(
             IRepository<User, long> userRepository,
             IRepository<UserLogin, long> userLoginRepository,

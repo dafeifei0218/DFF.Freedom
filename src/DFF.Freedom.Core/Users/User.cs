@@ -6,7 +6,7 @@ using Microsoft.AspNet.Identity;
 namespace DFF.Freedom.Users
 {
     /// <summary>
-    /// 用户 实体，继承自AbpUser。
+    /// 用户实体，继承自AbpUser。
     /// </summary>
     public class User : AbpUser<User>
     {
