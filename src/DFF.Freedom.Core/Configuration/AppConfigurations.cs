@@ -54,7 +54,7 @@ namespace DFF.Freedom.Configuration
 
             if (addUserSecrets)
             {
-                builder.AddUserSecrets();
+                //builder.AddUserSecrets(); //注释此句
             }
 
             return builder.Build();
