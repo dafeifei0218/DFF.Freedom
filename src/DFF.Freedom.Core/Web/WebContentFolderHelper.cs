@@ -44,7 +44,7 @@ namespace DFF.Freedom.Web
         /// </summary>
         /// <param name="directory">字典</param>
         /// <param name="fileName">文件名</param>
-        /// <returns></returns>
+        /// <returns>true：包含；false：不包含</returns>
         private static bool DirectoryContains(string directory, string fileName)
         {
             return Directory.GetFiles(directory).Any(filePath => string.Equals(Path.GetFileName(filePath), fileName));

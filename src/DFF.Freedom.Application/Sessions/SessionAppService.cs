@@ -6,9 +6,16 @@ using DFF.Freedom.Sessions.Dto;
 
 namespace DFF.Freedom.Sessions
 {
+    /// <summary>
+    /// Session服务类
+    /// </summary>
     [AbpAuthorize]
     public class SessionAppService : FreedomAppServiceBase, ISessionAppService
     {
+        /// <summary>
+        /// 获取当前登录信息
+        /// </summary>
+        /// <returns></returns>
         [DisableAuditing]
         public async Task<GetCurrentLoginInformationsOutput> GetCurrentLoginInformations()
         {

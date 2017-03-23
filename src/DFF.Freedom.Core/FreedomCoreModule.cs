@@ -44,7 +44,7 @@ namespace DFF.Freedom
         }
 
         /// <summary>
-        /// 初始化
+        /// 初始化执行的方法
         /// </summary>
         public override void Initialize()
         {
@@ -52,7 +52,7 @@ namespace DFF.Freedom
         }
 
         /// <summary>
-        /// 初始化之后执行
+        /// 初始化之后执行的方法
         /// </summary>
         public override void PostInitialize()
         {

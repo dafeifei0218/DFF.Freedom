@@ -11,7 +11,7 @@ namespace DFF.Freedom.Localization
     public static class FreedomLocalizationConfigurer
     {
         /// <summary>
-        /// 配置
+        /// 配置本地化资源的方法
         /// </summary>
         /// <param name="localizationConfiguration">本地化配置接口</param>
         public static void Configure(ILocalizationConfiguration localizationConfiguration)

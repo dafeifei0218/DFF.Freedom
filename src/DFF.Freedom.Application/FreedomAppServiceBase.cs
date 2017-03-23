@@ -51,7 +51,7 @@ namespace DFF.Freedom
         /// <summary>
         /// 获取当前租户异步方法
         /// </summary>
-        /// <returns>租户信息</returns>
+        /// <returns>返回 <see cref="Tenant"/> 租户信息</returns>
         protected virtual Task<Tenant> GetCurrentTenantAsync()
         {
             return TenantManager.GetByIdAsync(AbpSession.GetTenantId());

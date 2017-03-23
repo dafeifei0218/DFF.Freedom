@@ -9,15 +9,19 @@ namespace DFF.Freedom.Configuration
     /// </summary>
     public static class AppConfigurations
     {
+        //配置缓存字典
         private static readonly ConcurrentDictionary<string, IConfigurationRoot> ConfigurationCache;
 
+        /// <summary>
+        /// 静态构造函数
+        /// </summary>
         static AppConfigurations()
         {
             ConfigurationCache = new ConcurrentDictionary<string, IConfigurationRoot>();
         }
 
         /// <summary>
-        /// 
+        /// 获取配置
         /// </summary>
         /// <param name="path">路径</param>
         /// <param name="environmentName">环境的名称</param>
@@ -33,7 +37,7 @@ namespace DFF.Freedom.Configuration
         }
 
         /// <summary>
-        /// 
+        /// 建造配置
         /// </summary>
         /// <param name="path">路径</param>
         /// <param name="environmentName">环境的名称</param>
@@ -54,7 +58,7 @@ namespace DFF.Freedom.Configuration
 
             if (addUserSecrets)
             {
-                builder.AddUserSecrets();
+                //builder.AddUserSecrets(); //VS2017编译时这句报错
             }
 
             return builder.Build();

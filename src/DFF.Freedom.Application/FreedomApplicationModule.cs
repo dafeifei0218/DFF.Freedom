@@ -13,14 +13,21 @@ namespace DFF.Freedom
         typeof(AbpAutoMapperModule))]
     public class FreedomApplicationModule : AbpModule
     {
+        /// <summary>
+        /// 初始化之前执行的方法
+        /// </summary>
         public override void PreInitialize()
         {
             //授权设置
             Configuration.Authorization.Providers.Add<FreedomAuthorizationProvider>();
         }
 
+        /// <summary>
+        /// 初始化方法
+        /// </summary>
         public override void Initialize()
         {
+            //注册程序集
             IocManager.RegisterAssemblyByConvention(Assembly.GetExecutingAssembly());
         }
     }
