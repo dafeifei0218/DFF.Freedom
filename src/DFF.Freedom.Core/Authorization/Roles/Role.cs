@@ -11,6 +11,9 @@ namespace DFF.Freedom.Authorization.Roles
         //Can add application specific role properties here
         //可以在这里添加特定于应用程序的角色属性
 
+        /// <summary>
+        /// 构造函数
+        /// </summary>
         public Role()
         {
 

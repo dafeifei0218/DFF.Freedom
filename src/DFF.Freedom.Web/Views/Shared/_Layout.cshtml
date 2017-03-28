@@ -20,6 +20,7 @@
 
     <title>Freedom</title>
 
+    <!-- 开发环境用到的样式 -->
     <environment names="Development">
         <!-- ~/Bundles/vendor/css -->
         <link rel="stylesheet" href="~/lib/jquery-ui/themes/base/all.css" asp-append-version="true" />
@@ -32,10 +33,11 @@
         <link rel="stylesheet" href="~/css/main.css" asp-append-version="true" />
     </environment>
 
+    <!-- 生产环境用到的样式 -->
     <environment names="Staging,Production">
         <link rel="stylesheet" href="~/view-resources/Views/_Bundles/layout-libs.min.css" asp-append-version="true" />
     </environment>
-    
+
 
     <!-- View specific styles -->
     @RenderSection("styles", required: false)
@@ -52,10 +54,16 @@
         Html.RenderPartial("_TopBar");
     }
 
+    <div>
+        @{
+            Html.RenderPartial("_LeftBar");
+        }
+    </div>
     <div class="container">
         @RenderBody()
     </div>
 
+    <!-- 开发环境用到的脚本 -->
     <environment names="Development">
         <script src="~/lib/json2/json2.js" asp-append-version="true"></script>
         <script src="~/lib/jquery/dist/jquery.js" asp-append-version="true"></script>
@@ -81,6 +89,7 @@
         <script src="~/js/main.js" asp-append-version="true"></script>
     </environment>
 
+    <!-- 生产环境用到的脚本 -->
     <environment names="Staging,Production">
         <script src="~/view-resources/Views/_Bundles/layout-libs.min.js" asp-append-version="true"></script>
         <script src="~/js/main.min.js" asp-append-version="true"></script>
@@ -88,6 +97,7 @@
 
     <script>
         //Localizing momentjs
+        //本地化显示时间的js
         moment.locale('@Thread.CurrentThread.CurrentUICulture.Name');
     </script>
 
@@ -100,6 +110,7 @@
     @*@Html.IncludeScript("~/Abp/Framework/scripts/libs/abp.signalr.js")*@
 
     <!-- View specific scripts -->
+    <!-- 页面中的脚本 -->
     @RenderSection("scripts", required: false)
 </body>
 </html>

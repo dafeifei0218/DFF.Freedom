@@ -21,7 +21,7 @@ namespace DFF.Freedom.Web
         {
             var coreAssemblyDirectoryPath = Path.GetDirectoryName(typeof(FreedomCoreModule).Assembly.Location);
             if (coreAssemblyDirectoryPath == null)
-            {
+            { //DFF.Freedom.Core程序集的目录路径为空
                 throw new ApplicationException("Could not find location of DFF.Freedom.Core assembly!");
             }
 
@@ -40,9 +40,9 @@ namespace DFF.Freedom.Web
         }
 
         /// <summary>
-        /// 字典是否包含文件名
+        /// 目录中是否包含文件名
         /// </summary>
-        /// <param name="directory">字典</param>
+        /// <param name="directory">目录</param>
         /// <param name="fileName">文件名</param>
         /// <returns>true：包含；false：不包含</returns>
         private static bool DirectoryContains(string directory, string fileName)

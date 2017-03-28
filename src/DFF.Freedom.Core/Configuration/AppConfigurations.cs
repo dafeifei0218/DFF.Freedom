@@ -58,7 +58,7 @@ namespace DFF.Freedom.Configuration
 
             if (addUserSecrets)
             {
-                //builder.AddUserSecrets(); //VS2017编译时这句报错
+                //builder.AddUserSecrets(); //VS2017编译时这句报错，所以注释掉此代码
             }
 
             return builder.Build();
