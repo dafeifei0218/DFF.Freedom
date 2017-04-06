@@ -17,6 +17,9 @@
     "blockUI": "jquery.blockUI#*",
     "spin.js": "^2.3.2",
     "signalr": "^2.2.1",
-    "abp-web-resources": "^1.2.1"
+    "abp-web-resources": "^1.2.1",
+    "bootstrap-switch": "v3.3.2",
+    "simple-line-icons": "2.4.0",
+    "bootstrap-daterangepicker": "v2.1.25"
   }
 }

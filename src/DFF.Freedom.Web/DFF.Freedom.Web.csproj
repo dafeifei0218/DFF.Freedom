@@ -71,4 +71,6 @@
     <Reference Include="System.IdentityModel" />
   </ItemGroup>
 
+  <ProjectExtensions><VisualStudio><UserProperties bower_1json__JSONSchema="" /></VisualStudio></ProjectExtensions>
+
 </Project>

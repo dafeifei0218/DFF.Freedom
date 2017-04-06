@@ -23,37 +23,14 @@
     <!-- 开发环境用到的样式 -->
     <environment names="Development">
         <!-- ~/Bundles/vendor/css -->
-        @*<link rel="stylesheet" href="~/lib/jquery-ui/themes/base/all.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/lib/jquery-ui/themes/base/all.css" asp-append-version="true" />
         <link rel="stylesheet" href="~/lib/bootstrap-theme-cosmo/cosmo.min.css" asp-append-version="true" />
         <link rel="stylesheet" href="~/lib/toastr/toastr.css" asp-append-version="true" />
         <link rel="stylesheet" href="~/lib/sweetalert/dist/sweetalert.css" asp-append-version="true" />
         <link rel="stylesheet" href="~/lib/famfamfam-flags/dist/sprite/famfamfam-flags.css" asp-append-version="true" />
         <link rel="stylesheet" href="~/lib/font-awesome/css/font-awesome.css" asp-append-version="true" />
 
-        <link rel="stylesheet" href="~/css/main.css" asp-append-version="true" />*@
-        
-        <!-- BEGIN GLOBAL MANDATORY STYLES -->
-        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
-        <link href="~/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-        <link href="~/lib/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css" />
-        <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-        <link href="~/lib/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
-        <!-- END GLOBAL MANDATORY STYLES -->
-        <!-- BEGIN PAGE LEVEL PLUGINS -->
-        <link href="~/lib/bootstrap-daterangepicker/daterangepicker.min.css" rel="stylesheet" type="text/css" />
-        <link href="~/lib/morris/morris.css" rel="stylesheet" type="text/css" />
-        <link href="~/lib/fullcalendar/fullcalendar.min.css" rel="stylesheet" type="text/css" />
-        <link href="~/lib/jqvmap/jqvmap/jqvmap.css" rel="stylesheet" type="text/css" />
-        <!-- END PAGE LEVEL PLUGINS -->
-        <!-- BEGIN THEME GLOBAL STYLES -->
-        <link href="../assets/global/css/components.min.css" rel="stylesheet" id="style_components" type="text/css" />
-        <link href="../assets/global/css/plugins.min.css" rel="stylesheet" type="text/css" />
-        <!-- END THEME GLOBAL STYLES -->
-        <!-- BEGIN THEME LAYOUT STYLES -->
-        <link href="../assets/layouts/layout/css/layout.min.css" rel="stylesheet" type="text/css" />
-        <link href="../assets/layouts/layout/css/themes/darkblue.min.css" rel="stylesheet" type="text/css" id="style_color" />
-        <link href="../assets/layouts/layout/css/custom.min.css" rel="stylesheet" type="text/css" />
-        <!-- END THEME LAYOUT STYLES -->
+        <link rel="stylesheet" href="~/css/main.css" asp-append-version="true" />
     </environment>
 
     <!-- 生产环境用到的样式 -->
@@ -76,15 +53,8 @@
     {
         Html.RenderPartial("_TopBar");
     }
-    <div class="page-wrapper">
-        <div class="page-container">
-            @{
-                Html.RenderPartial("_LeftBar");
-            }
-            <div class="page-content-wrapper">
-                @RenderBody()
-            </div>
-        </div>
+    <div class="container">
+        @RenderBody()
     </div>
 
     <!-- 开发环境用到的脚本 -->
@@ -120,9 +90,9 @@
     </environment>
 
     <script>
-    //Localizing momentjs
-    //本地化显示时间的js
-    moment.locale('@Thread.CurrentThread.CurrentUICulture.Name');
+        //Localizing momentjs
+        //本地化显示时间的js
+        moment.locale('@Thread.CurrentThread.CurrentUICulture.Name');
     </script>
 
     <!-- Dynamic scripts of ABP system (They are created on runtime and can not be bundled) -->

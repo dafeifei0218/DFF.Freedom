@@ -6,9 +6,14 @@ namespace DFF.Freedom.Web.Startup
 {
     /// <summary>
     /// This class defines menus for the application.
+    /// 这个类定义应用程序的导航。
     /// </summary>
     public class FreedomNavigationProvider : NavigationProvider
     {
+        /// <summary>
+        /// 设置导航
+        /// </summary>
+        /// <param name="context"></param>
         public override void SetNavigation(INavigationProviderContext context)
         {
             context.Manager.MainMenu
@@ -44,8 +49,16 @@ namespace DFF.Freedom.Web.Startup
                         icon: "fa fa-info"
                         )
                 );
+
+
+
         }
 
+        /// <summary>
+        /// 根据名称，获取本地化值
+        /// </summary>
+        /// <param name="name">名称</param>
+        /// <returns></returns>
         private static ILocalizableString L(string name)
         {
             return new LocalizableString(name, FreedomConsts.LocalizationSourceName);

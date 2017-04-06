@@ -10,6 +10,9 @@ using Abp.Zero.Configuration;
 
 namespace DFF.Freedom.Web.Startup
 {
+    /// <summary>
+    /// Web模块
+    /// </summary>
     [DependsOn(
         typeof(FreedomApplicationModule), 
         typeof(FreedomEntityFrameworkModule), 
@@ -18,11 +21,18 @@ namespace DFF.Freedom.Web.Startup
     {
         private readonly IConfigurationRoot _appConfiguration;
 
+        /// <summary>
+        /// 构造函数
+        /// </summary>
+        /// <param name="env"></param>
         public FreedomWebModule(IHostingEnvironment env)
         {
             _appConfiguration = AppConfigurations.Get(env.ContentRootPath, env.EnvironmentName);
         }
 
+        /// <summary>
+        /// 初始化之前执行
+        /// </summary>
         public override void PreInitialize()
         {
             Configuration.DefaultNameOrConnectionString = _appConfiguration.GetConnectionString(FreedomConsts.ConnectionStringName);
@@ -38,6 +48,9 @@ namespace DFF.Freedom.Web.Startup
                 );
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public override void Initialize()
         {
             IocManager.RegisterAssemblyByConvention(Assembly.GetExecutingAssembly());
