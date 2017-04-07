@@ -13,7 +13,7 @@ namespace DFF.Freedom.Web.Startup
         /// <summary>
         /// 设置导航
         /// </summary>
-        /// <param name="context"></param>
+        /// <param name="context">导航提供者上下文</param>
         public override void SetNavigation(INavigationProviderContext context)
         {
             context.Manager.MainMenu
@@ -48,10 +48,47 @@ namespace DFF.Freedom.Web.Startup
                         url: "About",
                         icon: "fa fa-info"
                         )
-                );
-
-
-
+                ).AddItem(
+                    new MenuItemDefinition(
+                        PageNames.OrganizationUnits,
+                        L("OrganizationUnits"),
+                        url: "OrganizationUnits",
+                        icon: "fa fa-info"//,
+                        //requiredPermissionName: PermissionNames.Pages_OrganizationUnits
+                        )
+                ).AddItem(
+                    new MenuItemDefinition(
+                        PageNames.Roles,
+                        L("Roles"),
+                        url: "Roles",
+                        icon: "fa fa-info"//,
+                        //requiredPermissionName: PermissionNames.Pages_Roles
+                        )
+                ).AddItem(
+                    new MenuItemDefinition(
+                        PageNames.Languages,
+                        L("Languages"),
+                        url: "Languages",
+                        icon: "fa fa-info"//,
+                        //requiredPermissionName: PermissionNames.Pages_Roles
+                        )
+                ).AddItem(
+                    new MenuItemDefinition(
+                        PageNames.AuditLogs,
+                        L("AuditLogs"),
+                        url: "AuditLogs",
+                        icon: "fa fa-info"//,
+                        //requiredPermissionName: PermissionNames.Pages_AuditLogs
+                        )
+                ).AddItem(
+                    new MenuItemDefinition(
+                        PageNames.Settings,
+                        L("Settings"),
+                        url: "Settings",
+                        icon: "fa fa-info"//,
+                        //requiredPermissionName: PermissionNames.Pages_Settings
+                        )
+                ); 
         }
 
         /// <summary>

@@ -20,6 +20,9 @@
     "abp-web-resources": "^1.2.1",
     "bootstrap-switch": "v3.3.2",
     "simple-line-icons": "2.4.0",
-    "bootstrap-daterangepicker": "v2.1.25"
+    "bootstrap-daterangepicker": "v2.1.25",
+    "fullcalendar": "v3.3.1",
+    "morris.js": "morrisjs#0.5.1",
+    "jqvmap": "v1.5.1"
   }
 }

@@ -35,13 +35,17 @@ namespace DFF.Freedom.Web.Startup
         /// </summary>
         public override void PreInitialize()
         {
+            //默认链接字符串
             Configuration.DefaultNameOrConnectionString = _appConfiguration.GetConnectionString(FreedomConsts.ConnectionStringName);
 
             //Use database for language management
+            //使用数据库管理语言信息
             Configuration.Modules.Zero().LanguageManagement.EnableDbLocalization();
 
+            //设置导航
             Configuration.Navigation.Providers.Add<FreedomNavigationProvider>();
 
+            //设置控制器为Asp.NetCore服务类
             Configuration.Modules.AbpAspNetCore()
                 .CreateControllersForAppServices(
                     typeof(FreedomApplicationModule).Assembly
@@ -49,7 +53,7 @@ namespace DFF.Freedom.Web.Startup
         }
 
         /// <summary>
-        /// 
+        /// 初始化
         /// </summary>
         public override void Initialize()
         {

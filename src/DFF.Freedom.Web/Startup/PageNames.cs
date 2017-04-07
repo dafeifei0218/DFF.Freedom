@@ -25,7 +25,7 @@
         /// <summary>
         /// 仪表板，工作台
         /// </summary>
-        public const string Dashboard = "Tenant/Dashboard";
+        public const string Dashboard = "Dashboard";
         /// <summary>
         /// 组织机构单元
         /// </summary>
@@ -45,6 +45,6 @@
         /// <summary>
         /// 设置
         /// </summary>
-        public const string Settings = "Tenant/Settings";
+        public const string Settings = "Settings";
     }
 }
