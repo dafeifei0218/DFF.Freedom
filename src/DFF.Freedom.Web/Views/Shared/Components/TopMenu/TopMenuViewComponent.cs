@@ -16,8 +16,8 @@ namespace DFF.Freedom.Web.Views.Shared.Components.TopMenu
         /// <summary>
         /// 构造函数
         /// </summary>
-        /// <param name="userNavigationManager"></param>
-        /// <param name="abpSession"></param>
+        /// <param name="userNavigationManager">用户导航管理者</param>
+        /// <param name="abpSession">Abp会话</param>
         public TopMenuViewComponent(
             IUserNavigationManager userNavigationManager,
             IAbpSession abpSession)

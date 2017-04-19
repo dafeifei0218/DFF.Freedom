@@ -26,5 +26,8 @@
     <text name="Languages" value="语言" />
     <text name="AuditLogs" value="审计日志" />
     <text name="Settings" value="设置" />
+
+    <text name="Dashboard" value="工作台" />
+    <text name="Manage" value="管理" />
   </texts>
 </localizationDictionary>

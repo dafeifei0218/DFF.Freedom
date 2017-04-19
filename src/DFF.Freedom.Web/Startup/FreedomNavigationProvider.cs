@@ -25,7 +25,7 @@ namespace DFF.Freedom.Web.Startup
                         icon: "fa fa-home",
                         requiresAuthentication: true
                         )
-                ).AddItem(
+                .AddItem(
                     new MenuItemDefinition(
                         PageNames.Tenants,
                         L("Tenants"),
@@ -88,7 +88,8 @@ namespace DFF.Freedom.Web.Startup
                         icon: "fa fa-info"//,
                         //requiredPermissionName: PermissionNames.Pages_Settings
                         )
-                ); 
+                )
+            ); 
         }
 
         /// <summary>

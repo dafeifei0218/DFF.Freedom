@@ -13,9 +13,9 @@
             <a class="navbar-brand" href="~/"><i class="fa fa-cubes"></i> Freedom</a>
         </div>
         <div class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
+            @*<ul class="nav navbar-nav">
                 @await Component.InvokeAsync(typeof(TopMenuViewComponent), new { activeMenu = ViewBag.CurrentPageName })
-            </ul>
+            </ul>*@
             <ul class="nav navbar-nav navbar-right">
                 @await Component.InvokeAsync(typeof(LanguageSelectionViewComponent))
                 @await Component.InvokeAsync(typeof(UserMenuOrLoginLinkViewComponent))

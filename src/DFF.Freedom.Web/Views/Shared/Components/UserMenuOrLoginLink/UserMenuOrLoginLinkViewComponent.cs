@@ -6,12 +6,21 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace DFF.Freedom.Web.Views.Shared.Components.UserMenuOrLoginLink
 {
+    /// <summary>
+    /// 用户菜单或登录连接视图组件
+    /// </summary>
     public class UserMenuOrLoginLinkViewComponent : ViewComponent
     {
         private readonly IAbpSession _abpSession;
         private readonly ISessionAppService _sessionAppService;
         private readonly IMultiTenancyConfig _multiTenancyConfig;
 
+        /// <summary>
+        /// 构造函数
+        /// </summary>
+        /// <param name="abpSession">Abp会话</param>
+        /// <param name="sessionAppService">会话服务</param>
+        /// <param name="multiTenancyConfig">多租户配置</param>
         public UserMenuOrLoginLinkViewComponent(
             IAbpSession abpSession, 
             ISessionAppService sessionAppService, 
@@ -22,6 +31,10 @@ namespace DFF.Freedom.Web.Views.Shared.Components.UserMenuOrLoginLink
             _multiTenancyConfig = multiTenancyConfig;
         }
 
+        /// <summary>
+        /// 调用异步方法
+        /// </summary>
+        /// <returns></returns>
         public async Task<IViewComponentResult> InvokeAsync()
         {
             UserMenuOrLoginLinkViewModel model;
