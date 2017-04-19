@@ -29,7 +29,7 @@ namespace DFF.Freedom.Web.Authentication
         /// <summary>
         /// 是否全部为空
         /// </summary>
-        /// <returns></returns>
+        /// <returns>true：全部为空；</returns>
         public bool HasAllNonEmpty()
         {
             return !Name.IsNullOrEmpty() &&

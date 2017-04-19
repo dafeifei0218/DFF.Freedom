@@ -15,15 +15,27 @@ using Owin;
 
 namespace DFF.Freedom.Web.Startup
 {
+    /// <summary>
+    /// 启动
+    /// </summary>
     public class Startup
     {
         private readonly IConfigurationRoot _appConfiguration;
 
+        /// <summary>
+        /// 构造函数
+        /// </summary>
+        /// <param name="env">宿主环境</param>
         public Startup(IHostingEnvironment env)
         {
             _appConfiguration = env.GetAppConfiguration();
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="services"></param>
+        /// <returns></returns>
         public IServiceProvider ConfigureServices(IServiceCollection services)
         {
             //MVC
@@ -42,6 +54,12 @@ namespace DFF.Freedom.Web.Startup
             });
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="app"></param>
+        /// <param name="env"></param>
+        /// <param name="loggerFactory"></param>
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
             app.UseAbp(); //Initializes ABP framework.
@@ -74,6 +92,10 @@ namespace DFF.Freedom.Web.Startup
             });
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="app"></param>
         private static void ConfigureOwinServices(IAppBuilder app)
         {
             app.Properties["host.AppName"] = "Freedom";

@@ -93,9 +93,9 @@ namespace DFF.Freedom.Web.Startup
         }
 
         /// <summary>
-        /// 根据名称，获取本地化值
+        /// 根据键名称，获取本地化值
         /// </summary>
-        /// <param name="name">名称</param>
+        /// <param name="name">键名称</param>
         /// <returns></returns>
         private static ILocalizableString L(string name)
         {

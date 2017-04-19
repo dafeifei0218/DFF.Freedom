@@ -7,8 +7,17 @@ using Microsoft.AspNetCore.Http.Authentication;
 
 namespace DFF.Freedom.Web.Authentication
 {
+    /// <summary>
+    /// 认证管理 扩展类
+    /// </summary>
     public static class AuthenticationManagerExtensions
     {
+        /// <summary>
+        /// 获取外部登录用户信息
+        /// </summary>
+        /// <param name="authenticationManager"></param>
+        /// <param name="authSchema"></param>
+        /// <returns></returns>
         public static async Task<ExternalLoginUserInfo> GetExternalLoginUserInfo(this AuthenticationManager authenticationManager, string authSchema)
         {
             var authInfo = await authenticationManager.GetAuthenticateInfoAsync(authSchema);

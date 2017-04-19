@@ -9,15 +9,22 @@ using Microsoft.IdentityModel.Tokens;
 
 namespace DFF.Freedom.Web.Startup
 {
+    /// <summary>
+    /// 验证配置器
+    /// </summary>
     public static class AuthConfigurer
     {
+        /// <summary>
+        /// 认证方案
+        /// </summary>
         public const string AuthenticationScheme = "FreedomAuthSchema";
 
         /// <summary>
         /// Configures the specified application.
+        /// 配置指定的应用程序。
         /// </summary>
-        /// <param name="app">The application.</param>
-        /// <param name="configuration">The configuration.</param>
+        /// <param name="app">The application. 应用程序</param>
+        /// <param name="configuration">The configuration. 配置接口</param>
         public static void Configure(IApplicationBuilder app, IConfiguration configuration)
         {
             app.UseCookieAuthentication(new CookieAuthenticationOptions()
@@ -55,6 +62,11 @@ namespace DFF.Freedom.Web.Startup
             }
         }
 
+        /// <summary>
+        /// 创建微软认证选项
+        /// </summary>
+        /// <param name="configuration">配置接口</param>
+        /// <returns></returns>
         private static MicrosoftAccountOptions CreateMicrosoftAuthOptions(IConfiguration configuration)
         {
             return new MicrosoftAccountOptions
@@ -65,6 +77,11 @@ namespace DFF.Freedom.Web.Startup
             };
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="configuration">配置接口</param>
+        /// <returns></returns>
         private static GoogleOptions CreateGoogleAuthOptions(IConfiguration configuration)
         {
             return new GoogleOptions
@@ -75,6 +92,11 @@ namespace DFF.Freedom.Web.Startup
             };
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="configuration">配置接口</param>
+        /// <returns></returns>
         private static TwitterOptions CreateTwitterAuthOptions(IConfiguration configuration)
         {
             return new TwitterOptions
@@ -86,6 +108,11 @@ namespace DFF.Freedom.Web.Startup
             };
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="configuration">配置接口</param>
+        /// <returns></returns>
         private static FacebookOptions CreateFacebookAuthOptions(IConfiguration configuration)
         {
             var options = new FacebookOptions
@@ -101,6 +128,11 @@ namespace DFF.Freedom.Web.Startup
             return options;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="app"></param>
+        /// <param name="configuration">配置接口</param>
         private static void ConfigureJwtBearerAuthentication(IApplicationBuilder app, IConfiguration configuration)
         {
             var securityKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(configuration["Authentication:JwtBearer:SecurityKey"]));

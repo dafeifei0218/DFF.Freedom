@@ -46,6 +46,5 @@
         /// 设置
         /// </summary>
         public const string Settings = "Settings";
-        internal static string Administration;
     }
 }
