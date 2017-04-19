@@ -30,5 +30,6 @@
 
     <text name="Dashboard" value="工作台" />
     <text name="Manage" value="管理" />
+    <text name="Tenants" value="租户" />
   </texts>
 </localizationDictionary>

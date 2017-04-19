@@ -16,6 +16,9 @@
         <span></span>
     </a>
     <div class="top-menu">
+        <ul class="nav navbar-nav">
+            @await Component.InvokeAsync(typeof(TopMenuViewComponent), new { activeMenu = ViewBag.CurrentPageName })
+        </ul>
         <ul class="nav navbar-nav pull-right">
             @await Component.InvokeAsync(typeof(LanguageSelectionViewComponent))
             <li class="dropdown dropdown-extended dropdown-notification" id="header_notification_bar">
