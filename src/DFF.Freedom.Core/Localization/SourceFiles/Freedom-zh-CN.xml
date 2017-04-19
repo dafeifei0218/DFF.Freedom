@@ -23,6 +23,7 @@
     
     <text name="OrganizationUnits" value="组织机构单元" />
     <text name="Roles" value="角色" />
+    <text name="Users" value="用户" />
     <text name="Languages" value="语言" />
     <text name="AuditLogs" value="审计日志" />
     <text name="Settings" value="设置" />

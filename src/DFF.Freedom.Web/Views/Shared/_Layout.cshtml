@@ -64,6 +64,10 @@
 <body class="page-header-fixed page-sidebar-closed-hide-logo page-content-white">
     <div class="page-wrapper">
         <div class="page-header navbar navbar-fixed-top">
+            @if (ViewBag.DisableTopBar == null || ViewBag.DisableTopBar != true)
+            {
+                Html.RenderPartial("_TopBar");
+            }
         </div>
         <div class="clearfix"> </div>
         <div class="page-container">
