@@ -27,6 +27,10 @@
         /// </summary>
         public const string Dashboard = "Dashboard";
         /// <summary>
+        /// 管理
+        /// </summary>
+        public const string Manage = "Manage";
+        /// <summary>
         /// 组织机构单元
         /// </summary>
         public const string OrganizationUnits = "OrganizationUnits";

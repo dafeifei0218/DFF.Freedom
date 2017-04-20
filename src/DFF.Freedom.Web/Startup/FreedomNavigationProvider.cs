@@ -19,76 +19,79 @@ namespace DFF.Freedom.Web.Startup
             context.Manager.MainMenu
                 .AddItem(
                     new MenuItemDefinition(
-                        PageNames.Home,
-                        L("HomePage"),
-                        url: "",
-                        icon: "fa fa-home",
-                        requiresAuthentication: true
-                        )
+                        PageNames.Dashboard,
+                        L("Dashboard"),
+                        url: "Dashboard",
+                        icon: "icon-home"//, requiresAuthentication: true
+                    )
                 ).AddItem(
                     new MenuItemDefinition(
-                        PageNames.Tenants,
-                        L("Tenants"),
-                        url: "Tenants",
-                        icon: "fa fa-globe",
-                        requiredPermissionName: PermissionNames.Pages_Tenants
+                        PageNames.Manage,
+                        L("Manage"),
+                        url: "Manage",
+                        icon: "icon-wrench" //, requiredPermissionName: PermissionNames.Pages_Tenants
                         )
-                ).AddItem(
-                    new MenuItemDefinition(
-                        PageNames.Users,
-                        L("Users"),
-                        url: "Users",
-                        icon: "fa fa-users",
-                        requiredPermissionName: PermissionNames.Pages_Users
-                        )
-                ).AddItem(
-                    new MenuItemDefinition(
-                        PageNames.About,
-                        L("About"),
-                        url: "About",
-                        icon: "fa fa-info"
-                        )
-                ).AddItem(
-                    new MenuItemDefinition(
-                        PageNames.OrganizationUnits,
-                        L("OrganizationUnits"),
-                        url: "OrganizationUnits",
-                        icon: "fa fa-info"//,
-                        //requiredPermissionName: PermissionNames.Pages_OrganizationUnits
-                        )
-                ).AddItem(
-                    new MenuItemDefinition(
-                        PageNames.Roles,
-                        L("Roles"),
-                        url: "Roles",
-                        icon: "fa fa-info"//,
-                        //requiredPermissionName: PermissionNames.Pages_Roles
-                        )
-                ).AddItem(
-                    new MenuItemDefinition(
-                        PageNames.Languages,
-                        L("Languages"),
-                        url: "Languages",
-                        icon: "fa fa-info"//,
-                        //requiredPermissionName: PermissionNames.Pages_Roles
-                        )
-                ).AddItem(
-                    new MenuItemDefinition(
-                        PageNames.AuditLogs,
-                        L("AuditLogs"),
-                        url: "AuditLogs",
-                        icon: "fa fa-info"//,
-                        //requiredPermissionName: PermissionNames.Pages_AuditLogs
-                        )
-                ).AddItem(
-                    new MenuItemDefinition(
-                        PageNames.Settings,
-                        L("Settings"),
-                        url: "Settings",
-                        icon: "fa fa-info"//,
-                        //requiredPermissionName: PermissionNames.Pages_Settings
-                        )
-                ); 
+                    .AddItem(
+                        new MenuItemDefinition(
+                            PageNames.OrganizationUnits,
+                            L("OrganizationUnits"),
+                            url: "OrganizationUnits",
+                            icon: "icon-layers"//, requiredPermissionName: PermissionNames.Pages_OrganizationUnits
+                            )
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.Roles,
+                            L("Roles"),
+                            url: "Roles",
+                            icon: "icon-briefcase"//, requiredPermissionName: PermissionNames.Pages_Roles
+                            )
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.Users,
+                            L("Users"),
+                            url: "Users",
+                            icon: "icon-users",
+                            requiredPermissionName: PermissionNames.Pages_Users
+                            )
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.Languages,
+                            L("Languages"),
+                            url: "Languages",
+                            icon: "icon-flag"//, requiredPermissionName: PermissionNames.Pages_Roles
+                            )
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.AuditLogs,
+                            L("AuditLogs"),
+                            url: "AuditLogs",
+                            icon: "icon-lock"//, requiredPermissionName: PermissionNames.Pages_AuditLogs
+                            )
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.Settings,
+                            L("Settings"),
+                            url: "Settings",
+                            icon: "icon-settings"//, requiredPermissionName: PermissionNames.Pages_Settings
+                            )
+                    ) 
+                )
+                //.AddItem(
+                //    new MenuItemDefinition(
+                //        PageNames.Tenants,
+                //        L("Tenants"),
+                //        url: "Tenants",
+                //        icon: "icon-inbox" //, requiredPermissionName: PermissionNames.Pages_Tenants
+                //        )
+                //).AddItem(
+                //    new MenuItemDefinition(
+                //        PageNames.About,
+                //        L("About"),
+                //        url: "About",
+                //        icon: "icon-info-sign"
+                //        )
+                //)
+                ;
         }
 
         /// <summary>

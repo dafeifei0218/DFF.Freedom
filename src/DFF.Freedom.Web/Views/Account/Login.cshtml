@@ -3,6 +3,9 @@
 @using Abp.MultiTenancy
 @using DFF.Freedom.MultiTenancy
 @model DFF.Freedom.Web.Models.Account.LoginFormViewModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
 @section Styles
 {
     <environment names="Development">
@@ -24,6 +27,7 @@
         <script src="~/view-resources/Views/Account/Login.min.js" asp-append-version="true"></script>
     </environment>
 }
+
 <div class="container">
     <div id="LoginArea" class="row">
         <div class="col-lg-12">

@@ -10,6 +10,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Views_old\**" />
+    <Content Remove="Views_old\**" />
+    <EmbeddedResource Remove="Views_old\**" />
+    <None Remove="Views_old\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Include="wwwroot\css\components-md-rtl.min.css" />
     <Content Include="wwwroot\css\components-md.css" />
     <Content Include="wwwroot\css\components-md.min.css" />
@@ -1224,6 +1231,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Abp.Web.Mvc" Version="1.4.1" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="1.1.0">
       <PrivateAssets>All</PrivateAssets>
     </PackageReference>
@@ -1267,6 +1275,11 @@
 
   <ItemGroup>
     <Reference Include="System.IdentityModel" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\Roles\" />
+    <Folder Include="Views\OrganizationUnits\" />
   </ItemGroup>
 
   <ProjectExtensions><VisualStudio><UserProperties bower_1json__JSONSchema="" /></VisualStudio></ProjectExtensions>

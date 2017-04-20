@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace DFF.Freedom.Web.Views.Shared.Components.UserMenuOrLoginLink
 {
     /// <summary>
-    /// 用户菜单或登录连接视图组件
+    /// 用户菜单或登录链接视图组件
     /// </summary>
     public class UserMenuOrLoginLinkViewComponent : ViewComponent
     {
