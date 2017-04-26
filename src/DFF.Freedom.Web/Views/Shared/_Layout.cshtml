@@ -72,7 +72,8 @@
         <div class="clearfix"> </div>
         <div class="page-container">
             <div class="page-sidebar-wrapper">
-                @{
+                @if (ViewBag.DisableLeftBar == null || ViewBag.DisableLeftBar != true)
+                {
                     Html.RenderPartial("_LeftBar");
                 }
             </div>
