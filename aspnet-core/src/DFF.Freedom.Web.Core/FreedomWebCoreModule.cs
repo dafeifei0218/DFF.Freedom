@@ -28,19 +28,28 @@ namespace DFF.Freedom
         private readonly IHostingEnvironment _env;
         private readonly IConfigurationRoot _appConfiguration;
 
-        public FreedomWebCoreModule(IHostingEnvironment env)
+        /// <summary>
+        /// 构造函数
+        /// </summary>
+        /// <param name="env"></param>
+        public FreedomWebModule(IHostingEnvironment env)
         {
             _env = env;
             _appConfiguration = env.GetAppConfiguration();
         }
 
+        /// <summary>
+        /// 初始化之前执行
+        /// </summary>
         public override void PreInitialize()
         {
+            //默认链接字符串
             Configuration.DefaultNameOrConnectionString = _appConfiguration.GetConnectionString(
                 FreedomConsts.ConnectionStringName
             );
 
             //Use database for language management
+            //使用数据库管理语言信息
             Configuration.Modules.Zero().LanguageManagement.EnableDbLocalization();
 
             Configuration.Modules.AbpAspNetCore()
@@ -62,7 +71,10 @@ namespace DFF.Freedom
             tokenAuthConfig.SigningCredentials = new SigningCredentials(tokenAuthConfig.SecurityKey, SecurityAlgorithms.HmacSha256);
             tokenAuthConfig.Expiration = TimeSpan.FromDays(1);
         }
-
+		
+        /// <summary>
+        /// 初始化
+        /// </summary>
         public override void Initialize()
         {
             IocManager.RegisterAssemblyByConvention(Assembly.GetExecutingAssembly());

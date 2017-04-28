@@ -14,13 +14,17 @@ using Microsoft.IdentityModel.Tokens;
 
 namespace DFF.Freedom.Web.Host.Startup
 {
+    /// <summary>
+    /// 验证配置器
+    /// </summary>
     public static class AuthConfigurer
     {
         /// <summary>
         /// Configures the specified application.
+        /// 配置指定的应用程序。
         /// </summary>
-        /// <param name="app">The application.</param>
-        /// <param name="configuration">The configuration.</param>
+        /// <param name="app">The application. 应用程序</param>
+        /// <param name="configuration">The configuration. 配置接口</param>
         public static void Configure(IApplicationBuilder app, IConfiguration configuration)
         {
             if (bool.Parse(configuration["Authentication:JwtBearer:IsEnabled"]))
@@ -55,6 +59,11 @@ namespace DFF.Freedom.Web.Host.Startup
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="configuration">配置接口</param>
+        /// <returns></returns>
         private static JwtBearerOptions CreateJwtBearerAuthenticationOptions(IApplicationBuilder app)
         {
             var tokenAuthConfig = app.ApplicationServices.GetRequiredService<TokenAuthConfiguration>();
