@@ -32,7 +32,7 @@ namespace DFF.Freedom
         /// 构造函数
         /// </summary>
         /// <param name="env"></param>
-        public FreedomWebModule(IHostingEnvironment env)
+        public FreedomWebCoreModule(IHostingEnvironment env)
         {
             _env = env;
             _appConfiguration = env.GetAppConfiguration();

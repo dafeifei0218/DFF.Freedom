@@ -9,8 +9,11 @@ namespace DFF.Freedom.Authorization
     /// <summary>
     /// Abp登录结果类型帮助类
     /// </summary>
-    public class AbpLoginResultTypeHelper : FreedomAppServiceBase
+    public class AbpLoginResultTypeHelper : AbpServiceBase, ITransientDependency
     {
+        /// <summary>
+        /// 构造函数
+        /// </summary>
         public AbpLoginResultTypeHelper()
         {
             LocalizationSourceName = FreedomConsts.LocalizationSourceName;

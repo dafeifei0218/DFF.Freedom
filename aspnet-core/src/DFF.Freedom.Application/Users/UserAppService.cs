@@ -33,7 +33,7 @@ namespace DFF.Freedom.Users
         }
 
         /// <summary>
-        /// 
+        /// 禁止权限
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
@@ -50,8 +50,8 @@ namespace DFF.Freedom.Users
         /// <summary>
         /// 
         /// </summary>
-        /// <param name="userId"></param>
-        /// <param name="roleName"></param>
+        /// <param name="userId">用户Id</param>
+        /// <param name="roleName">角色名称</param>
         /// <returns></returns>
         public async Task RemoveFromRole(long userId, string roleName)
         {
@@ -59,7 +59,7 @@ namespace DFF.Freedom.Users
         }
 
         /// <summary>
-        /// 
+        /// 获取用户集合
         /// </summary>
         /// <returns></returns>
         public async Task<ListResultDto<UserListDto>> GetUsers()
@@ -72,9 +72,9 @@ namespace DFF.Freedom.Users
         }
 
         /// <summary>
-        /// 
+        /// 创建用户
         /// </summary>
-        /// <param name="input"></param>
+        /// <param name="input">输入模型</param>
         /// <returns></returns>
         public async Task CreateUser(CreateUserInput input)
         {
