@@ -1,7 +1,7 @@
 ﻿namespace DFF.Freedom.Authorization.Accounts.Dto
 {
     /// <summary>
-    /// 注册输出模型
+    /// 注册 输出模型
     /// </summary>
     public class RegisterOutput
     {

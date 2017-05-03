@@ -21,6 +21,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace DFF.Freedom.Controllers
 {
+    /// <summary>
+    /// 令牌认证 控制器
+    /// </summary>
     [Route("api/[controller]/[action]")]
     public class TokenAuthController : FreedomControllerBase
     {
@@ -32,6 +35,16 @@ namespace DFF.Freedom.Controllers
         private readonly IExternalAuthManager _externalAuthManager;
         private readonly UserRegistrationManager _userRegistrationManager;
 
+        /// <summary>
+        /// 构造函数
+        /// </summary>
+        /// <param name="logInManager">登录管理类</param>
+        /// <param name="tenantCache">租户缓存</param>
+        /// <param name="abpLoginResultTypeHelper">Abp登录结果类型帮助类</param>
+        /// <param name="configuration">令牌认证配置</param>
+        /// <param name="externalAuthConfiguration">外部认证配置</param>
+        /// <param name="externalAuthManager">外部认证管理</param>
+        /// <param name="userRegistrationManager">用户注册管理</param>
         public TokenAuthController(
             LogInManager logInManager,
             ITenantCache tenantCache,
@@ -50,6 +63,11 @@ namespace DFF.Freedom.Controllers
             _userRegistrationManager = userRegistrationManager;
         }
 
+        /// <summary>
+        /// 认证
+        /// </summary>
+        /// <param name="model">认证模型</param>
+        /// <returns>认证结果模型</returns>
         [HttpPost]
         public async Task<AuthenticateResultModel> Authenticate([FromBody] AuthenticateModel model)
         {
@@ -69,12 +87,21 @@ namespace DFF.Freedom.Controllers
             };
         }
 
+        /// <summary>
+        /// 获取外部认证提供信息列表
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public List<ExternalLoginProviderInfoModel> GetExternalAuthenticationProviders()
         {
             return _externalAuthConfiguration.Providers.MapTo<List<ExternalLoginProviderInfoModel>>();
         }
 
+        /// <summary>
+        /// 外部认证
+        /// </summary>
+        /// <param name="model">外部认证模型</param>
+        /// <returns></returns>
         [HttpPost]
         public async Task<ExternalAuthenticateResultModel> ExternalAuthenticate([FromBody] ExternalAuthenticateModel model)
         {
@@ -133,6 +160,11 @@ namespace DFF.Freedom.Controllers
             }
         }
 
+        /// <summary>
+        /// 注册外部用户 异步方法
+        /// </summary>
+        /// <param name="externalUser">外部登录用户信息</param>
+        /// <returns></returns>
         private async Task<User> RegisterExternalUserAsync(ExternalLoginUserInfo externalUser)
         {
             var user = await _userRegistrationManager.RegisterAsync(
@@ -159,6 +191,11 @@ namespace DFF.Freedom.Controllers
             return user;
         }
 
+        /// <summary>
+        /// 获取外部用户信息
+        /// </summary>
+        /// <param name="model">外部认证模型</param>
+        /// <returns></returns>
         private async Task<ExternalLoginUserInfo> GetExternalUserInfo(ExternalAuthenticateModel model)
         {
             var userInfo = await _externalAuthManager.GetUserInfo(model.AuthProvider, model.ProviderAccessCode);
@@ -170,6 +207,10 @@ namespace DFF.Freedom.Controllers
             return userInfo;
         }
 
+        /// <summary>
+        /// 获取租户名称或空
+        /// </summary>
+        /// <returns></returns>
         private string GetTenancyNameOrNull()
         {
             if (!AbpSession.TenantId.HasValue)
@@ -180,6 +221,13 @@ namespace DFF.Freedom.Controllers
             return _tenantCache.GetOrNull(AbpSession.TenantId.Value)?.TenancyName;
         }
 
+        /// <summary>
+        /// 获取登录结果 异步方法
+        /// </summary>
+        /// <param name="usernameOrEmailAddress">用户名或邮件地址</param>
+        /// <param name="password">密码</param>
+        /// <param name="tenancyName">租户名称</param>
+        /// <returns></returns>
         private async Task<AbpLoginResult<Tenant, User>> GetLoginResultAsync(string usernameOrEmailAddress, string password, string tenancyName)
         {
             var loginResult = await _logInManager.LoginAsync(usernameOrEmailAddress, password, tenancyName);
@@ -193,6 +241,12 @@ namespace DFF.Freedom.Controllers
             }
         }
 
+        /// <summary>
+        /// 创建访问令牌
+        /// </summary>
+        /// <param name="claims">表示声明</param>
+        /// <param name="expiration">过期时间</param>
+        /// <returns></returns>
         private string CreateAccessToken(IEnumerable<Claim> claims, TimeSpan? expiration = null)
         {
             var now = DateTime.UtcNow;
@@ -209,6 +263,11 @@ namespace DFF.Freedom.Controllers
             return new JwtSecurityTokenHandler().WriteToken(jwtSecurityToken);
         }
 
+        /// <summary>
+        /// 创建声明
+        /// </summary>
+        /// <param name="identity">委托基于声明的标识。</param>
+        /// <returns></returns>
         private static List<Claim> CreateJwtClaims(ClaimsIdentity identity)
         {
             var claims = identity.Claims.ToList();
@@ -225,6 +284,11 @@ namespace DFF.Freedom.Controllers
             return claims;
         }
 
+        /// <summary>
+        /// 获取加密的访问令牌
+        /// </summary>
+        /// <param name="accessToken">访问令牌</param>
+        /// <returns></returns>
         private string GetEncrpyedAccessToken(string accessToken)
         {
             return SimpleStringCipher.Instance.Encrypt(accessToken, AppConsts.DefaultPassPhrase);

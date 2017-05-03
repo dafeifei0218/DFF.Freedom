@@ -7,17 +7,17 @@ using DFF.Freedom.Authorization.Users;
 namespace DFF.Freedom.Authorization.Accounts
 {
     /// <summary>
-    /// 账户服务
+    /// 账户 应用程序服务
     /// </summary>
     public class AccountAppService : FreedomAppServiceBase, IAccountAppService
     {
-        //用户注册管理者
+        //用户注册管理类
         private readonly UserRegistrationManager _userRegistrationManager;
 
         /// <summary>
         /// 构造函数
         /// </summary>
-        /// <param name="userRegistrationManager"></param>
+        /// <param name="userRegistrationManager">用户注册管理类</param>
         public AccountAppService(
             UserRegistrationManager userRegistrationManager)
         {

@@ -5,7 +5,7 @@ using DFF.Freedom.Sessions.Dto;
 namespace DFF.Freedom.Sessions
 {
     /// <summary>
-    /// Session服务
+    /// Session会话 应用程序服务接口
     /// </summary>
     public interface ISessionAppService : IApplicationService
     {

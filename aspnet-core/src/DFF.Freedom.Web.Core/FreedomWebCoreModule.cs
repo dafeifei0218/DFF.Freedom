@@ -16,6 +16,9 @@ using Microsoft.IdentityModel.Tokens;
 
 namespace DFF.Freedom
 {
+    /// <summary>
+    /// 核心模块
+    /// </summary>
     [DependsOn(
          typeof(FreedomApplicationModule),
          typeof(FreedomEntityFrameworkModule),
@@ -60,6 +63,9 @@ namespace DFF.Freedom
             ConfigureTokenAuth();
         }
 
+        /// <summary>
+        /// 配置令牌认证
+        /// </summary>
         private void ConfigureTokenAuth()
         {
             IocManager.Register<TokenAuthConfiguration>();

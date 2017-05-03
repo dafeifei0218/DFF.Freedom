@@ -15,7 +15,7 @@ using Microsoft.IdentityModel.Tokens;
 namespace DFF.Freedom.Web.Host.Startup
 {
     /// <summary>
-    /// 验证配置器
+    /// 认证配置器
     /// </summary>
     public static class AuthConfigurer
     {
@@ -62,7 +62,7 @@ namespace DFF.Freedom.Web.Host.Startup
         /// <summary>
         /// 
         /// </summary>
-        /// <param name="configuration">配置接口</param>
+        /// <param name="app">应用程序建造者</param>
         /// <returns></returns>
         private static JwtBearerOptions CreateJwtBearerAuthenticationOptions(IApplicationBuilder app)
         {
@@ -101,6 +101,11 @@ namespace DFF.Freedom.Web.Host.Startup
 
         /* This method is needed to authorize SignalR javascript client.
          * SignalR can not send authorization header. So, we are getting it from query string as an encrypted text. */
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="context"></param>
+        /// <returns></returns>
         private static Task QueryStringTokenResolver(MessageReceivedContext context)
         {
             if (!context.HttpContext.Request.Path.HasValue ||

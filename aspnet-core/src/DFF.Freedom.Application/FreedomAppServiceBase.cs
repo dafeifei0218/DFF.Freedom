@@ -34,7 +34,7 @@ namespace DFF.Freedom
         }
 
         /// <summary>
-        /// 获取当前用户异步方法
+        /// 获取当前用户 异步方法
         /// </summary>
         /// <returns>用户信息</returns>
         protected virtual Task<User> GetCurrentUserAsync()
@@ -49,7 +49,7 @@ namespace DFF.Freedom
         }
 
         /// <summary>
-        /// 获取当前租户异步方法
+        /// 获取当前租户 异步方法
         /// </summary>
         /// <returns>返回 <see cref="Tenant"/> 租户信息</returns>
         protected virtual Task<Tenant> GetCurrentTenantAsync()

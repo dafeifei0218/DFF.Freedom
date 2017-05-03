@@ -13,7 +13,7 @@ namespace DFF.Freedom.Users
 {
     /* THIS IS JUST A SAMPLE. */
     /// <summary>
-    /// 用户服务类
+    /// 用户 应用程序服务类
     /// </summary>
     [AbpAuthorize(PermissionNames.Pages_Users)]
     public class UserAppService : FreedomAppServiceBase, IUserAppService
@@ -24,8 +24,8 @@ namespace DFF.Freedom.Users
         /// <summary>
         /// 构造函数
         /// </summary>
-        /// <param name="userRepository"></param>
-        /// <param name="permissionManager"></param>
+        /// <param name="userRepository">用户仓储</param>
+        /// <param name="permissionManager">权限管理</param>
         public UserAppService(IRepository<User, long> userRepository, IPermissionManager permissionManager)
         {
             _userRepository = userRepository;
@@ -35,7 +35,7 @@ namespace DFF.Freedom.Users
         /// <summary>
         /// 禁止权限
         /// </summary>
-        /// <param name="input"></param>
+        /// <param name="input">输入模型</param>
         /// <returns></returns>
         public async Task ProhibitPermission(ProhibitPermissionInput input)
         {
@@ -48,7 +48,7 @@ namespace DFF.Freedom.Users
         //Example for primitive method parameters.
         //原始方法参数示例。
         /// <summary>
-        /// 
+        /// 根据角色名称中删除指定用户Id
         /// </summary>
         /// <param name="userId">用户Id</param>
         /// <param name="roleName">角色名称</param>
@@ -59,7 +59,7 @@ namespace DFF.Freedom.Users
         }
 
         /// <summary>
-        /// 获取用户集合
+        /// 获取用户列表
         /// </summary>
         /// <returns></returns>
         public async Task<ListResultDto<UserListDto>> GetUsers()

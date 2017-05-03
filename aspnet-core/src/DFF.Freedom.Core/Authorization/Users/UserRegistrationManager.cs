@@ -14,6 +14,9 @@ using Microsoft.AspNet.Identity;
 
 namespace DFF.Freedom.Authorization.Users
 {
+    /// <summary>
+    /// 用户注册管理类
+    /// </summary>
     public class UserRegistrationManager : DomainService
     {
         public IAbpSession AbpSession { get; set; }

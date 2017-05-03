@@ -6,7 +6,7 @@ using DFF.Freedom.Users.Dto;
 namespace DFF.Freedom.Users
 {
     /// <summary>
-    /// 用户服务
+    /// 用户 应用程序服务接口
     /// </summary>
     public interface IUserAppService : IApplicationService
     {
@@ -18,7 +18,7 @@ namespace DFF.Freedom.Users
         Task ProhibitPermission(ProhibitPermissionInput input);
 
         /// <summary>
-        /// 从角色中删除指定用户
+        /// 根据角色名称中删除指定用户Id
         /// </summary>
         /// <param name="userId">用户Id</param>
         /// <param name="roleName">角色名称</param>
@@ -26,7 +26,7 @@ namespace DFF.Freedom.Users
         Task RemoveFromRole(long userId, string roleName);
 
         /// <summary>
-        /// 获取用户列表信息
+        /// 获取用户列表
         /// </summary>
         /// <returns></returns>
         Task<ListResultDto<UserListDto>> GetUsers();

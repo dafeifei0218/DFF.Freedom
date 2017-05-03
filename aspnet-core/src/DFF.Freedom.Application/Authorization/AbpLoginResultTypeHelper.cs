@@ -43,7 +43,7 @@ namespace DFF.Freedom.Authorization
                     return new UserFriendlyException(L("LoginFailed"), L("UserIsNotActiveAndCanNotLogin", usernameOrEmailAddress));
                 case AbpLoginResultType.UserEmailIsNotConfirmed: //用户电子邮件未确认
                     return new UserFriendlyException(L("LoginFailed"), L("UserEmailIsNotConfirmedAndCanNotLogin"));
-                case AbpLoginResultType.LockedOut:
+                case AbpLoginResultType.LockedOut: //锁定
                     return new UserFriendlyException(L("LoginFailed"), L("UserLockedOutMessage"));
                 default: //Can not fall to default actually. But other result types can be added in the future and we may forget to handle it
                          //不能到默认。但其他的结果类型可以添加在未来，我们可能会忘记处理它。

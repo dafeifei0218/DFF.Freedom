@@ -7,7 +7,7 @@ using DFF.Freedom.Sessions.Dto;
 namespace DFF.Freedom.Sessions
 {
     /// <summary>
-    /// Session服务类
+    /// Session会话 应用程序服务类
     /// </summary>
     public class SessionAppService : FreedomAppServiceBase, ISessionAppService
     {

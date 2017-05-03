@@ -5,6 +5,9 @@ using Abp.Zero.EntityFramework;
 
 namespace DFF.Freedom.EntityFramework
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class AbpZeroDbMigrator : AbpZeroDbMigrator<FreedomDbContext, Migrations.Configuration>
     {
         public AbpZeroDbMigrator(

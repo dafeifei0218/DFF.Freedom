@@ -5,7 +5,7 @@ using DFF.Freedom.Authorization.Accounts.Dto;
 namespace DFF.Freedom.Authorization.Accounts
 {
     /// <summary>
-    /// 账户服务
+    /// 账户 应用程序服务接口
     /// </summary>
     public interface IAccountAppService : IApplicationService
     {

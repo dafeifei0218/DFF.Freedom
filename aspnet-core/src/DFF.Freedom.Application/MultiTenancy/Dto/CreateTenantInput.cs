@@ -7,7 +7,7 @@ using DFF.Freedom.Users;
 namespace DFF.Freedom.MultiTenancy.Dto
 {
     /// <summary>
-    /// 创建租户输入模型
+    /// 创建租户 输入模型
     /// </summary>
     [AutoMapTo(typeof(Tenant))]
     public class CreateTenantInput

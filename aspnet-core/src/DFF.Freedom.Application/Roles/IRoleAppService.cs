@@ -5,7 +5,7 @@ using DFF.Freedom.Roles.Dto;
 namespace DFF.Freedom.Roles
 {
     /// <summary>
-    /// 角色服务
+    /// 角色 应用程序服务接口
     /// </summary>
     public interface IRoleAppService : IApplicationService
     {

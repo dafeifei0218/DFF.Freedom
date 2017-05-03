@@ -10,11 +10,17 @@ using DFF.Freedom.EntityFramework;
 
 namespace DFF.Freedom.Migrator
 {
+    /// <summary>
+    /// 
+    /// </summary>
     [DependsOn(typeof(FreedomEntityFrameworkModule))]
     public class FreedomMigratorModule : AbpModule
     {
         private readonly IConfigurationRoot _appConfiguration;
 
+        /// <summary>
+        /// 
+        /// </summary>
         public FreedomMigratorModule()
         {
             _appConfiguration = AppConfigurations.Get(
@@ -22,6 +28,9 @@ namespace DFF.Freedom.Migrator
             );
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public override void PreInitialize()
         {
             Database.SetInitializer<FreedomDbContext>(null);
@@ -39,6 +48,9 @@ namespace DFF.Freedom.Migrator
             });
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public override void Initialize()
         {
             IocManager.RegisterAssemblyByConvention(Assembly.GetExecutingAssembly());

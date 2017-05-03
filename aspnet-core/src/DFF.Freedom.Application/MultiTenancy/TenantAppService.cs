@@ -16,6 +16,9 @@ using DFF.Freedom.Users;
 
 namespace DFF.Freedom.MultiTenancy
 {
+    /// <summary>
+    /// 租户 应用程序服务
+    /// </summary>
     [AbpAuthorize(PermissionNames.Pages_Tenants)]
     public class TenantAppService : FreedomAppServiceBase, ITenantAppService
     {
@@ -24,6 +27,13 @@ namespace DFF.Freedom.MultiTenancy
         private readonly EditionManager _editionManager;
         private readonly IAbpZeroDbMigrator _abpZeroDbMigrator;
 
+        /// <summary>
+        /// 构造函数
+        /// </summary>
+        /// <param name="tenantManager">租户管理</param>
+        /// <param name="roleManager">角色管理</param>
+        /// <param name="editionManager">版本管理</param>
+        /// <param name="abpZeroDbMigrator">AbpZero数据迁移</param>
         public TenantAppService(
             TenantManager tenantManager, 
             RoleManager roleManager, 
@@ -36,6 +46,10 @@ namespace DFF.Freedom.MultiTenancy
             _abpZeroDbMigrator = abpZeroDbMigrator;
         }
 
+        /// <summary>
+        /// 获取租户列表
+        /// </summary>
+        /// <returns>租户列表</returns>
         public ListResultDto<TenantListDto> GetTenants()
         {
             return new ListResultDto<TenantListDto>(
@@ -46,6 +60,11 @@ namespace DFF.Freedom.MultiTenancy
                 );
         }
 
+        /// <summary>
+        /// 创建租户
+        /// </summary>
+        /// <param name="input">输入模型</param>
+        /// <returns></returns>
         public async Task CreateTenant(CreateTenantInput input)
         {
             //Create tenant

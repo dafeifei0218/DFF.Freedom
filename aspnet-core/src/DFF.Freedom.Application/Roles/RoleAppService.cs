@@ -9,7 +9,7 @@ namespace DFF.Freedom.Roles
     /* THIS IS JUST A SAMPLE. */
     //这只是一个样本
     /// <summary>
-    /// 角色服务
+    /// 角色 应用程序服务
     /// </summary>
     public class RoleAppService : FreedomAppServiceBase,IRoleAppService
     {
