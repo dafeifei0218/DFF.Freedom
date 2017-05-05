@@ -15,5 +15,12 @@ namespace DFF.Freedom.Roles
         /// <param name="input">更新角色权限输入模型</param>
         /// <returns></returns>
         Task UpdateRolePermissions(UpdateRolePermissionsInput input);
+        
+        /// <summary>
+        /// 创建角色
+        /// </summary>
+        /// <param name="input">输入模型</param>
+        /// <returns></returns>
+        Task CreateRole(CreateRoleInput input);
     }
 }

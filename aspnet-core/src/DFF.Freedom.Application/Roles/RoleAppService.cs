@@ -1,6 +1,8 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using System.Threading.Tasks;
 using Abp.Authorization;
+using Abp.AutoMapper;
 using DFF.Freedom.Authorization.Roles;
 using DFF.Freedom.Roles.Dto;
 
@@ -11,7 +13,7 @@ namespace DFF.Freedom.Roles
     /// <summary>
     /// 角色 应用程序服务
     /// </summary>
-    public class RoleAppService : FreedomAppServiceBase,IRoleAppService
+    public class RoleAppService : FreedomAppServiceBase, IRoleAppService
     {
         private readonly RoleManager _roleManager;
         private readonly IPermissionManager _permissionManager;
@@ -34,6 +36,7 @@ namespace DFF.Freedom.Roles
         /// <returns></returns>
         public async Task UpdateRolePermissions(UpdateRolePermissionsInput input)
         {
+            //根据角色Id，获取角色信息
             var role = await _roleManager.GetRoleByIdAsync(input.RoleId);
             var grantedPermissions = _permissionManager
                 .GetAllPermissions()
@@ -41,6 +44,18 @@ namespace DFF.Freedom.Roles
                 .ToList();
 
             await _roleManager.SetGrantedPermissionsAsync(role, grantedPermissions);
+        }
+
+        /// <summary>
+        /// 创建角色
+        /// </summary>
+        /// <param name="input">输入模型</param>
+        /// <returns></returns>
+        public async Task CreateRole(CreateRoleInput input)
+        {
+            var role = input.MapTo<Role>();
+
+            await _roleManager.CreateAsync(role);
         }
     }
 }

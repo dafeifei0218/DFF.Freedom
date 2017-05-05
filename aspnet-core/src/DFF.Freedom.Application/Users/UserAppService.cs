@@ -39,9 +39,12 @@ namespace DFF.Freedom.Users
         /// <returns></returns>
         public async Task ProhibitPermission(ProhibitPermissionInput input)
         {
+            //根据Id，获取用户信息
             var user = await UserManager.GetUserByIdAsync(input.UserId);
+            //根据权限名称，获取权限信息
             var permission = _permissionManager.GetPermission(input.PermissionName);
 
+            //禁止指定用户的权限
             await UserManager.ProhibitPermissionAsync(user, permission);
         }
 
@@ -64,6 +67,7 @@ namespace DFF.Freedom.Users
         /// <returns></returns>
         public async Task<ListResultDto<UserListDto>> GetUsers()
         {
+            //获取用户全部列表
             var users = await _userRepository.GetAllListAsync();
 
             return new ListResultDto<UserListDto>(

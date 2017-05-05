@@ -10,7 +10,7 @@
         /// </summary>
         Available = 1,
         /// <summary>
-        /// 已激活
+        /// 未激活
         /// </summary>
         InActive,
         /// <summary>

@@ -33,20 +33,21 @@ namespace DFF.Freedom.Authorization.Accounts
         {
             var tenant = await TenantManager.FindByTenancyNameAsync(input.TenancyName);
             if (tenant == null)
-            {
+            { //如果租户为空
                 return new IsTenantAvailableOutput(TenantAvailabilityState.NotFound);
             }
 
             if (!tenant.IsActive)
-            {
+            { //如果租户未激活
                 return new IsTenantAvailableOutput(TenantAvailabilityState.InActive);
             }
 
+            //租户可用
             return new IsTenantAvailableOutput(TenantAvailabilityState.Available, tenant.Id);
         }
 
         /// <summary>
-        /// 注册
+        /// 注册用户
         /// </summary>
         /// <param name="input">输入模型</param>
         /// <returns></returns>
@@ -61,6 +62,7 @@ namespace DFF.Freedom.Authorization.Accounts
                 false
             );
 
+            //登录是否需要电子邮件确认
             var isEmailConfirmationRequiredForLogin = await SettingManager.GetSettingValueAsync<bool>(AbpZeroSettingNames.UserManagement.IsEmailConfirmationRequiredForLogin);
 
             return new RegisterOutput
