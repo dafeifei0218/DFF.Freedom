@@ -22,7 +22,7 @@ namespace DFF.Freedom.Configuration
         }
 
         /// <summary>
-        /// 获取配置
+        /// 获取配置根的对象
         /// </summary>
         /// <param name="path">路径</param>
         /// <param name="environmentName">环境的名称</param>
@@ -38,7 +38,7 @@ namespace DFF.Freedom.Configuration
         }
 
         /// <summary>
-        /// 建造配置
+        /// 建造配置根的对象
         /// </summary>
         /// <param name="path">路径</param>
         /// <param name="environmentName">环境的名称</param>

@@ -21,15 +21,17 @@ namespace DFF.Freedom.Web
         {
             var coreAssemblyDirectoryPath = Path.GetDirectoryName(typeof(FreedomCoreModule).Assembly.Location);
             if (coreAssemblyDirectoryPath == null)
-            { //DFF.Freedom.Core程序集的目录路径为空
+            { //如果DFF.Freedom.Core程序集的目录路径为空
+                //抛出异常 找不到DFF.Freedom.Core程序集。
                 throw new ApplicationException("Could not find location of DFF.Freedom.Core assembly!");
             }
 
             var directoryInfo = new DirectoryInfo(coreAssemblyDirectoryPath);
             while (!DirectoryContains(directoryInfo.FullName, "DFF.Freedom.sln"))
-            {
+            { //
                 if (directoryInfo.Parent == null)
-                {
+                { //如果目录的父目录为空
+                    //抛出异常 根文件夹中找不到内容。
                     throw new ApplicationException("Could not find content root folder!");
                 }
 
@@ -52,7 +54,7 @@ namespace DFF.Freedom.Web
         }
 
         /// <summary>
-        /// 目录中是否包含文件名
+        /// 指定目录中，是否包含文件名
         /// </summary>
         /// <param name="directory">目录</param>
         /// <param name="fileName">文件名</param>
