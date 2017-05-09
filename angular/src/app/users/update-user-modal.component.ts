@@ -1,18 +1,18 @@
 ﻿import { Component, ViewChild, Injector, Output, EventEmitter, ElementRef } from '@angular/core';
 import { ModalDirective } from 'ng2-bootstrap';
-import { UserServiceProxy, CreateUserInput } from '@shared/service-proxies/service-proxies';
+import { UserServiceProxy, UpdateUserInput } from '@shared/service-proxies/service-proxies';
 import { AppComponentBase } from '@shared/app-component-base';
 import { AppConsts } from '@shared/AppConsts';
 
 import * as _ from "lodash";
 
 @Component({
-    selector: 'createUserModal',
-    templateUrl: './create-user-modal.component.html'
+    selector: 'updateUserModal',
+    templateUrl: './update-user-modal.component.html'
 })
-export class CreateUserModalComponent extends AppComponentBase {
+export class UpdateUserModalComponent extends AppComponentBase {
 
-    @ViewChild('createUserModal') modal: ModalDirective;
+    @ViewChild('updateUserModal') modal: ModalDirective;
 
     @Output() modalSave: EventEmitter<any> = new EventEmitter<any>();
 
@@ -20,7 +20,7 @@ export class CreateUserModalComponent extends AppComponentBase {
     active: boolean = false;
     //是否保存，默认 false未保存
     saving: boolean = false;
-    user: CreateUserInput = null;
+    user: UpdateUserInput = null;
 
     //构造函数
     constructor(
@@ -34,14 +34,14 @@ export class CreateUserModalComponent extends AppComponentBase {
     show(): void {
         this.active = true;
         this.modal.show();
-        this.user = new CreateUserInput({ isActive: false });
+        this.user = new UpdateUserInput({ isActive: false });
     }
 
     //保存
     save(): void {
 
         this.saving = true;
-        this._userService.createUser(this.user)
+        this._userService.updateUser(this.user)
             .finally(() => { this.saving = false; })
             .subscribe(() => {
                 this.notify.info(this.l('SavedSuccessfully'));

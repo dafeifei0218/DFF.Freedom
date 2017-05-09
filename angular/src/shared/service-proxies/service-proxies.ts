@@ -694,6 +694,32 @@ export class UserServiceProxy {
         else
             throw new SwaggerException(message, status, response);
     }
+
+    updateUser(input: UpdateUserInput): Observable<void> {
+        let url_ = this.baseUrl + "/api/services/app/User/CreateUser";
+
+        const content_ = JSON.stringify(input ? input.toJS() : null);
+
+        return this.http.request(url_, {
+            body: content_,
+            method: "post",
+            headers: new Headers({
+                "Content-Type": "application/json; charset=UTF-8",
+                "Accept": "application/json; charset=UTF-8"
+            })
+        }).map((response) => {
+            return this.processCreateUser(response);
+        }).catch((response: any, caught: any) => {
+            if (response instanceof Response) {
+                try {
+                    return Observable.of(this.processCreateUser(response));
+                } catch (e) {
+                    return <Observable<void>><any>Observable.throw(e);
+                }
+            } else
+                return <Observable<void>><any>Observable.throw(response);
+        });
+    }
 }
 
 export class IsTenantAvailableInput { 
@@ -1446,6 +1472,49 @@ export class CreateUserInput {
     clone() {
         const json = this.toJSON();
         return new CreateUserInput(JSON.parse(json));
+    }
+}
+
+export class UpdateUserInput {
+    userName: string;
+    name: string;
+    surname: string;
+    emailAddress: string;
+    password: string;
+    isActive: boolean;
+    constructor(data?: any) {
+        if (data !== undefined) {
+            this.userName = data["userName"] !== undefined ? data["userName"] : null;
+            this.name = data["name"] !== undefined ? data["name"] : null;
+            this.surname = data["surname"] !== undefined ? data["surname"] : null;
+            this.emailAddress = data["emailAddress"] !== undefined ? data["emailAddress"] : null;
+            this.password = data["password"] !== undefined ? data["password"] : null;
+            this.isActive = data["isActive"] !== undefined ? data["isActive"] : null;
+        }
+    }
+
+    static fromJS(data: any): UpdateUserInput {
+        return new UpdateUserInput(data);
+    }
+
+    toJS(data?: any) {
+        data = data === undefined ? {} : data;
+        data["userName"] = this.userName !== undefined ? this.userName : null;
+        data["name"] = this.name !== undefined ? this.name : null;
+        data["surname"] = this.surname !== undefined ? this.surname : null;
+        data["emailAddress"] = this.emailAddress !== undefined ? this.emailAddress : null;
+        data["password"] = this.password !== undefined ? this.password : null;
+        data["isActive"] = this.isActive !== undefined ? this.isActive : null;
+        return data;
+    }
+
+    toJSON() {
+        return JSON.stringify(this.toJS());
+    }
+
+    clone() {
+        const json = this.toJSON();
+        return new UpdateUserInput(JSON.parse(json));
     }
 }
 

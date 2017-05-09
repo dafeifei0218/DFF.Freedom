@@ -3,9 +3,14 @@
     <div class="row">
         <div class="col-md-12">
             <button data-toggle="modal" class="btn btn-primary pull-right" (click)="createUser()"><i class="fa fa-plus"></i> {{l('CreateNewUser')}}</button>
+            &nbsp;&nbsp;
+            <button data-toggle="modal" class="btn btn-primary pull-right" (click)="updateUser()"><i class="fa fa-plus"></i> {{l('UpdateUser')}}</button>
+            &nbsp;&nbsp;
+            <button data-toggle="modal" class="btn btn-primary pull-right" (click)="deleteUser()"><i class="fa fa-plus"></i> {{l('DeleteUser')}}</button>
             <table class="table">
                 <thead>
                 <tr>
+                    <th><input type="checkbox" id="chkAll" name="chkAll"/>全选</th>
                     <th>{{l('UserName')}}</th>
                     <th>{{l('FullName')}}</th>
                     <th>{{l('EmailAddress')}}</th>
@@ -14,6 +19,7 @@
                 </thead>
                 <tbody>
                 <tr *ngFor="let user of users">
+                    <td><input type="checkbox" value="{{user.id}}" id="chkId" name="chkId"/></td>
                     <td>{{user.userName}}</td>
                     <td>{{user.fullName}}</td>
                     <td>{{user.emailAddress}}</td>
