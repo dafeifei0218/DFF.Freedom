@@ -49,7 +49,7 @@ namespace DFF.Freedom.Authorization.Users
         /// <param name="name">名称</param>
         /// <param name="surname">真实名称</param>
         /// <param name="emailAddress">邮件地址</param>
-        /// <param name="userName">用户名称</param>
+        /// <param name="userName">登录用户名</param>
         /// <param name="plainPassword">普通的密码</param>
         /// <param name="isEmailConfirmed">是否邮件确认</param>
         /// <returns></returns>

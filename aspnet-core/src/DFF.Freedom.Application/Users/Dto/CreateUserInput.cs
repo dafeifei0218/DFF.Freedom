@@ -13,7 +13,7 @@ namespace DFF.Freedom.Users.Dto
     public class CreateUserInput
     {
         /// <summary>
-        /// 用户名称
+        /// 登录用户名
         /// </summary>
         [Required]
         [StringLength(AbpUserBase.MaxUserNameLength)]

@@ -28,7 +28,7 @@ namespace DFF.Freedom.Authorization.Accounts.Dto
         public string Surname { get; set; }
 
         /// <summary>
-        /// 用户名称
+        /// 登录用户名
         /// </summary>
         [Required]
         [StringLength(AbpUserBase.MaxUserNameLength)]

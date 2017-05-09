@@ -101,8 +101,10 @@ namespace DFF.Freedom.Web.Host.Startup
 
         /* This method is needed to authorize SignalR javascript client.
          * SignalR can not send authorization header. So, we are getting it from query string as an encrypted text. */
+        //这种方法需要授权SignalR JavaScript客户端。
+        //SignalR不能发送授权头。所以，我们将它从查询字符串作为加密文本。
         /// <summary>
-        /// 
+        /// 参数令牌解析
         /// </summary>
         /// <param name="context"></param>
         /// <returns></returns>
@@ -112,6 +114,7 @@ namespace DFF.Freedom.Web.Host.Startup
                 !context.HttpContext.Request.Path.Value.StartsWith("/signalr"))
             {
                 //We are just looking for signalr clients
+                //我们只是在寻找SignalR客户端
                 return Task.CompletedTask;
             }
 
@@ -119,10 +122,12 @@ namespace DFF.Freedom.Web.Host.Startup
             if (qsAuthToken == null)
             {
                 //Cookie value does not matches to querystring value
+                //Cookie的值不匹配的参数的值
                 return Task.CompletedTask;
             }
 
             //Set auth token from cookie
+            //从Cookie设置身份认证令牌
             context.Token = SimpleStringCipher.Instance.Decrypt(qsAuthToken, AppConsts.DefaultPassPhrase);
             return Task.CompletedTask;
         }

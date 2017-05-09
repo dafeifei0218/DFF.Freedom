@@ -22,7 +22,7 @@ namespace DFF.Freedom.Users.Dto
         public string Surname { get; set; }
 
         /// <summary>
-        /// 用户名称
+        /// 登录用户名
         /// </summary>
         public string UserName { get; set; }
 
