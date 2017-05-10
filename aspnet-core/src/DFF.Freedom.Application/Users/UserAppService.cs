@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Abp.Application.Services.Dto;
@@ -89,6 +90,18 @@ namespace DFF.Freedom.Users
             user.IsEmailConfirmed = true;
 
             CheckErrors(await UserManager.CreateAsync(user));
+        }
+
+        /// <summary>
+        /// 更新用户
+        /// </summary>
+        /// <param name="input">输入模型</param>
+        /// <returns></returns>
+        public async Task<IdentityResult> UpdateUser(UpdateUserInput input)
+        {
+            var user = input.MapTo<User>();
+
+            return await UserManager.UpdateAsync(user);     
         }
     }
 }

@@ -2,6 +2,7 @@ using System.Threading.Tasks;
 using Abp.Application.Services;
 using Abp.Application.Services.Dto;
 using DFF.Freedom.Users.Dto;
+using Microsoft.AspNet.Identity;
 
 namespace DFF.Freedom.Users
 {
@@ -37,5 +38,12 @@ namespace DFF.Freedom.Users
         /// <param name="input">创建用户输入模型</param>
         /// <returns></returns>
         Task CreateUser(CreateUserInput input);
+
+        /// <summary>
+        /// 更新用户
+        /// </summary>
+        /// <param name="input">输入模型</param>
+        /// <returns></returns>
+        Task<IdentityResult> UpdateUser(UpdateUserInput input);
     }
 }

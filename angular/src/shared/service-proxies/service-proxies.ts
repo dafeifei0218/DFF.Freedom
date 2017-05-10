@@ -173,6 +173,47 @@ export class RoleServiceProxy {
         return null;
     }
 
+    /**
+     * @return Success
+     */
+    createRole(input: CreateRoleInput): Observable<void> {
+        let url_ = this.baseUrl + "/api/services/app/Role/CreateRole";
+
+        const content_ = JSON.stringify(input ? input.toJS() : null);
+        
+        return this.http.request(url_, {
+            body: content_,
+            method: "post",
+            headers: new Headers({
+                "Content-Type": "application/json; charset=UTF-8", 
+				"Accept": "application/json; charset=UTF-8"
+            })
+        }).map((response) => {
+            return this.processCreateRole(response);
+        }).catch((response: any, caught: any) => {
+            if (response instanceof Response) {
+                try {
+                    return Observable.of(this.processCreateRole(response));
+                } catch (e) {
+                    return <Observable<void>><any>Observable.throw(e);
+                }
+            } else
+                return <Observable<void>><any>Observable.throw(response);
+        });
+    }
+
+    protected processCreateRole(response: Response): void {
+        const responseText = response.text();
+        const status = response.status; 
+
+        if (status === 200) {
+            return null;
+        } else if (status !== 200 && status !== 204) {
+            this.throwException("An unexpected server error occurred.", status, responseText);
+        }
+        return null;
+    }
+
     protected throwException(message: string, status: number, response: string, result?: any): any {
         if(result !== null && result !== undefined)
             throw result;
@@ -688,37 +729,55 @@ export class UserServiceProxy {
         return null;
     }
 
+    /**
+     * @return Success
+     */
+    updateUser(input: UpdateUserInput): Observable<IdentityResult> {
+        let url_ = this.baseUrl + "/api/services/app/User/UpdateUser";
+
+        const content_ = JSON.stringify(input ? input.toJS() : null);
+        
+        return this.http.request(url_, {
+            body: content_,
+            method: "put",
+            headers: new Headers({
+                "Content-Type": "application/json; charset=UTF-8", 
+				"Accept": "application/json; charset=UTF-8"
+            })
+        }).map((response) => {
+            return this.processUpdateUser(response);
+        }).catch((response: any, caught: any) => {
+            if (response instanceof Response) {
+                try {
+                    return Observable.of(this.processUpdateUser(response));
+                } catch (e) {
+                    return <Observable<IdentityResult>><any>Observable.throw(e);
+                }
+            } else
+                return <Observable<IdentityResult>><any>Observable.throw(response);
+        });
+    }
+
+    protected processUpdateUser(response: Response): IdentityResult {
+        const responseText = response.text();
+        const status = response.status; 
+
+        if (status === 200) {
+            let result200: IdentityResult = null;
+            let resultData200 = responseText === "" ? null : JSON.parse(responseText, this.jsonParseReviver);
+            result200 = resultData200 ? IdentityResult.fromJS(resultData200) : new IdentityResult();
+            return result200;
+        } else if (status !== 200 && status !== 204) {
+            this.throwException("An unexpected server error occurred.", status, responseText);
+        }
+        return null;
+    }
+
     protected throwException(message: string, status: number, response: string, result?: any): any {
         if(result !== null && result !== undefined)
             throw result;
         else
             throw new SwaggerException(message, status, response);
-    }
-
-    updateUser(input: UpdateUserInput): Observable<void> {
-        let url_ = this.baseUrl + "/api/services/app/User/CreateUser";
-
-        const content_ = JSON.stringify(input ? input.toJS() : null);
-
-        return this.http.request(url_, {
-            body: content_,
-            method: "post",
-            headers: new Headers({
-                "Content-Type": "application/json; charset=UTF-8",
-                "Accept": "application/json; charset=UTF-8"
-            })
-        }).map((response) => {
-            return this.processCreateUser(response);
-        }).catch((response: any, caught: any) => {
-            if (response instanceof Response) {
-                try {
-                    return Observable.of(this.processCreateUser(response));
-                } catch (e) {
-                    return <Observable<void>><any>Observable.throw(e);
-                }
-            } else
-                return <Observable<void>><any>Observable.throw(response);
-        });
     }
 }
 
@@ -888,6 +947,46 @@ export class UpdateRolePermissionsInput {
     clone() {
         const json = this.toJSON();
         return new UpdateRolePermissionsInput(JSON.parse(json));
+    }
+}
+
+export class CreateRoleInput { 
+    tenantId: number; 
+    name: string; 
+    displayName: string; 
+    isStatic: boolean; 
+    isDefault: boolean;
+    constructor(data?: any) {
+        if (data !== undefined) {
+            this.tenantId = data["tenantId"] !== undefined ? data["tenantId"] : null;
+            this.name = data["name"] !== undefined ? data["name"] : null;
+            this.displayName = data["displayName"] !== undefined ? data["displayName"] : null;
+            this.isStatic = data["isStatic"] !== undefined ? data["isStatic"] : null;
+            this.isDefault = data["isDefault"] !== undefined ? data["isDefault"] : null;
+        }
+    }
+
+    static fromJS(data: any): CreateRoleInput {
+        return new CreateRoleInput(data);
+    }
+
+    toJS(data?: any) {
+        data = data === undefined ? {} : data;
+        data["tenantId"] = this.tenantId !== undefined ? this.tenantId : null;
+        data["name"] = this.name !== undefined ? this.name : null;
+        data["displayName"] = this.displayName !== undefined ? this.displayName : null;
+        data["isStatic"] = this.isStatic !== undefined ? this.isStatic : null;
+        data["isDefault"] = this.isDefault !== undefined ? this.isDefault : null;
+        return data; 
+    }
+
+    toJSON() {
+        return JSON.stringify(this.toJS());
+    }
+
+    clone() {
+        const json = this.toJSON();
+        return new CreateRoleInput(JSON.parse(json));
     }
 }
 
@@ -1475,16 +1574,14 @@ export class CreateUserInput {
     }
 }
 
-export class UpdateUserInput {
-    userName: string;
-    name: string;
-    surname: string;
-    emailAddress: string;
-    password: string;
+export class UpdateUserInput { 
+    name: string; 
+    surname: string; 
+    emailAddress: string; 
+    password: string; 
     isActive: boolean;
     constructor(data?: any) {
         if (data !== undefined) {
-            this.userName = data["userName"] !== undefined ? data["userName"] : null;
             this.name = data["name"] !== undefined ? data["name"] : null;
             this.surname = data["surname"] !== undefined ? data["surname"] : null;
             this.emailAddress = data["emailAddress"] !== undefined ? data["emailAddress"] : null;
@@ -1499,13 +1596,12 @@ export class UpdateUserInput {
 
     toJS(data?: any) {
         data = data === undefined ? {} : data;
-        data["userName"] = this.userName !== undefined ? this.userName : null;
         data["name"] = this.name !== undefined ? this.name : null;
         data["surname"] = this.surname !== undefined ? this.surname : null;
         data["emailAddress"] = this.emailAddress !== undefined ? this.emailAddress : null;
         data["password"] = this.password !== undefined ? this.password : null;
         data["isActive"] = this.isActive !== undefined ? this.isActive : null;
-        return data;
+        return data; 
     }
 
     toJSON() {
@@ -1515,6 +1611,45 @@ export class UpdateUserInput {
     clone() {
         const json = this.toJSON();
         return new UpdateUserInput(JSON.parse(json));
+    }
+}
+
+export class IdentityResult { 
+    succeeded: boolean; 
+    errors: string[];
+    constructor(data?: any) {
+        if (data !== undefined) {
+            this.succeeded = data["succeeded"] !== undefined ? data["succeeded"] : null;
+            if (data["errors"] && data["errors"].constructor === Array) {
+                this.errors = [];
+                for (let item of data["errors"])
+                    this.errors.push(item);
+            }
+        }
+    }
+
+    static fromJS(data: any): IdentityResult {
+        return new IdentityResult(data);
+    }
+
+    toJS(data?: any) {
+        data = data === undefined ? {} : data;
+        data["succeeded"] = this.succeeded !== undefined ? this.succeeded : null;
+        if (this.errors && this.errors.constructor === Array) {
+            data["errors"] = [];
+            for (let item of this.errors)
+                data["errors"].push(item);
+        }
+        return data; 
+    }
+
+    toJSON() {
+        return JSON.stringify(this.toJS());
+    }
+
+    clone() {
+        const json = this.toJSON();
+        return new IdentityResult(JSON.parse(json));
     }
 }
 

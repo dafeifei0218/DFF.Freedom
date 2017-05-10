@@ -10,6 +10,7 @@ import { UpdateUserModalComponent } from './update-user-modal.component';
     templateUrl: './users.component.html',
     animations: [appModuleAnimation()]
 })
+//用户组件
 export class UsersComponent extends AppComponentBase implements OnInit {
 
     @ViewChild('createUserModal') createUserModal: CreateUserModalComponent;
