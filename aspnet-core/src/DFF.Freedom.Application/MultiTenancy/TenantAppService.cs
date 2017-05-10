@@ -80,7 +80,8 @@ namespace DFF.Freedom.MultiTenancy
                 tenant.EditionId = defaultEdition.Id;
             }
 
-            CheckErrors(await TenantManager.CreateAsync(tenant));
+            //CheckErrors(await TenantManager.CreateAsync(tenant));
+            await TenantManager.CreateAsync(tenant); //2017-05-10：新加的语句
             await CurrentUnitOfWork.SaveChangesAsync(); //To get new tenant's id. 获取新租户的Id
 
             //Create tenant database

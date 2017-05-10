@@ -18,6 +18,7 @@ using DFF.Freedom.Models.TokenAuth;
 using DFF.Freedom.MultiTenancy;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Abp.Authorization;
 
 namespace DFF.Freedom.Controllers
 {

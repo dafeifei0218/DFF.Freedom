@@ -3,6 +3,7 @@ using Abp;
 using Abp.Authorization.Users;
 using Abp.Dependency;
 using Abp.UI;
+using Abp.Authorization;
 
 namespace DFF.Freedom.Authorization
 {
