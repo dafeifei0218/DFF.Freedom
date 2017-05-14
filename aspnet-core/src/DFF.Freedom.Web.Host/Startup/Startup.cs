@@ -37,9 +37,9 @@ namespace DFF.Freedom.Web.Host.Startup
         }
 
         /// <summary>
-        /// 
+        /// 配置服务
         /// </summary>
-        /// <param name="services"></param>
+        /// <param name="services">服务集合</param>
         /// <returns></returns>
         public IServiceProvider ConfigureServices(IServiceCollection services)
         {
@@ -73,11 +73,11 @@ namespace DFF.Freedom.Web.Host.Startup
         }
 
         /// <summary>
-        /// 
+        /// 配置
         /// </summary>
-        /// <param name="app"></param>
-        /// <param name="env"></param>
-        /// <param name="loggerFactory"></param>
+        /// <param name="app">应用程序建造者</param>
+        /// <param name="env">宿主环境</param>
+        /// <param name="loggerFactory">日志工厂</param>
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
             app.UseAbp(); //Initializes ABP framework.
@@ -109,9 +109,9 @@ namespace DFF.Freedom.Web.Host.Startup
         }
 
         /// <summary>
-        /// 
+        /// 配置Owin服务
         /// </summary>
-        /// <param name="app"></param>
+        /// <param name="app">应用程序建造者</param>
         private static void ConfigureOwinServices(IAppBuilder app)
         {
             app.Properties["host.AppName"] = "AbpZeroTemplate";

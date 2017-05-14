@@ -68,16 +68,18 @@ namespace DFF.Freedom.Controllers
         /// 认证
         /// </summary>
         /// <param name="model">认证模型</param>
-        /// <returns>认证结果模型</returns>
+        /// <returns>返回 认证结果模型</returns>
         [HttpPost]
         public async Task<AuthenticateResultModel> Authenticate([FromBody] AuthenticateModel model)
         {
+            //获取登录结果
             var loginResult = await GetLoginResultAsync(
                 model.UserNameOrEmailAddress,
                 model.Password,
                 GetTenancyNameOrNull()
             );
 
+            //创建访问令牌
             var accessToken = CreateAccessToken(CreateJwtClaims(loginResult.Identity));
 
             return new AuthenticateResultModel
@@ -196,7 +198,7 @@ namespace DFF.Freedom.Controllers
         /// 获取外部用户信息
         /// </summary>
         /// <param name="model">外部认证模型</param>
-        /// <returns></returns>
+        /// <returns>扩展外部用户信息</returns>
         private async Task<ExternalLoginUserInfo> GetExternalUserInfo(ExternalAuthenticateModel model)
         {
             var userInfo = await _externalAuthManager.GetUserInfo(model.AuthProvider, model.ProviderAccessCode);

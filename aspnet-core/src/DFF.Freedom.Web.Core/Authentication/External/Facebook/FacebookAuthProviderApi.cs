@@ -13,10 +13,18 @@ using Abp.Extensions;
 
 namespace DFF.Freedom.Authentication.External.Facebook
 {
+    /// <summary>
+    /// Facebook认证提供者Api
+    /// </summary>
     public class FacebookAuthProviderApi : ExternalAuthProviderApiBase
     {
         public const string Name = "Facebook";
 
+        /// <summary>
+        /// 获取用户信息
+        /// </summary>
+        /// <param name="accessCode">访问代码</param>
+        /// <returns></returns>
         public override async Task<ExternalLoginUserInfo> GetUserInfo(string accessCode)
         {
             var endpoint = QueryHelpers.AddQueryString("https://graph.facebook.com/v2.8/me", "access_token", accessCode);
@@ -53,6 +61,11 @@ namespace DFF.Freedom.Authentication.External.Facebook
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="accessToken">访问令牌</param>
+        /// <returns></returns>
         private string GenerateAppSecretProof(string accessToken)
         {
             using (var algorithm = new HMACSHA256(Encoding.ASCII.GetBytes(ProviderInfo.ClientSecret)))

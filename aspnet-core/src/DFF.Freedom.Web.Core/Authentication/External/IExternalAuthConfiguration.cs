@@ -3,7 +3,7 @@
 namespace DFF.Freedom.Authentication.External
 {
     /// <summary>
-    /// 外部认证配置
+    /// 外部认证配置接口
     /// </summary>
     public interface IExternalAuthConfiguration
     {
