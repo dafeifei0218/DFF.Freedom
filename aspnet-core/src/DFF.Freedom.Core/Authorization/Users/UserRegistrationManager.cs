@@ -84,12 +84,13 @@ namespace DFF.Freedom.Authorization.Users
         }
 
         /// <summary>
-        /// 
+        /// 检查租户
         /// </summary>
         private void CheckForTenant()
         {
             if (!AbpSession.TenantId.HasValue)
             {
+                //无法注册host用户
                 throw new InvalidOperationException("Can not register host users!");
             }
         }
@@ -111,7 +112,7 @@ namespace DFF.Freedom.Authorization.Users
         /// <summary>
         /// 获取激活的租户 异步方法
         /// </summary>
-        /// <param name="tenantId"></param>
+        /// <param name="tenantId">租户Id</param>
         /// <returns></returns>
         private async Task<Tenant> GetActiveTenantAsync(int tenantId)
         {

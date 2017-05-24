@@ -80,9 +80,9 @@ namespace DFF.Freedom.Web.Host.Startup
         /// <param name="loggerFactory">日志工厂</param>
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
-            app.UseAbp(); //Initializes ABP framework.
+            app.UseAbp(); //Initializes ABP framework. 初始化ABP框架。
 
-            app.UseCors(DefaultCorsPolicyName); //Enable CORS!
+            app.UseCors(DefaultCorsPolicyName); //Enable CORS! 启用CORS
 
             AuthConfigurer.Configure(app, _appConfiguration);
 

@@ -13,6 +13,9 @@ export class AppUrlService {
 
     }
 
+    /**
+     * 获取跟Url
+     */
     get appRootUrl(): string {
         if (this._appSessionService.tenant) {
             return this.getAppRootUrlOfTenant(this._appSessionService.tenant.tenancyName);

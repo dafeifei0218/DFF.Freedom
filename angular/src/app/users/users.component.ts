@@ -14,6 +14,7 @@ import { UpdateUserModalComponent } from './update-user-modal.component';
 export class UsersComponent extends AppComponentBase implements OnInit {
 
     @ViewChild('createUserModal') createUserModal: CreateUserModalComponent;
+    @ViewChild('updateUserModal') updateUserModal: UpdateUserModalComponent;
     users: UserListDto[] = [];
 
     constructor(
