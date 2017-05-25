@@ -8,8 +8,8 @@ namespace DFF.Freedom.Web.Host.Startup
         public static void Main(string[] args)
         {
             var host = new WebHostBuilder()
-                .UseKestrel()
-                .UseContentRoot(Directory.GetCurrentDirectory())
+                .UseKestrel() //使用KestrelServer的服务器。
+                .UseContentRoot(Directory.GetCurrentDirectory()) //使用
                 .UseIISIntegration()
                 .UseStartup<Startup>()
                 .Build();

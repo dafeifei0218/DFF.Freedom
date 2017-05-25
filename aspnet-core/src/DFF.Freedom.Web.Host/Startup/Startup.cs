@@ -23,6 +23,7 @@ namespace DFF.Freedom.Web.Host.Startup
     /// </summary>
     public class Startup
     {
+        //默认CORS策略名称
         private const string DefaultCorsPolicyName = "localhost";
 
         private readonly IConfigurationRoot _appConfiguration;
@@ -44,28 +45,34 @@ namespace DFF.Freedom.Web.Host.Startup
         public IServiceProvider ConfigureServices(IServiceCollection services)
         {
             //MVC
+            //MVC过滤器设置
             services.AddMvc(options =>
             {
                 options.Filters.Add(new CorsAuthorizationFilterFactory(DefaultCorsPolicyName));
             });
 
             //Configure CORS for angular2 UI
+            //为Angular2 UI配置CORS
             services.AddCors(options =>
             {
                 options.AddPolicy(DefaultCorsPolicyName, p =>
                 {
                     //todo: Get from confiuration
+                    //从配置获取
                     p.WithOrigins("http://localhost:4200").AllowAnyHeader().AllowAnyMethod();
                 });
             });
 
             //Swagger - Enable this line and the related lines in Configure method to enable swagger UI
+            //Swagger - 在配置方法中启用此行和相关行，来启用Swagger UI
             services.AddSwaggerGen();
 
             //Configure Abp and Dependency Injection
+            //配置Abp和依赖注入
             return services.AddAbp<FreedomWebHostModule>(options =>
             {
                 //Configure Log4Net logging
+                //配置Log4Net日志
                 options.IocManager.IocContainer.AddFacility<LoggingFacility>(
                     f => f.UseAbpLog4Net().WithConfig("log4net.config")
                 );
@@ -82,13 +89,15 @@ namespace DFF.Freedom.Web.Host.Startup
         {
             app.UseAbp(); //Initializes ABP framework. 初始化ABP框架。
 
-            app.UseCors(DefaultCorsPolicyName); //Enable CORS! 启用CORS
+            app.UseCors(DefaultCorsPolicyName); //Enable CORS! 启用CORS！
 
             AuthConfigurer.Configure(app, _appConfiguration);
 
+            //对静态文件的访问
             app.UseStaticFiles();
 
             //Integrate to OWIN
+            //整合OWIN
             app.UseAppBuilder(ConfigureOwinServices);
 
             app.UseMvc(routes =>
@@ -103,8 +112,10 @@ namespace DFF.Freedom.Web.Host.Startup
             });
 
             // Enable middleware to serve generated Swagger as a JSON endpoint
+            // 启用中间件服务生成Swagger作为JSON终点
             app.UseSwagger();
             // Enable middleware to serve swagger-ui assets (HTML, JS, CSS etc.)
+            // 启用中间件服务swagger-ui资产（HTML，JS，CSS等）
             app.UseSwaggerUi(); //URL: /swagger/ui
         }
 

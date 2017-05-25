@@ -20,6 +20,7 @@ export class CreateUserModalComponent extends AppComponentBase {
     active: boolean = false;
     //是否保存，默认 false未保存
     saving: boolean = false;
+    //用户，创建用户输入模型
     user: CreateUserInput = null;
 
     //构造函数
@@ -30,14 +31,14 @@ export class CreateUserModalComponent extends AppComponentBase {
         super(injector);
     }
 
-    //显示 模态窗口
+    //显示 模态窗口方法
     show(): void {
         this.active = true;
         this.modal.show();
         this.user = new CreateUserInput({ isActive: false });
     }
 
-    //保存
+    //保存方法
     save(): void {
 
         this.saving = true;
@@ -50,7 +51,7 @@ export class CreateUserModalComponent extends AppComponentBase {
             });
     }
 
-    //关闭
+    //关闭方法
     close(): void {
         this.active = false;
         this.modal.hide();

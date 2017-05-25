@@ -60,7 +60,7 @@ namespace DFF.Freedom.Web.Host.Startup
         }
 
         /// <summary>
-        /// 
+        /// 创建Jwt认证选项
         /// </summary>
         /// <param name="app">应用程序建造者</param>
         /// <returns></returns>
