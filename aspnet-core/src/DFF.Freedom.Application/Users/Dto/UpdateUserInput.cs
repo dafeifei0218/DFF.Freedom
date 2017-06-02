@@ -15,6 +15,12 @@ namespace DFF.Freedom.Users.Dto
     public class UpdateUserInput
     {
         /// <summary>
+        /// 主键
+        /// </summary>
+        [Required]
+        public long Id { get; set; }
+
+        /// <summary>
         /// 名称
         /// </summary>
         [Required]

@@ -17,6 +17,7 @@ export class AppComponent implements OnInit, AfterViewInit {
             abp.notifications.showUiNotifyForUserNotification(userNotification);
             
             //Desktop notification
+            //桌面通知
             Push.create("AbpZeroTemplate", {
                 body: userNotification.notification.data.message,
                 icon: abp.appPath + 'assets/app-logo-small.png',

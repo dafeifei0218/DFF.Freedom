@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using System.Linq;
+using Microsoft.AspNet.Identity;
 using Abp.Application.Services.Dto;
 using Abp.Authorization;
 using Abp.AutoMapper;
@@ -8,7 +10,6 @@ using Abp.Domain.Repositories;
 using DFF.Freedom.Authorization;
 using DFF.Freedom.Authorization.Users;
 using DFF.Freedom.Users.Dto;
-using Microsoft.AspNet.Identity;
 
 namespace DFF.Freedom.Users
 {
@@ -93,15 +94,52 @@ namespace DFF.Freedom.Users
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public async Task<GetUserForEditOutput> GetUserForEdit(long id) {
+            
+            GetUserForEditOutput output = new GetUserForEditOutput();
+            output.User = await UserManager.GetUserByIdAsync(id);
+
+            var roleStrings = await UserManager.GetRolesAsync(id);
+            var rolesList = new List<string>();
+            foreach (var item in roleStrings)
+            {
+                //rolesList.Add();
+            }
+            output.Roles = null; 
+
+            return output;
+        }
+
+        /// <summary>
         /// 更新用户
         /// </summary>
         /// <param name="input">输入模型</param>
         /// <returns></returns>
         public async Task<IdentityResult> UpdateUser(UpdateUserInput input)
         {
-            var user = input.MapTo<User>();
+            var user = await UserManager.GetUserByIdAsync(input.Id);
 
-            return await UserManager.UpdateAsync(user);     
+            user.Name = input.Name;
+            user.Surname = input.Surname;
+            user.Password = input.Password;
+
+            return await UserManager.UpdateAsync(user);
+        }
+
+        /// <summary>
+        /// 删除用户
+        /// </summary>
+        /// <param name="userId">用户Id</param>
+        /// <returns></returns>
+        public async Task<IdentityResult> DeleteUser(long userId)
+        {
+            var user = await UserManager.GetUserByIdAsync(userId);
+
+            return await UserManager.DeleteAsync(user);
         }
     }
 }

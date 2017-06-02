@@ -20,7 +20,11 @@ export class UpdateUserModalComponent extends AppComponentBase {
     active: boolean = false;
     //是否保存，默认 false未保存
     saving: boolean = false;
+    
+    //user: User = null;
+    //用户，更新用户输入模型
     user: UpdateUserInput = null;
+
 
     //构造函数
     constructor(
