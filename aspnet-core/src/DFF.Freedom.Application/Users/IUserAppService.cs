@@ -40,10 +40,24 @@ namespace DFF.Freedom.Users
         Task CreateUser(CreateUserInput input);
 
         /// <summary>
+        /// 获取编辑页面的用户信息
+        /// </summary>
+        /// <param name="id">用户Id</param>
+        /// <returns>获取编辑页面的用户信息 输出模型</returns>
+        Task<GetUserForEditOutput> GetUserForEdit(long id);
+
+        /// <summary>
         /// 更新用户
         /// </summary>
         /// <param name="input">输入模型</param>
         /// <returns></returns>
-        Task<IdentityResult> UpdateUser(UpdateUserInput input);
+        Task UpdateUser(UpdateUserInput input);
+
+        /// <summary>
+        /// 删除用户
+        /// </summary>
+        /// <param name="userId">用户Id</param>
+        /// <returns></returns>
+        Task DeleteUser(long userId);
     }
 }

@@ -10,6 +10,7 @@ using Abp.Domain.Repositories;
 using DFF.Freedom.Authorization;
 using DFF.Freedom.Authorization.Users;
 using DFF.Freedom.Users.Dto;
+using DFF.Freedom.Authorization.Roles;
 
 namespace DFF.Freedom.Users
 {
@@ -22,6 +23,8 @@ namespace DFF.Freedom.Users
     {
         private readonly IRepository<User, long> _userRepository;
         private readonly IPermissionManager _permissionManager;
+        private readonly RoleManager _roleManager;
+
 
         /// <summary>
         /// 构造函数
@@ -60,6 +63,9 @@ namespace DFF.Freedom.Users
         /// <returns></returns>
         public async Task RemoveFromRole(long userId, string roleName)
         {
+            //var user = await UserManager.FindByIdAsync(userId.ToString());
+            var user = await UserManager.FindByIdAsync(userId);
+
             CheckErrors(await UserManager.RemoveFromRoleAsync(userId, roleName));
         }
 
@@ -94,22 +100,23 @@ namespace DFF.Freedom.Users
         }
 
         /// <summary>
-        /// 
+        /// 获取编辑页面的用户信息
         /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
+        /// <param name="id">用户Id</param>
+        /// <returns>获取编辑页面的用户信息 输出模型</returns>
         public async Task<GetUserForEditOutput> GetUserForEdit(long id) {
             
             GetUserForEditOutput output = new GetUserForEditOutput();
             output.User = await UserManager.GetUserByIdAsync(id);
 
             var roleStrings = await UserManager.GetRolesAsync(id);
-            var rolesList = new List<string>();
-            foreach (var item in roleStrings)
+            var rolesList = new List<Role>();
+            foreach (var roleId in roleStrings)
             {
-                //rolesList.Add();
+                var role = await _roleManager.GetRoleByIdAsync(Convert.ToInt32(roleId));
+                rolesList.Add(role);
             }
-            output.Roles = null; 
+            output.Roles = rolesList; 
 
             return output;
         }
@@ -119,7 +126,7 @@ namespace DFF.Freedom.Users
         /// </summary>
         /// <param name="input">输入模型</param>
         /// <returns></returns>
-        public async Task<IdentityResult> UpdateUser(UpdateUserInput input)
+        public async Task UpdateUser(UpdateUserInput input)
         {
             var user = await UserManager.GetUserByIdAsync(input.Id);
 
@@ -127,7 +134,7 @@ namespace DFF.Freedom.Users
             user.Surname = input.Surname;
             user.Password = input.Password;
 
-            return await UserManager.UpdateAsync(user);
+            CheckErrors(await UserManager.UpdateAsync(user));
         }
 
         /// <summary>
@@ -135,11 +142,11 @@ namespace DFF.Freedom.Users
         /// </summary>
         /// <param name="userId">用户Id</param>
         /// <returns></returns>
-        public async Task<IdentityResult> DeleteUser(long userId)
+        public async Task DeleteUser(long userId)
         {
             var user = await UserManager.GetUserByIdAsync(userId);
 
-            return await UserManager.DeleteAsync(user);
+            CheckErrors(await UserManager.DeleteAsync(user));
         }
     }
 }
