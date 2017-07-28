@@ -1,0 +1,80 @@
+﻿DEBUG 2017-07-28 11:02:23,018 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-07-28 11:02:23,573 [1    ] Abp.Modules.AbpModuleManager             - Found 14 ABP modules in total.
+DEBUG 2017-07-28 11:02:23,728 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DFF.Freedom.Web.Host.Startup.FreedomWebHostModule, DFF.Freedom.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-07-28 11:02:23,740 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DFF.Freedom.FreedomWebCoreModule, DFF.Freedom.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-07-28 11:02:23,754 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DFF.Freedom.FreedomApplicationModule, DFF.Freedom.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-07-28 11:02:23,755 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DFF.Freedom.FreedomCoreModule, DFF.Freedom.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-07-28 11:02:23,755 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-07-28 11:02:23,756 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-07-28 11:02:23,756 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-07-28 11:02:23,758 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-07-28 11:02:23,758 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DFF.Freedom.EntityFrameworkCore.FreedomEntityFrameworkModule, DFF.Freedom.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-07-28 11:02:23,759 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-07-28 11:02:23,759 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-07-28 11:02:23,761 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-07-28 11:02:23,761 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-07-28 11:02:23,762 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-07-28 11:02:23,769 [1    ] Abp.Modules.AbpModuleManager             - 14 modules loaded.
+DEBUG 2017-07-28 11:02:24,198 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-07-28 11:02:24,198 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-07-28 11:02:24,198 [1    ] o.Configuration.LanguageManagementConfig - Converted Freedom (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-07-28 11:02:24,198 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-07-28 11:02:25,255 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: DFF.Freedom.EntityFrameworkCore.FreedomDbContext, DFF.Freedom.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-07-28 11:02:27,091 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2017-07-28 11:02:27,257 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-07-28 11:02:27,275 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2017-07-28 11:02:27,282 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Freedom
+DEBUG 2017-07-28 11:02:27,284 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-07-28 11:02:27,642 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-07-28 11:02:27,777 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 11 classes define auto mapping attributes
+DEBUG 2017-07-28 11:02:27,777 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2017-07-28 11:02:27,782 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.Users.Dto.CreateUserDto
+DEBUG 2017-07-28 11:02:27,783 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.Users.Dto.UserDto
+DEBUG 2017-07-28 11:02:27,783 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2017-07-28 11:02:27,783 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.Sessions.Dto.UserLoginInfoDto
+DEBUG 2017-07-28 11:02:27,783 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.Roles.Dto.CreateRoleDto
+DEBUG 2017-07-28 11:02:27,783 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.Roles.Dto.PermissionDto
+DEBUG 2017-07-28 11:02:27,783 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.Roles.Dto.RoleDto
+DEBUG 2017-07-28 11:02:27,784 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2017-07-28 11:02:27,784 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.MultiTenancy.Dto.EditTenantDto
+DEBUG 2017-07-28 11:02:27,784 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.MultiTenancy.Dto.TenantDto
+DEBUG 2017-07-28 13:07:36,476 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-07-28 13:07:36,614 [1    ] Abp.Modules.AbpModuleManager             - Found 14 ABP modules in total.
+DEBUG 2017-07-28 13:07:36,638 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DFF.Freedom.Web.Host.Startup.FreedomWebHostModule, DFF.Freedom.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-07-28 13:07:36,643 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DFF.Freedom.FreedomWebCoreModule, DFF.Freedom.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-07-28 13:07:36,643 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DFF.Freedom.FreedomApplicationModule, DFF.Freedom.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-07-28 13:07:36,644 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DFF.Freedom.FreedomCoreModule, DFF.Freedom.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-07-28 13:07:36,645 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-07-28 13:07:36,646 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-07-28 13:07:36,646 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-07-28 13:07:36,647 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-07-28 13:07:36,648 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DFF.Freedom.EntityFrameworkCore.FreedomEntityFrameworkModule, DFF.Freedom.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-07-28 13:07:36,648 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-07-28 13:07:36,649 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-07-28 13:07:36,649 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-07-28 13:07:36,650 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-07-28 13:07:36,650 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-07-28 13:07:36,656 [1    ] Abp.Modules.AbpModuleManager             - 14 modules loaded.
+DEBUG 2017-07-28 13:07:36,809 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-07-28 13:07:36,809 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-07-28 13:07:36,810 [1    ] o.Configuration.LanguageManagementConfig - Converted Freedom (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-07-28 13:07:36,810 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-07-28 13:07:37,459 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: DFF.Freedom.EntityFrameworkCore.FreedomDbContext, DFF.Freedom.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-07-28 13:07:39,262 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2017-07-28 13:07:39,364 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-07-28 13:07:39,373 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2017-07-28 13:07:39,378 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Freedom
+DEBUG 2017-07-28 13:07:39,380 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-07-28 13:07:39,740 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-07-28 13:07:39,853 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 11 classes define auto mapping attributes
+DEBUG 2017-07-28 13:07:39,853 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2017-07-28 13:07:39,859 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.Users.Dto.CreateUserDto
+DEBUG 2017-07-28 13:07:39,859 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.Users.Dto.UserDto
+DEBUG 2017-07-28 13:07:39,860 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2017-07-28 13:07:39,860 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.Sessions.Dto.UserLoginInfoDto
+DEBUG 2017-07-28 13:07:39,860 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.Roles.Dto.CreateRoleDto
+DEBUG 2017-07-28 13:07:39,860 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.Roles.Dto.PermissionDto
+DEBUG 2017-07-28 13:07:39,860 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.Roles.Dto.RoleDto
+DEBUG 2017-07-28 13:07:39,860 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2017-07-28 13:07:39,860 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.MultiTenancy.Dto.EditTenantDto
+DEBUG 2017-07-28 13:07:39,860 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.MultiTenancy.Dto.TenantDto
