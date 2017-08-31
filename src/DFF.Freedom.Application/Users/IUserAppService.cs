@@ -6,6 +6,9 @@ using DFF.Freedom.Users.Dto;
 
 namespace DFF.Freedom.Users
 {
+    /// <summary>
+    /// 用户 应用程序服务接口
+    /// </summary>
     public interface IUserAppService : IAsyncCrudAppService<UserDto, long, PagedResultRequestDto, CreateUserDto, UserDto>
     {
         Task<ListResultDto<RoleDto>> GetRoles();

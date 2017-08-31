@@ -7,10 +7,18 @@ using Newtonsoft.Json.Linq;
 
 namespace DFF.Freedom.Authentication.External.Google
 {
+    /// <summary>
+    /// Google认证提供者Api
+    /// </summary>
     public class GoogleAuthProviderApi : ExternalAuthProviderApiBase
     {
         public const string Name = "Google";
 
+        /// <summary>
+        /// 获取用户信息
+        /// </summary>
+        /// <param name="accessCode">访问代码</param>
+        /// <returns></returns>
         public override async Task<ExternalAuthUserInfo> GetUserInfo(string accessCode)
         {
             using (var client = new HttpClient())

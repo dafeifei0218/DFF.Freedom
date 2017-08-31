@@ -21,6 +21,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace DFF.Freedom.Controllers
 {
+    /// <summary>
+    /// 令牌认证 控制器
+    /// </summary>
     [Route("api/[controller]/[action]")]
     public class TokenAuthController : FreedomControllerBase
     {
@@ -32,6 +35,16 @@ namespace DFF.Freedom.Controllers
         private readonly IExternalAuthManager _externalAuthManager;
         private readonly UserRegistrationManager _userRegistrationManager;
 
+        /// <summary>
+        /// 构造函数
+        /// </summary>
+        /// <param name="logInManager">登录管理类</param>
+        /// <param name="tenantCache">租户缓存</param>
+        /// <param name="abpLoginResultTypeHelper">Abp登录结果类型帮助类</param>
+        /// <param name="configuration">令牌认证配置</param>
+        /// <param name="externalAuthConfiguration">外部认证配置</param>
+        /// <param name="externalAuthManager">外部认证管理</param>
+        /// <param name="userRegistrationManager">用户注册管理</param>
         public TokenAuthController(
             LogInManager logInManager,
             ITenantCache tenantCache,
@@ -50,15 +63,22 @@ namespace DFF.Freedom.Controllers
             _userRegistrationManager = userRegistrationManager;
         }
 
+        /// <summary>
+        /// 认证
+        /// </summary>
+        /// <param name="model">认证模型</param>
+        /// <returns>返回 认证结果模型</returns>
         [HttpPost]
         public async Task<AuthenticateResultModel> Authenticate([FromBody] AuthenticateModel model)
         {
+            //获取登录结果
             var loginResult = await GetLoginResultAsync(
                 model.UserNameOrEmailAddress,
                 model.Password,
                 GetTenancyNameOrNull()
             );
 
+            //创建访问令牌
             var accessToken = CreateAccessToken(CreateJwtClaims(loginResult.Identity));
 
             return new AuthenticateResultModel
@@ -69,12 +89,21 @@ namespace DFF.Freedom.Controllers
             };
         }
 
+        /// <summary>
+        /// 获取外部认证提供信息列表
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public List<ExternalLoginProviderInfoModel> GetExternalAuthenticationProviders()
         {
             return ObjectMapper.Map<List<ExternalLoginProviderInfoModel>>(_externalAuthConfiguration.Providers);
         }
 
+        /// <summary>
+        /// 外部认证
+        /// </summary>
+        /// <param name="model">外部认证模型</param>
+        /// <returns></returns>
         [HttpPost]
         public async Task<ExternalAuthenticateResultModel> ExternalAuthenticate([FromBody] ExternalAuthenticateModel model)
         {
@@ -133,6 +162,11 @@ namespace DFF.Freedom.Controllers
             }
         }
 
+        /// <summary>
+        /// 注册外部用户 异步方法
+        /// </summary>
+        /// <param name="externalUser">外部登录用户信息</param>
+        /// <returns></returns>
         private async Task<User> RegisterExternalUserAsync(ExternalAuthUserInfo externalUser)
         {
             var user = await _userRegistrationManager.RegisterAsync(
@@ -159,6 +193,11 @@ namespace DFF.Freedom.Controllers
             return user;
         }
 
+        /// <summary>
+        /// 获取外部用户信息
+        /// </summary>
+        /// <param name="model">外部认证模型</param>
+        /// <returns>扩展外部用户信息</returns>
         private async Task<ExternalAuthUserInfo> GetExternalUserInfo(ExternalAuthenticateModel model)
         {
             var userInfo = await _externalAuthManager.GetUserInfo(model.AuthProvider, model.ProviderAccessCode);
@@ -170,6 +209,10 @@ namespace DFF.Freedom.Controllers
             return userInfo;
         }
 
+        /// <summary>
+        /// 获取租户名称或空
+        /// </summary>
+        /// <returns></returns>
         private string GetTenancyNameOrNull()
         {
             if (!AbpSession.TenantId.HasValue)
@@ -180,6 +223,13 @@ namespace DFF.Freedom.Controllers
             return _tenantCache.GetOrNull(AbpSession.TenantId.Value)?.TenancyName;
         }
 
+        /// <summary>
+        /// 获取登录结果 异步方法
+        /// </summary>
+        /// <param name="usernameOrEmailAddress">用户名或邮件地址</param>
+        /// <param name="password">密码</param>
+        /// <param name="tenancyName">租户名称</param>
+        /// <returns></returns>
         private async Task<AbpLoginResult<Tenant, User>> GetLoginResultAsync(string usernameOrEmailAddress, string password, string tenancyName)
         {
             var loginResult = await _logInManager.LoginAsync(usernameOrEmailAddress, password, tenancyName);

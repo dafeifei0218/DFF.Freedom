@@ -7,6 +7,7 @@ namespace DFF.Freedom.Net.MimeTypes
 
     /// <summary>
     /// Common mime types. 
+    /// 通用Mime类型名称
     /// </summary>
     public static class MimeTypeNames
     {

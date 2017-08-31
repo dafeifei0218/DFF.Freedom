@@ -6,8 +6,15 @@ using DFF.Freedom.SignalR;
 
 namespace DFF.Freedom.Sessions
 {
+    /// <summary>
+    /// Session会话 应用程序服务类
+    /// </summary>
     public class SessionAppService : FreedomAppServiceBase, ISessionAppService
     {
+        /// <summary>
+        /// 获取当前登录信息
+        /// </summary>
+        /// <returns></returns>
         [DisableAuditing]
         public async Task<GetCurrentLoginInformationsOutput> GetCurrentLoginInformations()
         {

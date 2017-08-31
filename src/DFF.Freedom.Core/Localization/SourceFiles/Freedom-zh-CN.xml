@@ -20,6 +20,46 @@
     <text name="LogIn" value="登录" />
 
     <text name="LoginFailed" value="登录失败!" />
+
+    <text name="NameSurname" value="Name surname" />
+    <text name="UserName" value="登录用户名" />
+    <text name="Name" value="名称" />
+    <text name="Surname" value="真实名称" />
+    <text name="EmailAddress" value="邮件地址" />
+
+    <text name="Tenants" value="租户" />
+    <text name="SavedSuccessfully" value="保存成功" />
+    <text name="CreateNewTenant" value="创建新租户" />
+    <text name="AdminEmailAddress" value="管理员邮件地址" />
+    <text name="Save" value="保存" />
+    <text name="Cancel" value="取消" />
+    <text name="TenantName_Regex_Description" value="Tenant name must be at least 2 chars, starts with a letter and continue with letter, number, dash or underscore." />
+    <text name="DefaultPasswordIs" value="默认密码是 {0}" />
+    <text name="CanBeEmptyToLoginAsHost" value="主机登录时可以为空" />
+    <text name="Register" value="注册" />
+    <text name="OrLoginWith" value="Or login with" />
+    <text name="WaitingForActivationMessage" value="Your account is waiting to be activated by system admin." />
+    <text name="TenantSelection" value="租户选择" />
+    <text name="TenantSelection_Detail" value="Please select one of the following tenants." />
+    <text name="Logout" value="退出" />
+
+    <text name="RegisterFormUserNameInvalidMessage">Please dont enter an email address for username.</text>
+
+    <text name="DatabaseConnectionString" value="数据库链接字符串" />
+    <text name="Users" value="用户" />
+    <text name="IsActive" value="是否激活" />
+    <text name="FullName" value="全名称" />
+    <text name="CreateNewUser" value="创建新用户" />
+    <text name="Yes" value="是" />
+    <text name="No" value="否" />
+    <text name="Optional" value="选项" />
+    <text name="LeaveEmptyToSwitchToHost">Leave empty to switch to the host</text>
+    <text name="UpdateNewUser" value="更新用户" />
+    
+    <text name="CurrentTenant">Current tenant</text>
+    <text name="NotSelected">Not selected</text>
+    <text name="Change">Change</text>
+    <text name="ChangeTenant">Change tenant</text>
     
   </texts>
 </localizationDictionary>

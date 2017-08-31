@@ -16,6 +16,9 @@ using DFF.Freedom.Roles.Dto;
 
 namespace DFF.Freedom.Users
 {
+    /// <summary>
+    /// 用户 应用程序服务类
+    /// </summary>
     [AbpAuthorize(PermissionNames.Pages_Users)]
     public class UserAppService : AsyncCrudAppService<User, UserDto, long, PagedResultRequestDto, CreateUserDto, UserDto>, IUserAppService
     {
@@ -23,6 +26,12 @@ namespace DFF.Freedom.Users
         private readonly IPasswordHasher<User> _passwordHasher;
         private readonly IRepository<Role> _roleRepository;
 
+
+        /// <summary>
+        /// 构造函数
+        /// </summary>
+        /// <param name="userRepository">用户仓储</param>
+        /// <param name="permissionManager">权限管理</param>
         public UserAppService(IRepository<User, long> repository, UserManager userManager, IPasswordHasher<User> passwordHasher, IRepository<Role> roleRepository)
             : base(repository)
         {

@@ -17,17 +17,26 @@ using AutoMapper;
 
 namespace DFF.Freedom
 {
+    /// <summary>
+    /// 应用程序模块
+    /// </summary>
     [DependsOn(
         typeof(FreedomCoreModule), 
         typeof(AbpAutoMapperModule))]
     public class FreedomApplicationModule : AbpModule
     {
-
+        /// <summary>
+        /// 初始化之前执行的方法
+        /// </summary>
         public override void PreInitialize()
         {
+            //授权设置
             Configuration.Authorization.Providers.Add<FreedomAuthorizationProvider>();
         }
 
+        /// <summary>
+        /// 初始化方法
+        /// </summary>
         public override void Initialize()
         {
             IocManager.RegisterAssemblyByConvention(typeof(FreedomApplicationModule).GetAssembly());

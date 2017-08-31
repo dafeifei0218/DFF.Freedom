@@ -25,20 +25,34 @@ using Abp.Owin;
 
 namespace DFF.Freedom.Web.Host.Startup
 {
+    /// <summary>
+    /// 启动
+    /// </summary>
     public class Startup
     {
+        //默认CORS策略名称
         private const string DefaultCorsPolicyName = "localhost";
 
         private readonly IConfigurationRoot _appConfiguration;
 
+        /// <summary>
+        /// 构造函数
+        /// </summary>
+        /// <param name="env">宿主环境</param>
         public Startup(IHostingEnvironment env)
         {
             _appConfiguration = env.GetAppConfiguration();
         }
 
+        /// <summary>
+        /// 配置服务
+        /// </summary>
+        /// <param name="services">服务集合</param>
+        /// <returns></returns>
         public IServiceProvider ConfigureServices(IServiceCollection services)
         {
             //MVC
+            //MVC过滤器设置
             services.AddMvc(options =>
             {
                 options.Filters.Add(new CorsAuthorizationFilterFactory(DefaultCorsPolicyName));
@@ -47,6 +61,7 @@ namespace DFF.Freedom.Web.Host.Startup
             IdentityRegistrar.Register(services);
 
             //Configure CORS for angular2 UI
+            //为Angular2 UI配置CORS
             services.AddCors(options =>
             {
                 options.AddPolicy(DefaultCorsPolicyName, builder =>
@@ -67,15 +82,23 @@ namespace DFF.Freedom.Web.Host.Startup
             });
 
             //Configure Abp and Dependency Injection
+            //配置Abp和依赖注入
             return services.AddAbp<FreedomWebHostModule>(options =>
             {
                 //Configure Log4Net logging
+                //配置Log4Net日志
                 options.IocManager.IocContainer.AddFacility<LoggingFacility>(
                     f => f.UseAbpLog4Net().WithConfig("log4net.config")
                 );
             });
         }
 
+        /// <summary>
+        /// 配置
+        /// </summary>
+        /// <param name="app">应用程序建造者</param>
+        /// <param name="env">宿主环境</param>
+        /// <param name="loggerFactory">日志工厂</param>
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
             app.UseAbp(); //Initializes ABP framework.
@@ -84,10 +107,12 @@ namespace DFF.Freedom.Web.Host.Startup
 
             AuthConfigurer.Configure(app, _appConfiguration);
 
+            //对静态文件的访问
             app.UseStaticFiles();
 
 #if FEATURE_SIGNALR
             //Integrate to OWIN
+            //整合OWIN
             app.UseAppBuilder(ConfigureOwinServices);
 #endif
 
@@ -103,8 +128,10 @@ namespace DFF.Freedom.Web.Host.Startup
             });
 
             // Enable middleware to serve generated Swagger as a JSON endpoint
+            // 启用中间件服务生成Swagger作为JSON终点
             app.UseSwagger();
             // Enable middleware to serve swagger-ui assets (HTML, JS, CSS etc.)
+			// 启用中间件服务swagger-ui资产（HTML，JS，CSS等）
             app.UseSwaggerUI(options =>
             {
                 options.SwaggerEndpoint("/swagger/v1/swagger.json", "Freedom API V1");
@@ -112,6 +139,11 @@ namespace DFF.Freedom.Web.Host.Startup
         }
 
 #if FEATURE_SIGNALR
+
+        /// <summary>
+        /// 配置Owin服务
+        /// </summary>
+        /// <param name="app">应用程序建造者</param>
         private static void ConfigureOwinServices(IAppBuilder app)
         {
             app.Properties["host.AppName"] = "AbpZeroTemplate";

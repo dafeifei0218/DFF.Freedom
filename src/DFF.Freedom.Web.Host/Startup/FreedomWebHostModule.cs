@@ -7,6 +7,9 @@ using Microsoft.Extensions.Configuration;
 
 namespace DFF.Freedom.Web.Host.Startup
 {
+    /// <summary>
+    /// WebHost模块
+    /// </summary>
     [DependsOn(
        typeof(FreedomWebCoreModule))]
     public class FreedomWebHostModule: AbpModule
@@ -14,6 +17,10 @@ namespace DFF.Freedom.Web.Host.Startup
         private readonly IHostingEnvironment _env;
         private readonly IConfigurationRoot _appConfiguration;
 
+        /// <summary>
+        /// 构造函数
+        /// </summary>
+        /// <param name="env">宿主环境</param>
         public FreedomWebHostModule(IHostingEnvironment env)
         {
             _env = env;

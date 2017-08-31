@@ -19,6 +19,9 @@ using Abp.Web.SignalR;
 
 namespace DFF.Freedom
 {
+    /// <summary>
+    /// 核心模块
+    /// </summary>
     [DependsOn(
          typeof(FreedomApplicationModule),
          typeof(FreedomEntityFrameworkModule),
@@ -32,19 +35,28 @@ namespace DFF.Freedom
         private readonly IHostingEnvironment _env;
         private readonly IConfigurationRoot _appConfiguration;
 
+        /// <summary>
+        /// 构造函数
+        /// </summary>
+        /// <param name="env"></param>
         public FreedomWebCoreModule(IHostingEnvironment env)
         {
             _env = env;
             _appConfiguration = env.GetAppConfiguration();
         }
 
+        /// <summary>
+        /// 初始化之前执行
+        /// </summary>
         public override void PreInitialize()
         {
+            //默认链接字符串
             Configuration.DefaultNameOrConnectionString = _appConfiguration.GetConnectionString(
                 FreedomConsts.ConnectionStringName
             );
 
             //Use database for language management
+            //使用数据库管理语言信息
             Configuration.Modules.Zero().LanguageManagement.EnableDbLocalization();
 
             Configuration.Modules.AbpAspNetCore()
@@ -55,6 +67,9 @@ namespace DFF.Freedom
             ConfigureTokenAuth();
         }
 
+        /// <summary>
+        /// 配置令牌认证
+        /// </summary>
         private void ConfigureTokenAuth()
         {
             IocManager.Register<TokenAuthConfiguration>();
@@ -66,7 +81,10 @@ namespace DFF.Freedom
             tokenAuthConfig.SigningCredentials = new SigningCredentials(tokenAuthConfig.SecurityKey, SecurityAlgorithms.HmacSha256);
             tokenAuthConfig.Expiration = TimeSpan.FromDays(1);
         }
-
+		
+        /// <summary>
+        /// 初始化
+        /// </summary>
         public override void Initialize()
         {
             IocManager.RegisterAssemblyByConvention(typeof(FreedomWebCoreModule).GetAssembly());

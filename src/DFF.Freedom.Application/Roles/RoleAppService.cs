@@ -16,12 +16,20 @@ using Abp.UI;
 
 namespace DFF.Freedom.Roles
 {
+	/// <summary>
+    /// 角色 应用程序服务
+    /// </summary>
     [AbpAuthorize(PermissionNames.Pages_Roles)]
     public class RoleAppService : AsyncCrudAppService<Role, RoleDto, int, PagedResultRequestDto, CreateRoleDto, RoleDto>, IRoleAppService
     {
         private readonly RoleManager _roleManager;
         private readonly UserManager _userManager;
 
+        /// <summary>
+        /// 构造函数
+        /// </summary>
+        /// <param name="roleManager">角色管理</param>
+        /// <param name="permissionManager">权限管理</param>
         public RoleAppService(IRepository<Role> repository, RoleManager roleManager, UserManager userManager)
             : base(repository)
         {

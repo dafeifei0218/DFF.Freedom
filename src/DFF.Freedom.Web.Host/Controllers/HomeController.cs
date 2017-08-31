@@ -8,15 +8,26 @@ using Abp.Extensions;
 
 namespace DFF.Freedom.Web.Host.Controllers
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class HomeController : FreedomControllerBase
     {
         private readonly INotificationPublisher _notificationPublisher;
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="notificationPublisher"></param>
         public HomeController(INotificationPublisher notificationPublisher)
         {
             _notificationPublisher = notificationPublisher;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public IActionResult Index()
         {
             return Redirect("/swagger");

@@ -15,6 +15,9 @@ using Microsoft.Extensions.Options;
 
 namespace DFF.Freedom.Authorization.Users
 {
+    /// <summary>
+    /// 用户管理类
+    /// </summary>
     public class UserManager : AbpUserManager<Role, User>
     {
         public UserManager(
