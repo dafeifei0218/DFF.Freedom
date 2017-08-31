@@ -698,3 +698,994 @@ DEBUG 2017-07-31 15:09:50,923 [3    ] Microsoft.AspNetCore.Server.Kestrel      -
 INFO  2017-07-31 15:09:50,924 [3    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2.977ms 200 image/png
 DEBUG 2017-07-31 15:09:51,423 [9    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL6NSCDFOCER" completed keep alive response.
 INFO  2017-07-31 15:09:51,423 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 599.0702ms 200 application/json
+DEBUG 2017-08-31 13:52:45,670 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-08-31 13:52:45,995 [1    ] Abp.Modules.AbpModuleManager             - Found 14 ABP modules in total.
+DEBUG 2017-08-31 13:52:46,032 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DFF.Freedom.Web.Host.Startup.FreedomWebHostModule, DFF.Freedom.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-08-31 13:52:46,037 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DFF.Freedom.FreedomWebCoreModule, DFF.Freedom.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-08-31 13:52:46,038 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DFF.Freedom.FreedomApplicationModule, DFF.Freedom.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-08-31 13:52:46,038 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DFF.Freedom.FreedomCoreModule, DFF.Freedom.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-08-31 13:52:46,039 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-08-31 13:52:46,039 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-08-31 13:52:46,040 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-08-31 13:52:46,042 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-08-31 13:52:46,043 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DFF.Freedom.EntityFrameworkCore.FreedomEntityFrameworkModule, DFF.Freedom.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-08-31 13:52:46,043 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-08-31 13:52:46,044 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-08-31 13:52:46,044 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-08-31 13:52:46,045 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-08-31 13:52:46,046 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-08-31 13:52:46,053 [1    ] Abp.Modules.AbpModuleManager             - 14 modules loaded.
+DEBUG 2017-08-31 13:52:46,193 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-08-31 13:52:46,193 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-08-31 13:52:46,193 [1    ] o.Configuration.LanguageManagementConfig - Converted Freedom (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-08-31 13:52:46,193 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-08-31 13:52:47,104 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: DFF.Freedom.EntityFrameworkCore.FreedomDbContext, DFF.Freedom.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-08-31 13:52:49,355 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2017-08-31 13:52:49,522 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-08-31 13:52:49,533 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2017-08-31 13:52:49,537 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Freedom
+DEBUG 2017-08-31 13:52:49,539 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-08-31 13:52:49,894 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-08-31 13:52:50,045 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 11 classes define auto mapping attributes
+DEBUG 2017-08-31 13:52:50,045 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2017-08-31 13:52:50,056 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.Users.Dto.CreateUserDto
+DEBUG 2017-08-31 13:52:50,057 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.Users.Dto.UserDto
+DEBUG 2017-08-31 13:52:50,057 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2017-08-31 13:52:50,057 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.Sessions.Dto.UserLoginInfoDto
+DEBUG 2017-08-31 13:52:50,058 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.Roles.Dto.CreateRoleDto
+DEBUG 2017-08-31 13:52:50,058 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.Roles.Dto.PermissionDto
+DEBUG 2017-08-31 13:52:50,058 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.Roles.Dto.RoleDto
+DEBUG 2017-08-31 13:52:50,058 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2017-08-31 13:52:50,058 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.MultiTenancy.Dto.EditTenantDto
+DEBUG 2017-08-31 13:52:50,058 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.MultiTenancy.Dto.TenantDto
+DEBUG 2017-08-31 13:53:02,223 [1    ] soft.AspNetCore.Hosting.Internal.WebHost - Hosting starting
+DEBUG 2017-08-31 13:53:02,486 [1    ] soft.AspNetCore.Hosting.Internal.WebHost - Hosting started
+DEBUG 2017-08-31 13:53:02,756 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6I5G7HMN" started.
+DEBUG 2017-08-31 13:53:02,756 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6I5G7HMM" started.
+INFO  2017-08-31 13:53:02,986 [4    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/  
+INFO  2017-08-31 13:53:02,986 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 DEBUG http://localhost:21021/  0
+DEBUG 2017-08-31 13:53:03,221 [8    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6I5G7HMM" completed keep alive response.
+INFO  2017-08-31 13:53:03,291 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 283.2385ms 200 
+DEBUG 2017-08-31 13:53:03,514 [4    ] NetCore.StaticFiles.StaticFileMiddleware - The request path / does not match a supported file type
+DEBUG 2017-08-31 13:53:04,211 [4    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+INFO  2017-08-31 13:53:10,170 [4    ] pendencyInjection.DataProtectionServices - User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+DEBUG 2017-08-31 13:53:10,650 [4    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action DFF.Freedom.Web.Host.Controllers.HomeController.Index (DFF.Freedom.Web.Host)
+INFO  2017-08-31 13:53:12,723 [4    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method DFF.Freedom.Web.Host.Controllers.HomeController.Index (DFF.Freedom.Web.Host) with arguments ((null)) - ModelState is Valid
+DEBUG 2017-08-31 13:53:12,727 [4    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method DFF.Freedom.Web.Host.Controllers.HomeController.Index (DFF.Freedom.Web.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult.
+INFO  2017-08-31 13:53:13,454 [9    ] Core.Mvc.Internal.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2017-08-31 13:53:13,479 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action DFF.Freedom.Web.Host.Controllers.HomeController.Index (DFF.Freedom.Web.Host) in 2825.3152ms
+DEBUG 2017-08-31 13:53:13,526 [9    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6I5G7HMN" completed keep alive response.
+INFO  2017-08-31 13:53:13,526 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 10586.373ms 302 
+INFO  2017-08-31 13:53:13,550 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger  
+DEBUG 2017-08-31 13:53:13,551 [10   ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger does not match a supported file type
+DEBUG 2017-08-31 13:53:13,553 [10   ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:53:13,554 [10   ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:53:13,555 [10   ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:53:13,555 [10   ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:53:13,558 [10   ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+DEBUG 2017-08-31 13:53:13,582 [10   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6I5G7HMM" completed keep alive response.
+INFO  2017-08-31 13:53:13,582 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 32.6198ms 301 
+INFO  2017-08-31 13:53:13,612 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/  
+DEBUG 2017-08-31 13:53:13,613 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/ does not match a supported file type
+DEBUG 2017-08-31 13:53:13,613 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:53:13,613 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:53:13,613 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:53:13,613 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:53:13,613 [9    ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+INFO  2017-08-31 13:53:13,663 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/index.html'. Physical path: 'N/A'
+DEBUG 2017-08-31 13:53:13,722 [9    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6I5G7HMN" completed keep alive response.
+INFO  2017-08-31 13:53:13,722 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 110.7158ms 200 text/html
+INFO  2017-08-31 13:53:13,795 [4    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/css/typography.css  
+INFO  2017-08-31 13:53:13,795 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/css/screen.css  
+DEBUG 2017-08-31 13:53:13,796 [4    ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/css/typography.css does not match an existing file
+DEBUG 2017-08-31 13:53:13,796 [4    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:53:13,796 [4    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:53:13,796 [4    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:53:13,796 [4    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:53:13,796 [4    ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+DEBUG 2017-08-31 13:53:13,796 [8    ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/css/screen.css does not match an existing file
+DEBUG 2017-08-31 13:53:13,796 [8    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:53:13,796 [8    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:53:13,796 [8    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:53:13,796 [8    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:53:13,796 [8    ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+DEBUG 2017-08-31 13:53:13,798 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6I5G7HMO" started.
+INFO  2017-08-31 13:53:13,798 [8    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/css/screen.css'. Physical path: 'N/A'
+INFO  2017-08-31 13:53:13,798 [4    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/css/typography.css'. Physical path: 'N/A'
+DEBUG 2017-08-31 13:53:13,800 [4    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6I5G7HMM" completed keep alive response.
+INFO  2017-08-31 13:53:13,800 [4    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 5.1282ms 200 text/css
+DEBUG 2017-08-31 13:53:13,800 [8    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6I5G7HMN" completed keep alive response.
+INFO  2017-08-31 13:53:13,800 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 5.3618ms 200 text/css
+INFO  2017-08-31 13:53:13,803 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/css/reset.css  
+DEBUG 2017-08-31 13:53:13,804 [10   ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/css/reset.css does not match an existing file
+DEBUG 2017-08-31 13:53:13,804 [10   ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:53:13,804 [10   ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:53:13,804 [10   ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:53:13,804 [10   ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:53:13,804 [10   ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+INFO  2017-08-31 13:53:13,805 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/css/reset.css'. Physical path: 'N/A'
+DEBUG 2017-08-31 13:53:13,805 [10   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6I5G7HMO" completed keep alive response.
+INFO  2017-08-31 13:53:13,805 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2.0008ms 200 text/css
+DEBUG 2017-08-31 13:53:13,897 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6I5G7HMP" started.
+INFO  2017-08-31 13:53:13,898 [4    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/object-assign-pollyfill.js  
+DEBUG 2017-08-31 13:53:13,898 [4    ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/lib/object-assign-pollyfill.js does not match an existing file
+DEBUG 2017-08-31 13:53:13,899 [4    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:53:13,899 [4    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:53:13,899 [4    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:53:13,899 [4    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:53:13,899 [4    ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+INFO  2017-08-31 13:53:13,899 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jquery.slideto.min.js  
+DEBUG 2017-08-31 13:53:13,900 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/lib/jquery.slideto.min.js does not match an existing file
+DEBUG 2017-08-31 13:53:13,900 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:53:13,900 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:53:13,900 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:53:13,900 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:53:13,900 [9    ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+INFO  2017-08-31 13:53:13,900 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jquery-1.8.0.min.js  
+INFO  2017-08-31 13:53:13,900 [4    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/object-assign-pollyfill.js'. Physical path: 'N/A'
+INFO  2017-08-31 13:53:13,901 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/jquery.slideto.min.js'. Physical path: 'N/A'
+DEBUG 2017-08-31 13:53:13,901 [4    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6I5G7HMM" completed keep alive response.
+DEBUG 2017-08-31 13:53:13,901 [9    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6I5G7HMO" completed keep alive response.
+INFO  2017-08-31 13:53:13,901 [4    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3.2886ms 200 application/javascript
+INFO  2017-08-31 13:53:13,901 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2.0907ms 200 application/javascript
+DEBUG 2017-08-31 13:53:13,901 [10   ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/lib/jquery-1.8.0.min.js does not match an existing file
+DEBUG 2017-08-31 13:53:13,911 [10   ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:53:13,912 [10   ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:53:13,912 [10   ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:53:13,912 [10   ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:53:13,912 [10   ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+INFO  2017-08-31 13:53:13,912 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/jquery-1.8.0.min.js'. Physical path: 'N/A'
+DEBUG 2017-08-31 13:53:13,909 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6I5G7HMR" started.
+DEBUG 2017-08-31 13:53:13,909 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6I5G7HMQ" started.
+INFO  2017-08-31 13:53:13,942 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jquery.ba-bbq.min.js  
+DEBUG 2017-08-31 13:53:13,943 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/lib/jquery.ba-bbq.min.js does not match an existing file
+DEBUG 2017-08-31 13:53:13,943 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:53:13,943 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:53:13,943 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:53:13,943 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:53:13,944 [9    ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+INFO  2017-08-31 13:53:13,944 [4    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/handlebars-4.0.5.js  
+DEBUG 2017-08-31 13:53:13,944 [4    ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/lib/handlebars-4.0.5.js does not match an existing file
+DEBUG 2017-08-31 13:53:13,945 [4    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:53:13,945 [4    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:53:13,945 [4    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:53:13,945 [4    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:53:13,945 [4    ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+INFO  2017-08-31 13:53:13,940 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jquery.wiggle.min.js  
+INFO  2017-08-31 13:53:13,946 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/jquery.ba-bbq.min.js'. Physical path: 'N/A'
+DEBUG 2017-08-31 13:53:13,946 [10   ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/lib/jquery.wiggle.min.js does not match an existing file
+DEBUG 2017-08-31 13:53:13,946 [10   ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:53:13,946 [9    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6I5G7HMQ" completed keep alive response.
+DEBUG 2017-08-31 13:53:13,946 [10   ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:53:13,946 [10   ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:53:13,946 [10   ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:53:13,946 [10   ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+INFO  2017-08-31 13:53:13,947 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/jquery.wiggle.min.js'. Physical path: 'N/A'
+DEBUG 2017-08-31 13:53:13,947 [10   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6I5G7HMR" completed keep alive response.
+INFO  2017-08-31 13:53:13,947 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 6.7384ms 200 application/javascript
+INFO  2017-08-31 13:53:13,948 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/lodash.min.js  
+DEBUG 2017-08-31 13:53:13,950 [10   ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/lib/lodash.min.js does not match an existing file
+DEBUG 2017-08-31 13:53:13,950 [10   ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:53:13,951 [10   ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:53:13,951 [10   ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+INFO  2017-08-31 13:53:13,946 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 4.4798ms 200 application/javascript
+INFO  2017-08-31 13:53:13,951 [4    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/handlebars-4.0.5.js'. Physical path: 'N/A'
+DEBUG 2017-08-31 13:53:13,951 [10   ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:53:13,954 [10   ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+DEBUG 2017-08-31 13:53:13,952 [9    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6I5G7HMN" completed keep alive response.
+INFO  2017-08-31 13:53:13,955 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 54.3077ms 200 application/javascript
+INFO  2017-08-31 13:53:13,955 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/backbone-min.js  
+DEBUG 2017-08-31 13:53:13,956 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/lib/backbone-min.js does not match an existing file
+DEBUG 2017-08-31 13:53:13,956 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:53:13,956 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:53:13,957 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:53:13,957 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:53:13,957 [9    ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+INFO  2017-08-31 13:53:13,958 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/lodash.min.js'. Physical path: 'N/A'
+INFO  2017-08-31 13:53:13,960 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/backbone-min.js'. Physical path: 'N/A'
+DEBUG 2017-08-31 13:53:13,964 [9    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6I5G7HMO" completed keep alive response.
+INFO  2017-08-31 13:53:13,964 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 8.5689ms 200 application/javascript
+INFO  2017-08-31 13:53:13,973 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui.min.js  
+DEBUG 2017-08-31 13:53:13,974 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/swagger-ui.min.js does not match an existing file
+DEBUG 2017-08-31 13:53:13,974 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:53:13,974 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:53:13,974 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:53:13,974 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:53:13,974 [9    ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+DEBUG 2017-08-31 13:53:13,989 [10   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6I5G7HMM" completed keep alive response.
+INFO  2017-08-31 13:53:13,989 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 40.9817ms 200 application/javascript
+INFO  2017-08-31 13:53:14,004 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui.min.js'. Physical path: 'N/A'
+INFO  2017-08-31 13:53:14,010 [4    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/highlight.9.1.0.pack_extended.js  
+DEBUG 2017-08-31 13:53:14,010 [4    ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/lib/highlight.9.1.0.pack_extended.js does not match an existing file
+DEBUG 2017-08-31 13:53:14,011 [4    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:53:14,011 [4    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+INFO  2017-08-31 13:53:14,011 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jsoneditor.min.js  
+DEBUG 2017-08-31 13:53:14,011 [4    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:53:14,011 [4    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:53:14,011 [4    ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+INFO  2017-08-31 13:53:14,011 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/highlight.9.1.0.pack.js  
+INFO  2017-08-31 13:53:14,012 [4    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/highlight.9.1.0.pack_extended.js'. Physical path: 'N/A'
+DEBUG 2017-08-31 13:53:14,012 [10   ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/lib/jsoneditor.min.js does not match an existing file
+DEBUG 2017-08-31 13:53:14,012 [4    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6I5G7HMO" completed keep alive response.
+DEBUG 2017-08-31 13:53:14,012 [10   ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:53:14,012 [10   ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:53:14,012 [10   ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:53:14,012 [10   ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:53:14,012 [10   ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+DEBUG 2017-08-31 13:53:14,012 [8    ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/lib/highlight.9.1.0.pack.js does not match an existing file
+DEBUG 2017-08-31 13:53:14,012 [8    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+INFO  2017-08-31 13:53:14,012 [4    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.9416ms 200 application/javascript
+DEBUG 2017-08-31 13:53:14,012 [8    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:53:14,026 [8    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:53:14,027 [8    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:53:14,029 [8    ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+INFO  2017-08-31 13:53:14,030 [8    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/highlight.9.1.0.pack.js'. Physical path: 'N/A'
+DEBUG 2017-08-31 13:53:14,030 [8    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6I5G7HMQ" completed keep alive response.
+INFO  2017-08-31 13:53:14,030 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 18.9142ms 200 application/javascript
+INFO  2017-08-31 13:53:14,039 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/swagger-oauth.js  
+DEBUG 2017-08-31 13:53:14,039 [8    ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/lib/swagger-oauth.js does not match an existing file
+DEBUG 2017-08-31 13:53:14,039 [8    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:53:14,039 [8    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:53:14,040 [8    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:53:14,040 [8    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:53:14,040 [8    ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+INFO  2017-08-31 13:53:14,025 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/jsoneditor.min.js'. Physical path: 'N/A'
+DEBUG 2017-08-31 13:53:14,014 [4    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6I5G7HMP" completed keep alive response.
+INFO  2017-08-31 13:53:14,046 [4    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 102.2857ms 200 application/javascript
+INFO  2017-08-31 13:53:14,053 [4    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/marked.js  
+DEBUG 2017-08-31 13:53:14,054 [4    ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/lib/marked.js does not match an existing file
+DEBUG 2017-08-31 13:53:14,054 [4    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:53:14,054 [4    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:53:14,054 [4    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:53:14,054 [4    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:53:14,054 [4    ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+INFO  2017-08-31 13:53:14,054 [4    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/marked.js'. Physical path: 'N/A'
+INFO  2017-08-31 13:53:14,065 [8    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/swagger-oauth.js'. Physical path: 'N/A'
+DEBUG 2017-08-31 13:53:14,068 [8    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6I5G7HMO" completed keep alive response.
+INFO  2017-08-31 13:53:14,068 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 29.199ms 200 application/javascript
+INFO  2017-08-31 13:53:14,100 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/css/print.css  
+DEBUG 2017-08-31 13:53:14,102 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/css/print.css does not match an existing file
+DEBUG 2017-08-31 13:53:14,102 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:53:14,102 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:53:14,102 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:53:14,102 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:53:14,102 [9    ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+INFO  2017-08-31 13:53:14,102 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/css/print.css'. Physical path: 'N/A'
+DEBUG 2017-08-31 13:53:14,103 [9    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6I5G7HMQ" completed keep alive response.
+INFO  2017-08-31 13:53:14,103 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2.3787ms 200 text/css
+DEBUG 2017-08-31 13:53:14,107 [4    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6I5G7HMM" completed keep alive response.
+INFO  2017-08-31 13:53:14,107 [4    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 54.6204ms 200 application/javascript
+INFO  2017-08-31 13:53:14,132 [4    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/images/logo_small.png  
+DEBUG 2017-08-31 13:53:14,132 [4    ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/images/logo_small.png does not match an existing file
+DEBUG 2017-08-31 13:53:14,132 [4    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:53:14,133 [4    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:53:14,133 [4    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:53:14,133 [4    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:53:14,133 [4    ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+INFO  2017-08-31 13:53:14,134 [4    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/images/logo_small.png'. Physical path: 'N/A'
+DEBUG 2017-08-31 13:53:14,135 [4    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6I5G7HMO" completed keep alive response.
+INFO  2017-08-31 13:53:14,135 [4    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3.2783ms 200 image/png
+DEBUG 2017-08-31 13:53:14,141 [9    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6I5G7HMN" completed keep alive response.
+INFO  2017-08-31 13:53:14,141 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 129.7749ms 200 application/javascript
+DEBUG 2017-08-31 13:53:14,161 [8    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6I5G7HMR" completed keep alive response.
+INFO  2017-08-31 13:53:14,161 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 187.4811ms 200 application/javascript
+INFO  2017-08-31 13:53:14,820 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+DEBUG 2017-08-31 13:53:14,820 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/v1/swagger.json does not match an existing file
+DEBUG 2017-08-31 13:53:14,820 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:53:14,820 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:53:14,820 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:53:14,820 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:53:14,820 [9    ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+INFO  2017-08-31 13:53:14,915 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/images/favicon-16x16.png  
+DEBUG 2017-08-31 13:53:14,916 [10   ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/images/favicon-16x16.png does not match an existing file
+DEBUG 2017-08-31 13:53:14,916 [10   ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:53:14,916 [10   ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:53:14,916 [10   ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:53:14,916 [10   ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:53:14,916 [10   ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+INFO  2017-08-31 13:53:14,916 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/images/favicon-16x16.png'. Physical path: 'N/A'
+DEBUG 2017-08-31 13:53:14,917 [10   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6I5G7HMM" completed keep alive response.
+INFO  2017-08-31 13:53:14,917 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.4266ms 200 image/png
+DEBUG 2017-08-31 13:53:15,496 [9    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6I5G7HMP" completed keep alive response.
+INFO  2017-08-31 13:53:15,496 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 677.269ms 200 application/json
+DEBUG 2017-08-31 13:54:53,435 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6I5G7HMO" received FIN.
+DEBUG 2017-08-31 13:54:53,435 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6I5G7HMQ" received FIN.
+DEBUG 2017-08-31 13:54:53,436 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6I5G7HMM" received FIN.
+DEBUG 2017-08-31 13:54:53,436 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6I5G7HMN" received FIN.
+DEBUG 2017-08-31 13:54:53,436 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6I5G7HMR" received FIN.
+DEBUG 2017-08-31 13:54:53,436 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6I5G7HMP" received FIN.
+DEBUG 2017-08-31 13:54:53,447 [3    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6I5G7HMO" disconnecting.
+DEBUG 2017-08-31 13:54:53,447 [8    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6I5G7HMQ" disconnecting.
+DEBUG 2017-08-31 13:54:53,447 [13   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6I5G7HMN" disconnecting.
+DEBUG 2017-08-31 13:54:53,447 [9    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6I5G7HMM" disconnecting.
+DEBUG 2017-08-31 13:54:53,448 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6I5G7HMO" sending FIN.
+DEBUG 2017-08-31 13:54:53,448 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6I5G7HMQ" sending FIN.
+DEBUG 2017-08-31 13:54:53,450 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6I5G7HMN" sending FIN.
+DEBUG 2017-08-31 13:54:53,450 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6I5G7HMM" sending FIN.
+DEBUG 2017-08-31 13:54:53,451 [8    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6I5G7HMR" disconnecting.
+DEBUG 2017-08-31 13:54:53,451 [3    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6I5G7HMP" disconnecting.
+DEBUG 2017-08-31 13:54:53,455 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6I5G7HMN" sent FIN with status "0".
+DEBUG 2017-08-31 13:54:53,455 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6I5G7HMM" sent FIN with status "0".
+DEBUG 2017-08-31 13:54:53,459 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6I5G7HMM" stopped.
+DEBUG 2017-08-31 13:54:53,459 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6I5G7HMN" stopped.
+DEBUG 2017-08-31 13:54:53,459 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6I5G7HMQ" sent FIN with status "0".
+DEBUG 2017-08-31 13:54:53,459 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6I5G7HMO" sent FIN with status "0".
+DEBUG 2017-08-31 13:54:53,459 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6I5G7HMQ" stopped.
+DEBUG 2017-08-31 13:54:53,459 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6I5G7HMP" sending FIN.
+DEBUG 2017-08-31 13:54:53,459 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6I5G7HMO" stopped.
+DEBUG 2017-08-31 13:54:53,460 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6I5G7HMR" sending FIN.
+DEBUG 2017-08-31 13:54:53,460 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6I5G7HMP" sent FIN with status "0".
+DEBUG 2017-08-31 13:54:53,460 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6I5G7HMP" stopped.
+DEBUG 2017-08-31 13:54:53,460 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6I5G7HMR" sent FIN with status "0".
+DEBUG 2017-08-31 13:54:53,460 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6I5G7HMR" stopped.
+DEBUG 2017-08-31 13:56:35,884 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6I5G7HMS" started.
+INFO  2017-08-31 13:56:35,885 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/images/throbber.gif  
+DEBUG 2017-08-31 13:56:35,886 [8    ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/images/throbber.gif does not match an existing file
+DEBUG 2017-08-31 13:56:35,886 [8    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:56:35,886 [8    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:56:35,886 [8    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:56:35,886 [8    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:56:35,886 [8    ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+INFO  2017-08-31 13:56:35,887 [8    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/images/throbber.gif'. Physical path: 'N/A'
+DEBUG 2017-08-31 13:56:35,887 [8    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6I5G7HMS" completed keep alive response.
+INFO  2017-08-31 13:56:35,887 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.9072ms 200 image/gif
+DEBUG 2017-08-31 13:58:59,660 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-08-31 13:58:59,811 [1    ] Abp.Modules.AbpModuleManager             - Found 14 ABP modules in total.
+DEBUG 2017-08-31 13:58:59,873 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DFF.Freedom.Web.Host.Startup.FreedomWebHostModule, DFF.Freedom.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-08-31 13:58:59,879 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DFF.Freedom.FreedomWebCoreModule, DFF.Freedom.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-08-31 13:58:59,880 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DFF.Freedom.FreedomApplicationModule, DFF.Freedom.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-08-31 13:58:59,880 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DFF.Freedom.FreedomCoreModule, DFF.Freedom.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-08-31 13:58:59,881 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-08-31 13:58:59,881 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-08-31 13:58:59,882 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-08-31 13:58:59,884 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-08-31 13:58:59,885 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DFF.Freedom.EntityFrameworkCore.FreedomEntityFrameworkModule, DFF.Freedom.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-08-31 13:58:59,885 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-08-31 13:58:59,886 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-08-31 13:58:59,886 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-08-31 13:58:59,887 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-08-31 13:58:59,887 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-08-31 13:58:59,892 [1    ] Abp.Modules.AbpModuleManager             - 14 modules loaded.
+DEBUG 2017-08-31 13:59:00,048 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-08-31 13:59:00,048 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-08-31 13:59:00,048 [1    ] o.Configuration.LanguageManagementConfig - Converted Freedom (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-08-31 13:59:00,048 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-08-31 13:59:00,832 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: DFF.Freedom.EntityFrameworkCore.FreedomDbContext, DFF.Freedom.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-08-31 13:59:03,033 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2017-08-31 13:59:03,130 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-08-31 13:59:03,141 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2017-08-31 13:59:03,146 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Freedom
+DEBUG 2017-08-31 13:59:03,147 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-08-31 13:59:03,562 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-08-31 13:59:03,667 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 11 classes define auto mapping attributes
+DEBUG 2017-08-31 13:59:03,668 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2017-08-31 13:59:03,672 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.Users.Dto.CreateUserDto
+DEBUG 2017-08-31 13:59:03,673 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.Users.Dto.UserDto
+DEBUG 2017-08-31 13:59:03,674 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2017-08-31 13:59:03,674 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.Sessions.Dto.UserLoginInfoDto
+DEBUG 2017-08-31 13:59:03,674 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.Roles.Dto.CreateRoleDto
+DEBUG 2017-08-31 13:59:03,674 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.Roles.Dto.PermissionDto
+DEBUG 2017-08-31 13:59:03,674 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.Roles.Dto.RoleDto
+DEBUG 2017-08-31 13:59:03,674 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2017-08-31 13:59:03,674 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.MultiTenancy.Dto.EditTenantDto
+DEBUG 2017-08-31 13:59:03,674 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.MultiTenancy.Dto.TenantDto
+DEBUG 2017-08-31 13:59:09,929 [1    ] soft.AspNetCore.Hosting.Internal.WebHost - Hosting starting
+DEBUG 2017-08-31 13:59:10,085 [1    ] soft.AspNetCore.Hosting.Internal.WebHost - Hosting started
+DEBUG 2017-08-31 13:59:10,282 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6LJ17MRC" started.
+DEBUG 2017-08-31 13:59:10,283 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6LJ17MRB" started.
+INFO  2017-08-31 13:59:10,483 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/  
+INFO  2017-08-31 13:59:10,483 [4    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 DEBUG http://localhost:21021/  0
+DEBUG 2017-08-31 13:59:10,645 [4    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6LJ17MRB" completed keep alive response.
+INFO  2017-08-31 13:59:10,658 [4    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 206.213ms 200 
+DEBUG 2017-08-31 13:59:10,711 [5    ] NetCore.StaticFiles.StaticFileMiddleware - The request path / does not match a supported file type
+DEBUG 2017-08-31 13:59:11,123 [5    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+INFO  2017-08-31 13:59:16,471 [5    ] pendencyInjection.DataProtectionServices - User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+DEBUG 2017-08-31 13:59:16,877 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action DFF.Freedom.Web.Host.Controllers.HomeController.Index (DFF.Freedom.Web.Host)
+INFO  2017-08-31 13:59:18,804 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method DFF.Freedom.Web.Host.Controllers.HomeController.Index (DFF.Freedom.Web.Host) with arguments ((null)) - ModelState is Valid
+DEBUG 2017-08-31 13:59:18,806 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method DFF.Freedom.Web.Host.Controllers.HomeController.Index (DFF.Freedom.Web.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult.
+INFO  2017-08-31 13:59:19,149 [9    ] Core.Mvc.Internal.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2017-08-31 13:59:19,166 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action DFF.Freedom.Web.Host.Controllers.HomeController.Index (DFF.Freedom.Web.Host) in 2286.2144ms
+DEBUG 2017-08-31 13:59:19,201 [9    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6LJ17MRC" completed keep alive response.
+INFO  2017-08-31 13:59:19,201 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 8760.448ms 302 
+INFO  2017-08-31 13:59:19,211 [4    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/  
+DEBUG 2017-08-31 13:59:19,212 [4    ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/ does not match a supported file type
+DEBUG 2017-08-31 13:59:19,213 [4    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:59:19,214 [4    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:59:19,215 [4    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:59:19,215 [4    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:59:19,218 [4    ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+INFO  2017-08-31 13:59:19,278 [4    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/index.html'. Physical path: 'N/A'
+DEBUG 2017-08-31 13:59:19,329 [4    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6LJ17MRB" completed keep alive response.
+INFO  2017-08-31 13:59:19,329 [4    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 118.0658ms 200 text/html
+INFO  2017-08-31 13:59:19,387 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/css/typography.css  
+DEBUG 2017-08-31 13:59:19,387 [5    ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/css/typography.css does not match an existing file
+DEBUG 2017-08-31 13:59:19,388 [5    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:59:19,388 [5    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:59:19,388 [5    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:59:19,388 [5    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:59:19,388 [5    ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+DEBUG 2017-08-31 13:59:19,390 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6LJ17MRD" started.
+INFO  2017-08-31 13:59:19,391 [3    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/object-assign-pollyfill.js  
+DEBUG 2017-08-31 13:59:19,392 [3    ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/lib/object-assign-pollyfill.js does not match an existing file
+DEBUG 2017-08-31 13:59:19,393 [3    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:59:19,393 [3    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:59:19,393 [3    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:59:19,393 [3    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:59:19,393 [3    ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+INFO  2017-08-31 13:59:19,393 [5    ] NetCore.StaticFiles.StaticFileMiddleware - The file /css/typography.css was not modified
+INFO  2017-08-31 13:59:19,393 [3    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/object-assign-pollyfill.js was not modified
+INFO  2017-08-31 13:59:19,396 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jquery.slideto.min.js  
+DEBUG 2017-08-31 13:59:19,396 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6LJ17MRE" started.
+DEBUG 2017-08-31 13:59:19,397 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6LJ17MRF" started.
+DEBUG 2017-08-31 13:59:19,397 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/lib/jquery.slideto.min.js does not match an existing file
+DEBUG 2017-08-31 13:59:19,397 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6LJ17MRG" started.
+INFO  2017-08-31 13:59:19,398 [4    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/css/reset.css  
+DEBUG 2017-08-31 13:59:19,398 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:59:19,398 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:59:19,398 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:59:19,398 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:59:19,398 [9    ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+DEBUG 2017-08-31 13:59:19,398 [4    ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/css/reset.css does not match an existing file
+INFO  2017-08-31 13:59:19,399 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/jquery.slideto.min.js was not modified
+DEBUG 2017-08-31 13:59:19,398 [3    ] NetCore.StaticFiles.StaticFileMiddleware - Handled. Status code: 304 File: /lib/object-assign-pollyfill.js
+DEBUG 2017-08-31 13:59:19,398 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Handled. Status code: 304 File: /css/typography.css
+DEBUG 2017-08-31 13:59:19,399 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Handled. Status code: 304 File: /lib/jquery.slideto.min.js
+DEBUG 2017-08-31 13:59:19,399 [4    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:59:19,399 [4    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:59:19,401 [4    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:59:19,401 [4    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:59:19,401 [4    ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+INFO  2017-08-31 13:59:19,401 [4    ] NetCore.StaticFiles.StaticFileMiddleware - The file /css/reset.css was not modified
+DEBUG 2017-08-31 13:59:19,400 [3    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6LJ17MRB" completed keep alive response.
+INFO  2017-08-31 13:59:19,401 [3    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 10.4055ms 304 application/javascript
+DEBUG 2017-08-31 13:59:19,401 [4    ] NetCore.StaticFiles.StaticFileMiddleware - Handled. Status code: 304 File: /css/reset.css
+DEBUG 2017-08-31 13:59:19,412 [4    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6LJ17MRF" completed keep alive response.
+INFO  2017-08-31 13:59:19,409 [3    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jquery-1.8.0.min.js  
+DEBUG 2017-08-31 13:59:19,400 [9    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6LJ17MRD" completed keep alive response.
+INFO  2017-08-31 13:59:19,412 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 16.1309ms 304 application/javascript
+DEBUG 2017-08-31 13:59:19,400 [5    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6LJ17MRC" completed keep alive response.
+INFO  2017-08-31 13:59:19,412 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jquery.ba-bbq.min.js  
+INFO  2017-08-31 13:59:19,412 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 25.8929ms 304 text/css
+DEBUG 2017-08-31 13:59:19,413 [3    ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/lib/jquery-1.8.0.min.js does not match an existing file
+INFO  2017-08-31 13:59:19,412 [4    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 14.4114ms 304 text/css
+DEBUG 2017-08-31 13:59:19,413 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/lib/jquery.ba-bbq.min.js does not match an existing file
+DEBUG 2017-08-31 13:59:19,413 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:59:19,413 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:59:19,413 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:59:19,413 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:59:19,413 [9    ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+INFO  2017-08-31 13:59:19,413 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jquery.wiggle.min.js  
+INFO  2017-08-31 13:59:19,414 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/jquery.ba-bbq.min.js was not modified
+DEBUG 2017-08-31 13:59:19,414 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Handled. Status code: 304 File: /lib/jquery.ba-bbq.min.js
+DEBUG 2017-08-31 13:59:19,413 [3    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:59:19,415 [3    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:59:19,415 [3    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:59:19,415 [3    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:59:19,415 [3    ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+DEBUG 2017-08-31 13:59:19,414 [9    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6LJ17MRD" completed keep alive response.
+INFO  2017-08-31 13:59:19,415 [3    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/jquery-1.8.0.min.js was not modified
+DEBUG 2017-08-31 13:59:19,415 [3    ] NetCore.StaticFiles.StaticFileMiddleware - Handled. Status code: 304 File: /lib/jquery-1.8.0.min.js
+DEBUG 2017-08-31 13:59:19,414 [5    ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/lib/jquery.wiggle.min.js does not match an existing file
+DEBUG 2017-08-31 13:59:19,415 [5    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:59:19,415 [5    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:59:19,415 [3    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6LJ17MRE" completed keep alive response.
+DEBUG 2017-08-31 13:59:19,415 [5    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:59:19,415 [5    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:59:19,415 [5    ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+INFO  2017-08-31 13:59:19,415 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2.4898ms 304 application/javascript
+INFO  2017-08-31 13:59:19,416 [5    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/jquery.wiggle.min.js was not modified
+INFO  2017-08-31 13:59:19,413 [4    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/css/screen.css  
+DEBUG 2017-08-31 13:59:19,416 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Handled. Status code: 304 File: /lib/jquery.wiggle.min.js
+DEBUG 2017-08-31 13:59:19,416 [5    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6LJ17MRC" completed keep alive response.
+INFO  2017-08-31 13:59:19,416 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3.4135ms 304 application/javascript
+INFO  2017-08-31 13:59:19,416 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/handlebars-4.0.5.js  
+DEBUG 2017-08-31 13:59:19,422 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/lib/handlebars-4.0.5.js does not match an existing file
+DEBUG 2017-08-31 13:59:19,422 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:59:19,422 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:59:19,422 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:59:19,422 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:59:19,422 [9    ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+INFO  2017-08-31 13:59:19,415 [3    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 6.5041ms 304 application/javascript
+INFO  2017-08-31 13:59:19,422 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/handlebars-4.0.5.js was not modified
+DEBUG 2017-08-31 13:59:19,417 [4    ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/css/screen.css does not match an existing file
+DEBUG 2017-08-31 13:59:19,423 [4    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:59:19,423 [4    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:59:19,423 [4    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:59:19,423 [4    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:59:19,424 [4    ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+INFO  2017-08-31 13:59:19,424 [4    ] NetCore.StaticFiles.StaticFileMiddleware - The file /css/screen.css was not modified
+DEBUG 2017-08-31 13:59:19,424 [4    ] NetCore.StaticFiles.StaticFileMiddleware - Handled. Status code: 304 File: /css/screen.css
+DEBUG 2017-08-31 13:59:19,425 [4    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6LJ17MRG" completed keep alive response.
+INFO  2017-08-31 13:59:19,425 [4    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 11.5895ms 304 text/css
+DEBUG 2017-08-31 13:59:19,423 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Handled. Status code: 304 File: /lib/handlebars-4.0.5.js
+DEBUG 2017-08-31 13:59:19,426 [9    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6LJ17MRB" completed keep alive response.
+INFO  2017-08-31 13:59:19,427 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 10.7346ms 304 application/javascript
+INFO  2017-08-31 13:59:19,430 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/lodash.min.js  
+DEBUG 2017-08-31 13:59:19,431 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/lib/lodash.min.js does not match an existing file
+DEBUG 2017-08-31 13:59:19,431 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:59:19,431 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:59:19,432 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:59:19,432 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:59:19,432 [9    ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+INFO  2017-08-31 13:59:19,432 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/lodash.min.js was not modified
+DEBUG 2017-08-31 13:59:19,432 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Handled. Status code: 304 File: /lib/lodash.min.js
+DEBUG 2017-08-31 13:59:19,433 [9    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6LJ17MRF" completed keep alive response.
+INFO  2017-08-31 13:59:19,433 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2.9064ms 304 application/javascript
+INFO  2017-08-31 13:59:19,437 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/backbone-min.js  
+DEBUG 2017-08-31 13:59:19,437 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/lib/backbone-min.js does not match an existing file
+DEBUG 2017-08-31 13:59:19,437 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:59:19,437 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:59:19,437 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:59:19,437 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:59:19,437 [9    ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+INFO  2017-08-31 13:59:19,438 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/backbone-min.js was not modified
+DEBUG 2017-08-31 13:59:19,439 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Handled. Status code: 304 File: /lib/backbone-min.js
+DEBUG 2017-08-31 13:59:19,439 [9    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6LJ17MRE" completed keep alive response.
+INFO  2017-08-31 13:59:19,440 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3.1231ms 304 application/javascript
+INFO  2017-08-31 13:59:19,440 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/highlight.9.1.0.pack.js  
+DEBUG 2017-08-31 13:59:19,441 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/lib/highlight.9.1.0.pack.js does not match an existing file
+DEBUG 2017-08-31 13:59:19,441 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:59:19,441 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:59:19,441 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:59:19,441 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:59:19,441 [9    ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+INFO  2017-08-31 13:59:19,442 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/highlight.9.1.0.pack.js was not modified
+DEBUG 2017-08-31 13:59:19,442 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Handled. Status code: 304 File: /lib/highlight.9.1.0.pack.js
+DEBUG 2017-08-31 13:59:19,442 [9    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6LJ17MRC" completed keep alive response.
+INFO  2017-08-31 13:59:19,442 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.5781ms 304 application/javascript
+INFO  2017-08-31 13:59:19,443 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui.min.js  
+DEBUG 2017-08-31 13:59:19,444 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/swagger-ui.min.js does not match an existing file
+DEBUG 2017-08-31 13:59:19,444 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:59:19,444 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:59:19,444 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:59:19,444 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:59:19,444 [9    ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+INFO  2017-08-31 13:59:19,444 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger-ui.min.js was not modified
+DEBUG 2017-08-31 13:59:19,445 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Handled. Status code: 304 File: /swagger-ui.min.js
+DEBUG 2017-08-31 13:59:19,445 [9    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6LJ17MRD" completed keep alive response.
+INFO  2017-08-31 13:59:19,445 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.4314ms 304 application/javascript
+INFO  2017-08-31 13:59:19,445 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/highlight.9.1.0.pack_extended.js  
+DEBUG 2017-08-31 13:59:19,446 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/lib/highlight.9.1.0.pack_extended.js does not match an existing file
+DEBUG 2017-08-31 13:59:19,446 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:59:19,446 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:59:19,446 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:59:19,446 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:59:19,446 [9    ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+INFO  2017-08-31 13:59:19,446 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/highlight.9.1.0.pack_extended.js was not modified
+DEBUG 2017-08-31 13:59:19,446 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Handled. Status code: 304 File: /lib/highlight.9.1.0.pack_extended.js
+DEBUG 2017-08-31 13:59:19,446 [9    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6LJ17MRB" completed keep alive response.
+INFO  2017-08-31 13:59:19,446 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.3928ms 304 application/javascript
+INFO  2017-08-31 13:59:19,458 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jsoneditor.min.js  
+DEBUG 2017-08-31 13:59:19,458 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/lib/jsoneditor.min.js does not match an existing file
+DEBUG 2017-08-31 13:59:19,459 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:59:19,459 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:59:19,459 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:59:19,459 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:59:19,459 [9    ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+INFO  2017-08-31 13:59:19,459 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/jsoneditor.min.js was not modified
+DEBUG 2017-08-31 13:59:19,459 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Handled. Status code: 304 File: /lib/jsoneditor.min.js
+DEBUG 2017-08-31 13:59:19,459 [9    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6LJ17MRG" completed keep alive response.
+INFO  2017-08-31 13:59:19,459 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.3819ms 304 application/javascript
+INFO  2017-08-31 13:59:19,460 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/marked.js  
+DEBUG 2017-08-31 13:59:19,460 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/lib/marked.js does not match an existing file
+DEBUG 2017-08-31 13:59:19,460 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:59:19,460 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:59:19,460 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:59:19,461 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:59:19,461 [9    ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+INFO  2017-08-31 13:59:19,461 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/marked.js was not modified
+DEBUG 2017-08-31 13:59:19,461 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Handled. Status code: 304 File: /lib/marked.js
+DEBUG 2017-08-31 13:59:19,461 [9    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6LJ17MRF" completed keep alive response.
+INFO  2017-08-31 13:59:19,461 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.493ms 304 application/javascript
+INFO  2017-08-31 13:59:19,466 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/css/print.css  
+DEBUG 2017-08-31 13:59:19,467 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/css/print.css does not match an existing file
+DEBUG 2017-08-31 13:59:19,467 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:59:19,467 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:59:19,467 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:59:19,467 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:59:19,467 [9    ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+INFO  2017-08-31 13:59:19,467 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The file /css/print.css was not modified
+DEBUG 2017-08-31 13:59:19,467 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Handled. Status code: 304 File: /css/print.css
+DEBUG 2017-08-31 13:59:19,467 [9    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6LJ17MRC" completed keep alive response.
+INFO  2017-08-31 13:59:19,467 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.5033ms 304 text/css
+INFO  2017-08-31 13:59:19,468 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/swagger-oauth.js  
+DEBUG 2017-08-31 13:59:19,468 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/lib/swagger-oauth.js does not match an existing file
+DEBUG 2017-08-31 13:59:19,469 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:59:19,469 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:59:19,469 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:59:19,469 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:59:19,469 [9    ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+INFO  2017-08-31 13:59:19,470 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/swagger-oauth.js was not modified
+DEBUG 2017-08-31 13:59:19,470 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Handled. Status code: 304 File: /lib/swagger-oauth.js
+DEBUG 2017-08-31 13:59:19,471 [9    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6LJ17MRE" completed keep alive response.
+INFO  2017-08-31 13:59:19,471 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2.9058ms 304 application/javascript
+INFO  2017-08-31 13:59:19,490 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/images/logo_small.png  
+DEBUG 2017-08-31 13:59:19,490 [5    ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/images/logo_small.png does not match an existing file
+DEBUG 2017-08-31 13:59:19,491 [5    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:59:19,491 [5    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:59:19,491 [5    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:59:19,491 [5    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:59:19,491 [5    ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+INFO  2017-08-31 13:59:19,491 [5    ] NetCore.StaticFiles.StaticFileMiddleware - The file /images/logo_small.png was not modified
+DEBUG 2017-08-31 13:59:19,491 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Handled. Status code: 304 File: /images/logo_small.png
+DEBUG 2017-08-31 13:59:19,491 [5    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6LJ17MRD" completed keep alive response.
+INFO  2017-08-31 13:59:19,492 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.7001ms 304 image/png
+INFO  2017-08-31 13:59:20,117 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+DEBUG 2017-08-31 13:59:20,118 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/v1/swagger.json does not match an existing file
+DEBUG 2017-08-31 13:59:20,118 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:59:20,118 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:59:20,118 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 13:59:20,118 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 13:59:20,118 [9    ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+DEBUG 2017-08-31 13:59:20,635 [9    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6LJ17MRB" completed keep alive response.
+INFO  2017-08-31 13:59:20,635 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 518.4997ms 200 application/json
+DEBUG 2017-08-31 14:01:00,911 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6LJ17MRG" received FIN.
+DEBUG 2017-08-31 14:01:00,912 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6LJ17MRF" received FIN.
+DEBUG 2017-08-31 14:01:00,913 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6LJ17MRC" received FIN.
+DEBUG 2017-08-31 14:01:00,913 [3    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6LJ17MRF" disconnecting.
+DEBUG 2017-08-31 14:01:00,913 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6LJ17MRE" received FIN.
+DEBUG 2017-08-31 14:01:00,914 [4    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6LJ17MRC" disconnecting.
+DEBUG 2017-08-31 14:01:00,914 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6LJ17MRD" received FIN.
+DEBUG 2017-08-31 14:01:00,913 [5    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6LJ17MRG" disconnecting.
+DEBUG 2017-08-31 14:01:00,914 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6LJ17MRB" received FIN.
+DEBUG 2017-08-31 14:01:00,914 [9    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6LJ17MRE" disconnecting.
+DEBUG 2017-08-31 14:01:00,916 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6LJ17MRF" sending FIN.
+DEBUG 2017-08-31 14:01:00,915 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6LJ17MRC" sending FIN.
+DEBUG 2017-08-31 14:01:00,939 [6    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6LJ17MRD" disconnecting.
+DEBUG 2017-08-31 14:01:00,943 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6LJ17MRG" sending FIN.
+DEBUG 2017-08-31 14:01:00,943 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6LJ17MRD" sending FIN.
+DEBUG 2017-08-31 14:01:00,943 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6LJ17MRE" sending FIN.
+DEBUG 2017-08-31 14:01:00,948 [4    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6LJ17MRB" disconnecting.
+DEBUG 2017-08-31 14:01:00,952 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6LJ17MRD" sent FIN with status "0".
+DEBUG 2017-08-31 14:01:00,952 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6LJ17MRE" sent FIN with status "0".
+DEBUG 2017-08-31 14:01:00,955 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6LJ17MRD" stopped.
+DEBUG 2017-08-31 14:01:00,955 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6LJ17MRE" stopped.
+DEBUG 2017-08-31 14:01:00,955 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6LJ17MRF" sent FIN with status "0".
+DEBUG 2017-08-31 14:01:00,955 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6LJ17MRG" sent FIN with status "0".
+DEBUG 2017-08-31 14:01:00,956 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6LJ17MRF" stopped.
+DEBUG 2017-08-31 14:01:00,956 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6LJ17MRG" stopped.
+DEBUG 2017-08-31 14:01:00,956 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6LJ17MRB" sending FIN.
+DEBUG 2017-08-31 14:01:00,956 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6LJ17MRC" sent FIN with status "0".
+DEBUG 2017-08-31 14:01:00,956 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6LJ17MRB" sent FIN with status "0".
+DEBUG 2017-08-31 14:01:00,956 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6LJ17MRC" stopped.
+DEBUG 2017-08-31 14:01:00,957 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G6LJ17MRB" stopped.
+DEBUG 2017-08-31 14:46:49,965 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-08-31 14:46:50,116 [1    ] Abp.Modules.AbpModuleManager             - Found 14 ABP modules in total.
+DEBUG 2017-08-31 14:46:50,173 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DFF.Freedom.Web.Host.Startup.FreedomWebHostModule, DFF.Freedom.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-08-31 14:46:50,181 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DFF.Freedom.FreedomWebCoreModule, DFF.Freedom.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-08-31 14:46:50,181 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DFF.Freedom.FreedomApplicationModule, DFF.Freedom.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-08-31 14:46:50,182 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DFF.Freedom.FreedomCoreModule, DFF.Freedom.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-08-31 14:46:50,182 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-08-31 14:46:50,183 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-08-31 14:46:50,184 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-08-31 14:46:50,185 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-08-31 14:46:50,186 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DFF.Freedom.EntityFrameworkCore.FreedomEntityFrameworkModule, DFF.Freedom.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-08-31 14:46:50,187 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-08-31 14:46:50,187 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-08-31 14:46:50,188 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-08-31 14:46:50,188 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-08-31 14:46:50,189 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-08-31 14:46:50,196 [1    ] Abp.Modules.AbpModuleManager             - 14 modules loaded.
+DEBUG 2017-08-31 14:46:50,618 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-08-31 14:46:50,619 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-08-31 14:46:50,619 [1    ] o.Configuration.LanguageManagementConfig - Converted Freedom (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-08-31 14:46:50,619 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-08-31 14:46:52,130 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: DFF.Freedom.EntityFrameworkCore.FreedomDbContext, DFF.Freedom.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-08-31 14:46:54,313 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2017-08-31 14:46:54,406 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-08-31 14:46:54,416 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2017-08-31 14:46:54,420 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Freedom
+DEBUG 2017-08-31 14:46:54,422 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-08-31 14:46:54,806 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-08-31 14:46:54,939 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 11 classes define auto mapping attributes
+DEBUG 2017-08-31 14:46:54,940 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2017-08-31 14:46:54,947 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.Users.Dto.CreateUserDto
+DEBUG 2017-08-31 14:46:54,948 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.Users.Dto.UserDto
+DEBUG 2017-08-31 14:46:54,948 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2017-08-31 14:46:54,948 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.Sessions.Dto.UserLoginInfoDto
+DEBUG 2017-08-31 14:46:54,948 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.Roles.Dto.CreateRoleDto
+DEBUG 2017-08-31 14:46:54,948 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.Roles.Dto.PermissionDto
+DEBUG 2017-08-31 14:46:54,949 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.Roles.Dto.RoleDto
+DEBUG 2017-08-31 14:46:54,949 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2017-08-31 14:46:54,949 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.MultiTenancy.Dto.EditTenantDto
+DEBUG 2017-08-31 14:46:54,949 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.MultiTenancy.Dto.TenantDto
+DEBUG 2017-08-31 14:47:01,539 [1    ] soft.AspNetCore.Hosting.Internal.WebHost - Hosting starting
+DEBUG 2017-08-31 14:47:01,706 [1    ] soft.AspNetCore.Hosting.Internal.WebHost - Hosting started
+DEBUG 2017-08-31 14:47:01,921 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G7GARBE0H" started.
+DEBUG 2017-08-31 14:47:01,921 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G7GARBE0G" started.
+INFO  2017-08-31 14:47:02,126 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/  
+INFO  2017-08-31 14:47:02,126 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 DEBUG http://localhost:21021/  0
+DEBUG 2017-08-31 14:47:02,338 [9    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G7GARBE0G" completed keep alive response.
+INFO  2017-08-31 14:47:02,392 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 259.6229ms 200 
+DEBUG 2017-08-31 14:47:02,413 [8    ] NetCore.StaticFiles.StaticFileMiddleware - The request path / does not match a supported file type
+DEBUG 2017-08-31 14:47:02,809 [8    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+INFO  2017-08-31 14:47:08,415 [8    ] pendencyInjection.DataProtectionServices - User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+DEBUG 2017-08-31 14:47:08,856 [8    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action DFF.Freedom.Web.Host.Controllers.HomeController.Index (DFF.Freedom.Web.Host)
+INFO  2017-08-31 14:47:11,126 [8    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method DFF.Freedom.Web.Host.Controllers.HomeController.Index (DFF.Freedom.Web.Host) with arguments ((null)) - ModelState is Valid
+DEBUG 2017-08-31 14:47:11,131 [8    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method DFF.Freedom.Web.Host.Controllers.HomeController.Index (DFF.Freedom.Web.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult.
+INFO  2017-08-31 14:47:11,563 [9    ] Core.Mvc.Internal.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2017-08-31 14:47:11,589 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action DFF.Freedom.Web.Host.Controllers.HomeController.Index (DFF.Freedom.Web.Host) in 2729.5572ms
+DEBUG 2017-08-31 14:47:11,636 [9    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G7GARBE0H" completed keep alive response.
+INFO  2017-08-31 14:47:11,636 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 9556.8485ms 302 
+INFO  2017-08-31 14:47:11,646 [3    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger  
+DEBUG 2017-08-31 14:47:11,647 [3    ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger does not match a supported file type
+DEBUG 2017-08-31 14:47:11,648 [3    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 14:47:11,649 [3    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 14:47:11,650 [3    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 14:47:11,650 [3    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 14:47:11,653 [3    ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+DEBUG 2017-08-31 14:47:11,673 [3    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G7GARBE0G" completed keep alive response.
+INFO  2017-08-31 14:47:11,674 [3    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 28.044ms 301 
+INFO  2017-08-31 14:47:11,681 [3    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/  
+DEBUG 2017-08-31 14:47:11,681 [3    ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/ does not match a supported file type
+DEBUG 2017-08-31 14:47:11,681 [3    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 14:47:11,682 [3    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 14:47:11,682 [3    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 14:47:11,682 [3    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 14:47:11,682 [3    ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+INFO  2017-08-31 14:47:11,714 [3    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/index.html'. Physical path: 'N/A'
+DEBUG 2017-08-31 14:47:11,766 [3    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G7GARBE0H" completed keep alive response.
+INFO  2017-08-31 14:47:11,766 [3    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 84.9424ms 200 text/html
+INFO  2017-08-31 14:47:11,807 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/css/typography.css  
+DEBUG 2017-08-31 14:47:11,808 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/css/typography.css does not match an existing file
+DEBUG 2017-08-31 14:47:11,808 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 14:47:11,808 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 14:47:11,808 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 14:47:11,808 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 14:47:11,808 [9    ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+INFO  2017-08-31 14:47:11,810 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The file /css/typography.css was not modified
+DEBUG 2017-08-31 14:47:11,816 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Handled. Status code: 304 File: /css/typography.css
+DEBUG 2017-08-31 14:47:11,817 [9    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G7GARBE0G" completed keep alive response.
+INFO  2017-08-31 14:47:11,817 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 9.6177ms 304 text/css
+INFO  2017-08-31 14:47:11,830 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/css/reset.css  
+INFO  2017-08-31 14:47:11,830 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jquery.slideto.min.js  
+DEBUG 2017-08-31 14:47:11,830 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/lib/jquery.slideto.min.js does not match an existing file
+DEBUG 2017-08-31 14:47:11,831 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 14:47:11,831 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 14:47:11,831 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 14:47:11,831 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 14:47:11,831 [9    ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+DEBUG 2017-08-31 14:47:11,831 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G7GARBE0I" started.
+INFO  2017-08-31 14:47:11,831 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/jquery.slideto.min.js was not modified
+DEBUG 2017-08-31 14:47:11,831 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Handled. Status code: 304 File: /lib/jquery.slideto.min.js
+DEBUG 2017-08-31 14:47:11,831 [9    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G7GARBE0G" completed keep alive response.
+INFO  2017-08-31 14:47:11,832 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.391ms 304 application/javascript
+DEBUG 2017-08-31 14:47:11,833 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G7GARBE0J" started.
+INFO  2017-08-31 14:47:11,833 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/object-assign-pollyfill.js  
+DEBUG 2017-08-31 14:47:11,833 [10   ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/css/reset.css does not match an existing file
+DEBUG 2017-08-31 14:47:11,833 [10   ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 14:47:11,833 [10   ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 14:47:11,833 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/lib/object-assign-pollyfill.js does not match an existing file
+DEBUG 2017-08-31 14:47:11,833 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 14:47:11,833 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 14:47:11,834 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 14:47:11,834 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 14:47:11,834 [9    ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+INFO  2017-08-31 14:47:11,834 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/object-assign-pollyfill.js was not modified
+DEBUG 2017-08-31 14:47:11,833 [10   ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 14:47:11,834 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Handled. Status code: 304 File: /lib/object-assign-pollyfill.js
+DEBUG 2017-08-31 14:47:11,834 [10   ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 14:47:11,834 [10   ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+INFO  2017-08-31 14:47:11,834 [10   ] NetCore.StaticFiles.StaticFileMiddleware - The file /css/reset.css was not modified
+DEBUG 2017-08-31 14:47:11,834 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Handled. Status code: 304 File: /css/reset.css
+DEBUG 2017-08-31 14:47:11,834 [9    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G7GARBE0I" completed keep alive response.
+DEBUG 2017-08-31 14:47:11,835 [10   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G7GARBE0H" completed keep alive response.
+INFO  2017-08-31 14:47:11,835 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 5.0467ms 304 text/css
+INFO  2017-08-31 14:47:11,840 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jquery.wiggle.min.js  
+INFO  2017-08-31 14:47:11,835 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2.322ms 304 application/javascript
+INFO  2017-08-31 14:47:11,843 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jquery-1.8.0.min.js  
+DEBUG 2017-08-31 14:47:11,843 [10   ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/lib/jquery.wiggle.min.js does not match an existing file
+DEBUG 2017-08-31 14:47:11,843 [10   ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 14:47:11,843 [10   ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 14:47:11,843 [10   ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 14:47:11,843 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/lib/jquery-1.8.0.min.js does not match an existing file
+DEBUG 2017-08-31 14:47:11,843 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 14:47:11,843 [10   ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 14:47:11,844 [10   ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+DEBUG 2017-08-31 14:47:11,844 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+INFO  2017-08-31 14:47:11,844 [10   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/jquery.wiggle.min.js was not modified
+DEBUG 2017-08-31 14:47:11,844 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 14:47:11,844 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 14:47:11,844 [9    ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+DEBUG 2017-08-31 14:47:11,844 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Handled. Status code: 304 File: /lib/jquery.wiggle.min.js
+INFO  2017-08-31 14:47:11,844 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/jquery-1.8.0.min.js was not modified
+DEBUG 2017-08-31 14:47:11,844 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Handled. Status code: 304 File: /lib/jquery-1.8.0.min.js
+DEBUG 2017-08-31 14:47:11,844 [9    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G7GARBE0G" completed keep alive response.
+INFO  2017-08-31 14:47:11,844 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.5141ms 304 application/javascript
+INFO  2017-08-31 14:47:11,850 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/css/screen.css  
+DEBUG 2017-08-31 14:47:11,844 [10   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G7GARBE0J" completed keep alive response.
+INFO  2017-08-31 14:47:11,850 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 9.9618ms 304 application/javascript
+INFO  2017-08-31 14:47:11,850 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jquery.ba-bbq.min.js  
+DEBUG 2017-08-31 14:47:11,850 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/css/screen.css does not match an existing file
+DEBUG 2017-08-31 14:47:11,850 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 14:47:11,850 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 14:47:11,850 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 14:47:11,851 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 14:47:11,851 [9    ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+INFO  2017-08-31 14:47:11,851 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The file /css/screen.css was not modified
+DEBUG 2017-08-31 14:47:11,851 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Handled. Status code: 304 File: /css/screen.css
+DEBUG 2017-08-31 14:47:11,850 [10   ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/lib/jquery.ba-bbq.min.js does not match an existing file
+DEBUG 2017-08-31 14:47:11,851 [10   ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 14:47:11,851 [10   ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 14:47:11,851 [10   ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 14:47:11,851 [10   ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 14:47:11,851 [10   ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+INFO  2017-08-31 14:47:11,851 [10   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/jquery.ba-bbq.min.js was not modified
+DEBUG 2017-08-31 14:47:11,852 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Handled. Status code: 304 File: /lib/jquery.ba-bbq.min.js
+DEBUG 2017-08-31 14:47:11,851 [9    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G7GARBE0I" completed keep alive response.
+INFO  2017-08-31 14:47:11,852 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2.0509ms 304 text/css
+DEBUG 2017-08-31 14:47:11,852 [10   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G7GARBE0J" completed keep alive response.
+INFO  2017-08-31 14:47:11,852 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2.2332ms 304 application/javascript
+INFO  2017-08-31 14:47:11,852 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/handlebars-4.0.5.js  
+DEBUG 2017-08-31 14:47:11,853 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/lib/handlebars-4.0.5.js does not match an existing file
+DEBUG 2017-08-31 14:47:11,853 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 14:47:11,853 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 14:47:11,853 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 14:47:11,853 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 14:47:11,853 [9    ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+INFO  2017-08-31 14:47:11,854 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/handlebars-4.0.5.js was not modified
+DEBUG 2017-08-31 14:47:11,854 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Handled. Status code: 304 File: /lib/handlebars-4.0.5.js
+DEBUG 2017-08-31 14:47:11,854 [9    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G7GARBE0H" completed keep alive response.
+INFO  2017-08-31 14:47:11,854 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.5872ms 304 application/javascript
+INFO  2017-08-31 14:47:11,875 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/lodash.min.js  
+DEBUG 2017-08-31 14:47:11,876 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/lib/lodash.min.js does not match an existing file
+DEBUG 2017-08-31 14:47:11,876 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 14:47:11,877 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 14:47:11,877 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 14:47:11,877 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 14:47:11,877 [9    ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+INFO  2017-08-31 14:47:11,877 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/lodash.min.js was not modified
+DEBUG 2017-08-31 14:47:11,877 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Handled. Status code: 304 File: /lib/lodash.min.js
+DEBUG 2017-08-31 14:47:11,880 [9    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G7GARBE0G" completed keep alive response.
+INFO  2017-08-31 14:47:11,880 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 4.5305ms 304 application/javascript
+INFO  2017-08-31 14:47:11,891 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/highlight.9.1.0.pack_extended.js  
+DEBUG 2017-08-31 14:47:11,891 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G7GARBE0K" started.
+DEBUG 2017-08-31 14:47:11,892 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/lib/highlight.9.1.0.pack_extended.js does not match an existing file
+DEBUG 2017-08-31 14:47:11,892 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 14:47:11,892 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 14:47:11,892 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 14:47:11,892 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 14:47:11,892 [9    ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+INFO  2017-08-31 14:47:11,892 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/highlight.9.1.0.pack_extended.js was not modified
+DEBUG 2017-08-31 14:47:11,893 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Handled. Status code: 304 File: /lib/highlight.9.1.0.pack_extended.js
+DEBUG 2017-08-31 14:47:11,894 [9    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G7GARBE0I" completed keep alive response.
+INFO  2017-08-31 14:47:11,895 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3.2855ms 304 application/javascript
+INFO  2017-08-31 14:47:11,909 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui.min.js  
+DEBUG 2017-08-31 14:47:11,910 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/swagger-ui.min.js does not match an existing file
+DEBUG 2017-08-31 14:47:11,910 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 14:47:11,910 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 14:47:11,910 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 14:47:11,910 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 14:47:11,911 [9    ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+INFO  2017-08-31 14:47:11,911 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger-ui.min.js was not modified
+DEBUG 2017-08-31 14:47:11,911 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Handled. Status code: 304 File: /swagger-ui.min.js
+DEBUG 2017-08-31 14:47:11,911 [9    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G7GARBE0H" completed keep alive response.
+INFO  2017-08-31 14:47:11,911 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.7955ms 304 application/javascript
+DEBUG 2017-08-31 14:47:11,922 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G7GARBE0L" started.
+INFO  2017-08-31 14:47:11,922 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/highlight.9.1.0.pack.js  
+DEBUG 2017-08-31 14:47:11,923 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/lib/highlight.9.1.0.pack.js does not match an existing file
+DEBUG 2017-08-31 14:47:11,923 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 14:47:11,923 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 14:47:11,923 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 14:47:11,923 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 14:47:11,923 [9    ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+INFO  2017-08-31 14:47:11,924 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/highlight.9.1.0.pack.js was not modified
+DEBUG 2017-08-31 14:47:11,924 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Handled. Status code: 304 File: /lib/highlight.9.1.0.pack.js
+DEBUG 2017-08-31 14:47:11,924 [9    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G7GARBE0J" completed keep alive response.
+INFO  2017-08-31 14:47:11,924 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2.0599ms 304 application/javascript
+INFO  2017-08-31 14:47:11,926 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jsoneditor.min.js  
+DEBUG 2017-08-31 14:47:11,930 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/lib/jsoneditor.min.js does not match an existing file
+DEBUG 2017-08-31 14:47:11,930 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 14:47:11,930 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 14:47:11,930 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 14:47:11,930 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 14:47:11,930 [9    ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+INFO  2017-08-31 14:47:11,930 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/backbone-min.js  
+INFO  2017-08-31 14:47:11,930 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/jsoneditor.min.js was not modified
+DEBUG 2017-08-31 14:47:11,931 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Handled. Status code: 304 File: /lib/jsoneditor.min.js
+DEBUG 2017-08-31 14:47:11,931 [9    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G7GARBE0G" completed keep alive response.
+INFO  2017-08-31 14:47:11,931 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 4.3699ms 304 application/javascript
+INFO  2017-08-31 14:47:11,938 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/marked.js  
+DEBUG 2017-08-31 14:47:11,939 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/lib/marked.js does not match an existing file
+DEBUG 2017-08-31 14:47:11,939 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 14:47:11,939 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 14:47:11,939 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 14:47:11,939 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 14:47:11,939 [9    ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+INFO  2017-08-31 14:47:11,940 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/marked.js was not modified
+DEBUG 2017-08-31 14:47:11,940 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Handled. Status code: 304 File: /lib/marked.js
+DEBUG 2017-08-31 14:47:11,941 [9    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G7GARBE0I" completed keep alive response.
+INFO  2017-08-31 14:47:11,941 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2.613ms 304 application/javascript
+INFO  2017-08-31 14:47:11,942 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/swagger-oauth.js  
+DEBUG 2017-08-31 14:47:11,942 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/lib/swagger-oauth.js does not match an existing file
+DEBUG 2017-08-31 14:47:11,942 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 14:47:11,942 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 14:47:11,942 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 14:47:11,942 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 14:47:11,943 [9    ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+INFO  2017-08-31 14:47:11,943 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/swagger-oauth.js was not modified
+DEBUG 2017-08-31 14:47:11,943 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Handled. Status code: 304 File: /lib/swagger-oauth.js
+DEBUG 2017-08-31 14:47:11,943 [9    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G7GARBE0L" completed keep alive response.
+INFO  2017-08-31 14:47:11,943 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.493ms 304 application/javascript
+INFO  2017-08-31 14:47:11,949 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/css/print.css  
+DEBUG 2017-08-31 14:47:11,950 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/css/print.css does not match an existing file
+DEBUG 2017-08-31 14:47:11,950 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 14:47:11,950 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 14:47:11,950 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 14:47:11,950 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 14:47:11,950 [9    ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+INFO  2017-08-31 14:47:11,950 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The file /css/print.css was not modified
+DEBUG 2017-08-31 14:47:11,950 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Handled. Status code: 304 File: /css/print.css
+DEBUG 2017-08-31 14:47:11,951 [9    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G7GARBE0H" completed keep alive response.
+INFO  2017-08-31 14:47:11,951 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.5896ms 304 text/css
+DEBUG 2017-08-31 14:47:11,953 [10   ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/lib/backbone-min.js does not match an existing file
+DEBUG 2017-08-31 14:47:11,953 [10   ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 14:47:11,953 [10   ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 14:47:11,953 [10   ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 14:47:11,953 [10   ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 14:47:11,953 [10   ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+INFO  2017-08-31 14:47:11,954 [10   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/backbone-min.js was not modified
+DEBUG 2017-08-31 14:47:11,954 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Handled. Status code: 304 File: /lib/backbone-min.js
+DEBUG 2017-08-31 14:47:11,954 [10   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G7GARBE0K" completed keep alive response.
+INFO  2017-08-31 14:47:11,954 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 24.4493ms 304 application/javascript
+INFO  2017-08-31 14:47:11,970 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/images/logo_small.png  
+DEBUG 2017-08-31 14:47:11,971 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/images/logo_small.png does not match an existing file
+DEBUG 2017-08-31 14:47:11,971 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 14:47:11,971 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 14:47:11,971 [9    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 14:47:11,972 [9    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 14:47:11,972 [9    ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+INFO  2017-08-31 14:47:11,972 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The file /images/logo_small.png was not modified
+DEBUG 2017-08-31 14:47:11,972 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Handled. Status code: 304 File: /images/logo_small.png
+DEBUG 2017-08-31 14:47:11,972 [9    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G7GARBE0J" completed keep alive response.
+INFO  2017-08-31 14:47:11,972 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2.2743ms 304 image/png
+INFO  2017-08-31 14:47:12,428 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+DEBUG 2017-08-31 14:47:12,429 [10   ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/v1/swagger.json does not match an existing file
+DEBUG 2017-08-31 14:47:12,429 [10   ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 14:47:12,430 [10   ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 14:47:12,430 [10   ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 14:47:12,430 [10   ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 14:47:12,430 [10   ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+INFO  2017-08-31 14:47:12,513 [4    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/images/favicon-16x16.png  
+DEBUG 2017-08-31 14:47:12,513 [4    ] NetCore.StaticFiles.StaticFileMiddleware - The request path /swagger/images/favicon-16x16.png does not match an existing file
+DEBUG 2017-08-31 14:47:12,514 [4    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 14:47:12,514 [4    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 14:47:12,514 [4    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-08-31 14:47:12,514 [4    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-08-31 14:47:12,514 [4    ] soft.AspNetCore.Builder.RouterMiddleware - Request did not match any routes.
+INFO  2017-08-31 14:47:12,514 [4    ] NetCore.StaticFiles.StaticFileMiddleware - The file /images/favicon-16x16.png was not modified
+DEBUG 2017-08-31 14:47:12,514 [4    ] NetCore.StaticFiles.StaticFileMiddleware - Handled. Status code: 304 File: /images/favicon-16x16.png
+DEBUG 2017-08-31 14:47:12,514 [4    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G7GARBE0I" completed keep alive response.
+INFO  2017-08-31 14:47:12,514 [4    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.5027ms 304 image/png
+DEBUG 2017-08-31 14:47:12,977 [10   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G7GARBE0G" completed keep alive response.
+INFO  2017-08-31 14:47:12,977 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 549.2063ms 200 application/json
+DEBUG 2017-08-31 14:48:51,982 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G7GARBE0L" received FIN.
+DEBUG 2017-08-31 14:48:51,982 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G7GARBE0J" received FIN.
+DEBUG 2017-08-31 14:48:51,982 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G7GARBE0H" received FIN.
+DEBUG 2017-08-31 14:48:51,984 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G7GARBE0K" received FIN.
+DEBUG 2017-08-31 14:48:51,986 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G7GARBE0I" received FIN.
+DEBUG 2017-08-31 14:48:51,986 [9    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G7GARBE0H" disconnecting.
+DEBUG 2017-08-31 14:48:51,986 [4    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G7GARBE0J" disconnecting.
+DEBUG 2017-08-31 14:48:51,987 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G7GARBE0G" received FIN.
+DEBUG 2017-08-31 14:48:51,986 [3    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G7GARBE0L" disconnecting.
+DEBUG 2017-08-31 14:48:51,988 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G7GARBE0H" sending FIN.
+DEBUG 2017-08-31 14:48:51,988 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G7GARBE0J" sending FIN.
+DEBUG 2017-08-31 14:48:52,012 [5    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G7GARBE0K" disconnecting.
+DEBUG 2017-08-31 14:48:52,012 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G7GARBE0L" sending FIN.
+DEBUG 2017-08-31 14:48:52,014 [4    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G7GARBE0I" disconnecting.
+DEBUG 2017-08-31 14:48:52,014 [9    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G7GARBE0G" disconnecting.
+DEBUG 2017-08-31 14:48:52,017 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G7GARBE0H" sent FIN with status "0".
+DEBUG 2017-08-31 14:48:52,017 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G7GARBE0L" sent FIN with status "0".
+DEBUG 2017-08-31 14:48:52,021 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G7GARBE0L" stopped.
+DEBUG 2017-08-31 14:48:52,021 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G7GARBE0H" stopped.
+DEBUG 2017-08-31 14:48:52,021 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G7GARBE0K" sending FIN.
+DEBUG 2017-08-31 14:48:52,021 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G7GARBE0I" sending FIN.
+DEBUG 2017-08-31 14:48:52,021 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G7GARBE0J" sent FIN with status "0".
+DEBUG 2017-08-31 14:48:52,021 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G7GARBE0I" sent FIN with status "0".
+DEBUG 2017-08-31 14:48:52,021 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G7GARBE0J" stopped.
+DEBUG 2017-08-31 14:48:52,021 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G7GARBE0G" sending FIN.
+DEBUG 2017-08-31 14:48:52,021 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G7GARBE0I" stopped.
+DEBUG 2017-08-31 14:48:52,022 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G7GARBE0G" sent FIN with status "0".
+DEBUG 2017-08-31 14:48:52,022 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G7GARBE0K" sent FIN with status "0".
+DEBUG 2017-08-31 14:48:52,022 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G7GARBE0G" stopped.
+DEBUG 2017-08-31 14:48:52,022 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7G7GARBE0K" stopped.

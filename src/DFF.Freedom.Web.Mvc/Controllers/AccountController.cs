@@ -73,6 +73,13 @@ namespace DFF.Freedom.Web.Controllers
 
         #region Login / Logout
 
+        /// <summary>
+        /// 登录
+        /// </summary>
+        /// <param name="userNameOrEmailAddress">用户名或Email地址</param>
+        /// <param name="returnUrl">返回链接</param>
+        /// <param name="successMessage">成功消息</param>
+        /// <returns></returns>
         public ActionResult Login(string userNameOrEmailAddress = "", string returnUrl = "", string successMessage = "")
         {
             if (string.IsNullOrWhiteSpace(returnUrl))
@@ -143,6 +150,10 @@ namespace DFF.Freedom.Web.Controllers
             return View("Register", model);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         private bool IsSelfRegistrationEnabled()
         {
             if (!AbpSession.TenantId.HasValue)

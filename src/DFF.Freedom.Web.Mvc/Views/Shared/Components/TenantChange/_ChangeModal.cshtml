@@ -5,6 +5,7 @@
 @{
     Layout = null;
 }
+@* 设置模态框头部，文字为“ChangeTenant”更改租户。 *@
 @Html.Partial("~/Views/Shared/Modals/_ModalHeader.cshtml", new ModalHeaderViewModel(L("ChangeTenant")))
 
 <div class="modal-body">
@@ -19,6 +20,7 @@
     </form>
 </div>
 
+@* 设置模态框底部为公共的页面，保存和取消按钮 *@
 @Html.Partial("~/Views/Shared/Modals/_ModalFooterWithSaveAndCancel.cshtml")
 
 <script src="~/view-resources/Views/Shared/Components/TenantChange/_ChangeModal.js" asp-append-version="true"></script>

@@ -53,13 +53,13 @@
     <text name="Yes" value="是" />
     <text name="No" value="否" />
     <text name="Optional" value="选项" />
-    <text name="LeaveEmptyToSwitchToHost">Leave empty to switch to the host</text>
+    <text name="LeaveEmptyToSwitchToHost">空白则切换到主机</text>
     <text name="UpdateNewUser" value="更新用户" />
     
-    <text name="CurrentTenant">Current tenant</text>
-    <text name="NotSelected">Not selected</text>
-    <text name="Change">Change</text>
-    <text name="ChangeTenant">Change tenant</text>
+    <text name="CurrentTenant">当前租户</text>
+    <text name="NotSelected">未选择</text>
+    <text name="Change">更改</text>
+    <text name="ChangeTenant">更改租户</text>
     
   </texts>
 </localizationDictionary>
