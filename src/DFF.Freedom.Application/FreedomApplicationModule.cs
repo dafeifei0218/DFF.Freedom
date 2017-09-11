@@ -42,9 +42,11 @@ namespace DFF.Freedom
             IocManager.RegisterAssemblyByConvention(typeof(FreedomApplicationModule).GetAssembly());
 
             // TODO: Is there somewhere else to store these, with the dto classes
+            // 有没有地方储存这些，与DTO类
             Configuration.Modules.AbpAutoMapper().Configurators.Add(cfg =>
             {
                 // Role and permission
+                // 角色和权限
                 cfg.CreateMap<Permission, string>().ConvertUsing(r => r.Name);
                 cfg.CreateMap<RolePermissionSetting, string>().ConvertUsing(r => r.Name);    
 
@@ -53,6 +55,7 @@ namespace DFF.Freedom
 
                 IRepository<Role, int> repository = IocManager.Resolve<IRepository<Role, int>>();
                 // User and role
+                // 用户和角色
                 cfg.CreateMap<UserRole, string>().ConvertUsing(  (r) =>  {
                     //TODO: Fix, this seems hacky
                     Role role = repository.FirstOrDefault(r.RoleId);

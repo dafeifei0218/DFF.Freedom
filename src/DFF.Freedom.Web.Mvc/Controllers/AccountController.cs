@@ -36,6 +36,8 @@ namespace DFF.Freedom.Web.Controllers
     /// </summary>
     public class AccountController : FreedomControllerBase
     {
+        #region 私有属性
+
         private readonly UserManager _userManager;
         private readonly TenantManager _tenantManager;
         private readonly IMultiTenancyConfig _multiTenancyConfig;
@@ -46,8 +48,26 @@ namespace DFF.Freedom.Web.Controllers
         private readonly UserRegistrationManager _userRegistrationManager;
         private readonly ISessionAppService _sessionAppService;
         private readonly ITenantCache _tenantCache;
-        private readonly INotificationPublisher _notificationPublisher;
+        private readonly INotificationPublisher _notificationPublisher; 
 
+        #endregion
+
+        #region 构造函数
+
+        /// <summary>
+        /// 构造函数
+        /// </summary>
+        /// <param name="userManager"></param>
+        /// <param name="multiTenancyConfig"></param>
+        /// <param name="tenantManager"></param>
+        /// <param name="unitOfWorkManager"></param>
+        /// <param name="abpLoginResultTypeHelper"></param>
+        /// <param name="logInManager"></param>
+        /// <param name="signInManager"></param>
+        /// <param name="userRegistrationManager"></param>
+        /// <param name="sessionAppService"></param>
+        /// <param name="tenantCache"></param>
+        /// <param name="notificationPublisher"></param>
         public AccountController(
             UserManager userManager,
             IMultiTenancyConfig multiTenancyConfig,
@@ -72,7 +92,9 @@ namespace DFF.Freedom.Web.Controllers
             _sessionAppService = sessionAppService;
             _tenantCache = tenantCache;
             _notificationPublisher = notificationPublisher;
-        }
+        } 
+
+        #endregion
 
         #region Login / Logout
 
@@ -99,6 +121,13 @@ namespace DFF.Freedom.Web.Controllers
             });
         }
 
+        /// <summary>
+        /// 登录
+        /// </summary>
+        /// <param name="loginModel"></param>
+        /// <param name="returnUrl"></param>
+        /// <param name="returnUrlHash"></param>
+        /// <returns></returns>
         [HttpPost]
         [UnitOfWork]
         public virtual async Task<JsonResult> Login(LoginViewModel loginModel, string returnUrl = "", string returnUrlHash = "")
@@ -117,13 +146,23 @@ namespace DFF.Freedom.Web.Controllers
             return Json(new AjaxResponse { TargetUrl = returnUrl });
         }
 
+        /// <summary>
+        /// 退出、注销
+        /// </summary>
+        /// <returns></returns>
         public async Task<ActionResult> Logout()
         {
             await _signInManager.SignOutAsync();
             return RedirectToAction("Login");
         }
 
-
+        /// <summary>
+        /// 获取登录结果-异步
+        /// </summary>
+        /// <param name="usernameOrEmailAddress"></param>
+        /// <param name="password"></param>
+        /// <param name="tenancyName"></param>
+        /// <returns></returns>
         private async Task<AbpLoginResult<Tenant, User>> GetLoginResultAsync(string usernameOrEmailAddress, string password, string tenancyName)
         {
             var loginResult = await _logInManager.LoginAsync(usernameOrEmailAddress, password, tenancyName);
@@ -141,11 +180,20 @@ namespace DFF.Freedom.Web.Controllers
 
         #region Register
 
+        /// <summary>
+        /// 注册
+        /// </summary>
+        /// <returns></returns>
         public ActionResult Register()
         {
             return RegisterView(new RegisterViewModel());
         }
 
+        /// <summary>
+        /// 注册视图
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
         private ActionResult RegisterView(RegisterViewModel model)
         {
             ViewBag.IsMultiTenancyEnabled = _multiTenancyConfig.IsEnabled;
@@ -154,19 +202,24 @@ namespace DFF.Freedom.Web.Controllers
         }
 
         /// <summary>
-        /// 
+        /// 是否启用自注册
         /// </summary>
         /// <returns></returns>
         private bool IsSelfRegistrationEnabled()
         {
             if (!AbpSession.TenantId.HasValue)
             {
-                return false; //No registration enabled for host users!
+                return false; //No registration enabled for host users! 无法为主机用户启用注册！
             }
 
             return true;
         }
 
+        /// <summary>
+        /// 注册
+        /// </summary>
+        /// <param name="model">注册视图模型</param>
+        /// <returns></returns>
         [HttpPost]
         [UnitOfWork]
         public async Task<ActionResult> Register(RegisterViewModel model)
@@ -276,6 +329,12 @@ namespace DFF.Freedom.Web.Controllers
 
         #region External Login
 
+        /// <summary>
+        /// 外部登录
+        /// </summary>
+        /// <param name="provider"></param>
+        /// <param name="returnUrl"></param>
+        /// <returns></returns>
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult ExternalLogin(string provider, string returnUrl)
@@ -299,6 +358,13 @@ namespace DFF.Freedom.Web.Controllers
             );
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="returnUrl"></param>
+        /// <param name="authSchema"></param>
+        /// <param name="remoteError"></param>
+        /// <returns></returns>
         [UnitOfWork]
         public virtual async Task<ActionResult> ExternalLoginCallback(string returnUrl, string authSchema, string remoteError = null)
         {
@@ -339,6 +405,11 @@ namespace DFF.Freedom.Web.Controllers
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="externalLoginInfo"></param>
+        /// <returns></returns>
         private async Task<ActionResult> RegisterForExternalLogin(ExternalLoginInfo externalLoginInfo)
         {
             var email = externalLoginInfo.Principal.FindFirstValue(ClaimTypes.Email);
@@ -363,6 +434,11 @@ namespace DFF.Freedom.Web.Controllers
             return RegisterView(viewModel);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="login"></param>
+        /// <returns></returns>
         [UnitOfWork]
         protected virtual async Task<List<Tenant>> FindPossibleTenantsOfUserAsync(UserLoginInfo login)
         {
@@ -382,11 +458,19 @@ namespace DFF.Freedom.Web.Controllers
 
         #region Helpers
 
+        /// <summary>
+        /// 重定向到应用程序主页
+        /// </summary>
+        /// <returns></returns>
         public ActionResult RedirectToAppHome()
         {
             return RedirectToAction("Index", "Home");
         }
 
+        /// <summary>
+        /// 获取应用程序主页Url链接
+        /// </summary>
+        /// <returns></returns>
         public string GetAppHomeUrl()
         {
             return Url.Action("Index", "Home");
@@ -396,6 +480,10 @@ namespace DFF.Freedom.Web.Controllers
 
         #region Change Tenant
 
+        /// <summary>
+        /// 租户更改模态框
+        /// </summary>
+        /// <returns></returns>
         public async Task<ActionResult> TenantChangeModal()
         {
             var loginInfo = await _sessionAppService.GetCurrentLoginInformations();
@@ -409,6 +497,10 @@ namespace DFF.Freedom.Web.Controllers
 
         #region Common
 
+        /// <summary>
+        /// 获取租户名称
+        /// </summary>
+        /// <returns></returns>
         private string GetTenancyNameOrNull()
         {
             if (!AbpSession.TenantId.HasValue)
@@ -419,6 +511,12 @@ namespace DFF.Freedom.Web.Controllers
             return _tenantCache.GetOrNull(AbpSession.TenantId.Value)?.TenancyName;
         }
 
+        /// <summary>
+        /// 规范返回的Url
+        /// </summary>
+        /// <param name="returnUrl">返回的Url</param>
+        /// <param name="defaultValueBuilder"></param>
+        /// <returns></returns>
         private string NormalizeReturnUrl(string returnUrl, Func<string> defaultValueBuilder = null)
         {
             if (defaultValueBuilder == null)

@@ -10,7 +10,6 @@
         /// </summary>
         public ApplicationInfoDto Application { get; set; }
 
-
         /// <summary>
         /// 用户登录信息
         /// </summary>

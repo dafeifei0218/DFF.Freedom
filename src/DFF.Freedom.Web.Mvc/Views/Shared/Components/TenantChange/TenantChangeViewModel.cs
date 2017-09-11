@@ -9,6 +9,9 @@ namespace DFF.Freedom.Web.Views.Shared.Components.TenantChange
     [AutoMapFrom(typeof(GetCurrentLoginInformationsOutput))]
     public class TenantChangeViewModel
     {
+        /// <summary>
+        /// ×â»§µÇÂ¼ÐÅÏ¢
+        /// </summary>
         public TenantLoginInfoDto Tenant { get; set; }
     }
 }

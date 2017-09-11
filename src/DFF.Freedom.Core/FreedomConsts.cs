@@ -14,9 +14,9 @@
         /// 连接字符串名称
         /// </summary>
         public const string ConnectionStringName = "Default";
-        
+
         /// <summary>
-        /// 多租户启用
+        /// 启用多租户
         /// </summary>
         public const bool MultiTenancyEnabled = true;
     }

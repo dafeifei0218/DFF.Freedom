@@ -36,7 +36,7 @@ namespace DFF.Freedom
             FreedomLocalizationConfigurer.Configure(Configuration.Localization);
 
             //Enable this line to create a multi-tenant application.
-            //启用多租户应用程序
+            //启用这行，创建一个多租户应用程序
             Configuration.MultiTenancy.IsEnabled = FreedomConsts.MultiTenancyEnabled;
 
             //Configure roles

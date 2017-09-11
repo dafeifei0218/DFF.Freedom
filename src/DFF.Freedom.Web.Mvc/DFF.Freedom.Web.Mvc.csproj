@@ -14,6 +14,9 @@
     <DefineConstants>FEATURE_SIGNALR</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove="App_Data\Logs\Logs.txt" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="wwwroot\view-resources\Views\Roles\Index.js" />
     <Content Include="wwwroot\view-resources\Views\Roles\_EditRoleModal.js" />
     <Content Include="wwwroot\view-resources\Views\Shared\_Layout.js" />
@@ -67,6 +70,7 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.0" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App_Data\Logs\" />
     <Folder Include="wwwroot\view-resources\Views\_Bundles\" />
     <Folder Include="wwwroot\view-resources\Views\_Bundles\" />
   </ItemGroup>
