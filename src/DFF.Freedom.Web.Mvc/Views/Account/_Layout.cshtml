@@ -54,12 +54,12 @@
 
 </head>
 <body class="login-page">
-
     <div class="login-box">
         <div class="logo">
             <a href="javascript:void(0);">Freedom</a>
         </div>
 
+        @* 是否启用多租户 *@
         @if (MultiTenancyConfig.IsEnabled)
         {
             <div class="tenant-change-box">
@@ -69,6 +69,7 @@
 
         @RenderBody()
 
+        @* 语言选项视图组件，使用/Views/Shared/Components/AccountLanguages/Default.cshtml *@
         <vc:account-languages></vc:account-languages>
 
         <div class="row">
@@ -78,6 +79,7 @@
         </div>
 
     </div>
+
     <environment names="Development">
         <script src="~/lib/json2/json2.js" asp-append-version="true"></script>
         <script src="~/lib/jquery/dist/jquery.js" asp-append-version="true"></script>
@@ -105,8 +107,8 @@
     </environment>
 
     <script>
-    //Localizing momentjs
-    moment.locale('@CultureInfo.CurrentUICulture.Name');
+        //Localizing momentjs
+        moment.locale('@CultureInfo.CurrentUICulture.Name');
     </script>
 
     <!-- Dynamic scripts of ABP system (They are created on runtime and can not be bundled) -->

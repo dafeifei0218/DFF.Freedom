@@ -31,6 +31,9 @@ using Microsoft.AspNetCore.Identity;
 
 namespace DFF.Freedom.Web.Controllers
 {
+    /// <summary>
+    /// 账户 控制器
+    /// </summary>
     public class AccountController : FreedomControllerBase
     {
         private readonly UserManager _userManager;

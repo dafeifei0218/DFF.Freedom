@@ -8,6 +8,7 @@
     <PackageId>DFF.Freedom.Web.Mvc</PackageId>
     <UserSecretsId>DFF-Freedom-56C2EF2F-ABD6-4EFC-AAF2-2E81C34E8FB1</UserSecretsId>
     <RootNamespace>DFF.Freedom.Web</RootNamespace>
+    <EnableDefaultContentItems>false</EnableDefaultContentItems>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(TargetFramework)' == 'net461' ">
     <DefineConstants>FEATURE_SIGNALR</DefineConstants>

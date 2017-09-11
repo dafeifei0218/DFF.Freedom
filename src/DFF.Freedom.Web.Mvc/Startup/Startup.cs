@@ -20,15 +20,27 @@ using DFF.Freedom.Owin;
 
 namespace DFF.Freedom.Web.Startup
 {
+    /// <summary>
+    /// 启动类
+    /// </summary>
     public class Startup
     {
         private readonly IConfigurationRoot _appConfiguration;
 
+        /// <summary>
+        /// 构造函数
+        /// </summary>
+        /// <param name="env">宿主环境接口</param>
         public Startup(IHostingEnvironment env)
         {
             _appConfiguration = env.GetAppConfiguration();
         }
 
+        /// <summary>
+        /// 配置服务
+        /// </summary>
+        /// <param name="services">服务集合</param>
+        /// <returns></returns>
         public IServiceProvider ConfigureServices(IServiceCollection services)
         {
             //MVC
@@ -42,15 +54,23 @@ namespace DFF.Freedom.Web.Startup
             services.AddScoped<IWebResourceManager, WebResourceManager>();
 
             //Configure Abp and Dependency Injection
+            //配置Abp依赖注入
             return services.AddAbp<FreedomWebMvcModule>(options =>
             {
                 //Configure Log4Net logging
+                //配置Log4Net日志
                 options.IocManager.IocContainer.AddFacility<LoggingFacility>(
                     f => f.UseAbpLog4Net().WithConfig("log4net.config")
                 );
             });
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="app"></param>
+        /// <param name="env"></param>
+        /// <param name="loggerFactory"></param>
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
             app.UseAbp(); //Initializes ABP framework.
