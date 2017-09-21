@@ -9,7 +9,7 @@ namespace DFF.Freedom.Authentication.External
     public class ExternalAuthConfiguration : IExternalAuthConfiguration, ISingletonDependency
     {
         /// <summary>
-        /// 提供者
+        /// 外部登录信息列表的提供者
         /// </summary>
         public List<ExternalLoginProviderInfo> Providers { get; }
 

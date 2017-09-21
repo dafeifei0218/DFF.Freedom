@@ -243,6 +243,12 @@ namespace DFF.Freedom.Controllers
             }
         }
 
+        /// <summary>
+        /// 创建访问令牌
+        /// </summary>
+        /// <param name="claims"></param>
+        /// <param name="expiration"></param>
+        /// <returns></returns>
         private string CreateAccessToken(IEnumerable<Claim> claims, TimeSpan? expiration = null)
         {
             var now = DateTime.UtcNow;
@@ -259,6 +265,11 @@ namespace DFF.Freedom.Controllers
             return new JwtSecurityTokenHandler().WriteToken(jwtSecurityToken);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="identity"></param>
+        /// <returns></returns>
         private static List<Claim> CreateJwtClaims(ClaimsIdentity identity)
         {
             var claims = identity.Claims.ToList();
@@ -275,6 +286,11 @@ namespace DFF.Freedom.Controllers
             return claims;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="accessToken"></param>
+        /// <returns></returns>
         private string GetEncrpyedAccessToken(string accessToken)
         {
             return SimpleStringCipher.Instance.Encrypt(accessToken, AppConsts.DefaultPassPhrase);

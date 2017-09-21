@@ -2,10 +2,19 @@
 
 namespace DFF.Freedom.Configuration.Ui
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public static class UiThemes
     {
+        /// <summary>
+        /// 
+        /// </summary>
         public static List<UiThemeInfo> All { get; }
 
+        /// <summary>
+        /// 
+        /// </summary>
         static UiThemes()
         {
             All = new List<UiThemeInfo>

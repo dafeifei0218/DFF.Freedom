@@ -51,6 +51,7 @@ namespace DFF.Freedom.Web
                 return webHostFolder;
             }
 
+            //网站项目不能找到根文件夹
             throw new Exception("Could not find root folder of the web project!");
         }
 

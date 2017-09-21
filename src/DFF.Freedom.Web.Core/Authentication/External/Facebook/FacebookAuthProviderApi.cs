@@ -62,7 +62,7 @@ namespace DFF.Freedom.Authentication.External.Facebook
         }
 
         /// <summary>
-        /// 
+        /// 生成应用程序的秘钥证明
         /// </summary>
         /// <param name="accessToken">访问令牌</param>
         /// <returns></returns>

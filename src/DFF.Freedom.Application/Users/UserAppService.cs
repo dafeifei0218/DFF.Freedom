@@ -25,8 +25,7 @@ namespace DFF.Freedom.Users
         private readonly UserManager _userManager;
         private readonly IPasswordHasher<User> _passwordHasher;
         private readonly IRepository<Role> _roleRepository;
-
-
+        
         /// <summary>
         /// 构造函数
         /// </summary>
@@ -40,9 +39,14 @@ namespace DFF.Freedom.Users
             _roleRepository = roleRepository;
         }
         
+        /// <summary>
+        /// 创建用户
+        /// </summary>
+        /// <param name="input">创建用户数据传输对象</param>
+        /// <returns></returns>
         public override async Task<UserDto> Create(CreateUserDto input)
         {
-            CheckCreatePermission();
+            CheckCreatePermission(); //检查创建权限
 
             var user = ObjectMapper.Map<User>(input);
 
@@ -62,6 +66,11 @@ namespace DFF.Freedom.Users
             return MapToEntityDto(user);
         }
 
+        /// <summary>
+        /// 更新用户
+        /// </summary>
+        /// <param name="input">用户传输对象</param>
+        /// <returns></returns>
         public override async Task<UserDto> Update(UserDto input)
         {
             CheckUpdatePermission();
@@ -80,18 +89,32 @@ namespace DFF.Freedom.Users
             return await Get(input);
         }
 
+        /// <summary>
+        /// 删除用户
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
         public override async Task Delete(EntityDto<long> input)
         {
             var user = await _userManager.GetUserByIdAsync(input.Id);
             await _userManager.DeleteAsync(user);
 		}
 
+        /// <summary>
+        /// 获取角色列表
+        /// </summary>
+        /// <returns></returns>
         public async Task<ListResultDto<RoleDto>> GetRoles()
         {
             var roles = await _roleRepository.GetAllListAsync();
             return new ListResultDto<RoleDto>(ObjectMapper.Map<List<RoleDto>>(roles));
         }
 
+        /// <summary>
+        /// 转换为实体
+        /// </summary>
+        /// <param name="createInput"></param>
+        /// <returns></returns>
         protected override User MapToEntity(CreateUserDto createInput)
         {
             var user = ObjectMapper.Map<User>(createInput);
@@ -99,27 +122,52 @@ namespace DFF.Freedom.Users
             return user;
         }
 
+        /// <summary>
+        /// 转换为实体
+        /// </summary>
+        /// <param name="input"></param>
+        /// <param name="user"></param>
         protected override void MapToEntity(UserDto input, User user)
         {
             ObjectMapper.Map(input, user);
             user.SetNormalizedNames();
         }
         
+        /// <summary>
+        /// 创建过滤查询
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
         protected override IQueryable<User> CreateFilteredQuery(PagedResultRequestDto input)
         {
             return Repository.GetAllIncluding(x => x.Roles);
         }
 
+        /// <summary>
+        /// 根据Id获取实体 异步方法
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         protected override async Task<User> GetEntityByIdAsync(long id)
         {
             return await Repository.GetAllIncluding(x => x.Roles).FirstOrDefaultAsync(x => x.Id == id);
         }
         
+        /// <summary>
+        /// 申请排序
+        /// </summary>
+        /// <param name="query"></param>
+        /// <param name="input"></param>
+        /// <returns></returns>
         protected override IQueryable<User> ApplySorting(IQueryable<User> query, PagedResultRequestDto input)
         {
             return query.OrderBy(r => r.UserName);
         }
 
+        /// <summary>
+        /// 检查错误
+        /// </summary>
+        /// <param name="identityResult">认证及结果</param>
         protected virtual void CheckErrors(IdentityResult identityResult)
         {
             identityResult.CheckErrors(LocalizationManager);

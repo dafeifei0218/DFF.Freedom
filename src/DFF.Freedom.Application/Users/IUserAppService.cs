@@ -11,6 +11,10 @@ namespace DFF.Freedom.Users
     /// </summary>
     public interface IUserAppService : IAsyncCrudAppService<UserDto, long, PagedResultRequestDto, CreateUserDto, UserDto>
     {
+        /// <summary>
+        /// 获取角色列表
+        /// </summary>
+        /// <returns></returns>
         Task<ListResultDto<RoleDto>> GetRoles();
     }
 }

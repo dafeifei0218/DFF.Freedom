@@ -16,8 +16,8 @@ namespace DFF.Freedom.Authentication.External
         /// <summary>
         /// 构造函数
         /// </summary>
-        /// <param name="iocResolver"></param>
-        /// <param name="externalAuthConfiguration"></param>
+        /// <param name="iocResolver">IOC解析器</param>
+        /// <param name="externalAuthConfiguration">外部认证配置</param>
         public ExternalAuthManager(IIocResolver iocResolver, IExternalAuthConfiguration externalAuthConfiguration)
         {
             _iocResolver = iocResolver;
@@ -44,7 +44,7 @@ namespace DFF.Freedom.Authentication.External
         /// </summary>
         /// <param name="provider">提供者字符串</param>
         /// <param name="accessCode">访问代码</param>
-        /// <returns></returns>
+        /// <returns>外部认证用户信息列表</returns>
         public Task<ExternalAuthUserInfo> GetUserInfo(string provider, string accessCode)
         {
             using (var providerApi = CreateProviderApi(provider))
@@ -53,6 +53,11 @@ namespace DFF.Freedom.Authentication.External
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="provider"></param>
+        /// <returns></returns>
         public IDisposableDependencyObjectWrapper<IExternalAuthProviderApi> CreateProviderApi(string provider)
         {
             var providerInfo = _externalAuthConfiguration.Providers.FirstOrDefault(p => p.Name == provider);

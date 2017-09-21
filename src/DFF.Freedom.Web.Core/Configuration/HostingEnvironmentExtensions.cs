@@ -4,7 +4,7 @@ using Microsoft.Extensions.Configuration;
 namespace DFF.Freedom.Configuration
 {
     /// <summary>
-    /// 宿主环境 扩展类
+    /// 宿主环境扩展类
     /// </summary>
     public static class HostingEnvironmentExtensions
     {

@@ -7,7 +7,7 @@ using Abp.UI;
 namespace DFF.Freedom.Authorization
 {
     /// <summary>
-    /// Abp登录结果类型帮助类
+    /// Abp登录结果类型 帮助类
     /// </summary>
     public class AbpLoginResultTypeHelper : AbpServiceBase, ITransientDependency
     {

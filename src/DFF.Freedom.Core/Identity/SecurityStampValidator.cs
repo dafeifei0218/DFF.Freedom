@@ -7,8 +7,16 @@ using Microsoft.Extensions.Options;
 
 namespace DFF.Freedom.Identity
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class SecurityStampValidator : AbpSecurityStampValidator<Tenant, Role, User>
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="options"></param>
+        /// <param name="signInManager"></param>
         public SecurityStampValidator(
             IOptions<IdentityOptions> options, 
             SignInManager signInManager) 

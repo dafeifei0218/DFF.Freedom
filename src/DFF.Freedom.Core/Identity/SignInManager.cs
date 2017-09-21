@@ -12,8 +12,21 @@ using Microsoft.Extensions.Options;
 
 namespace DFF.Freedom.Identity
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class SignInManager : AbpSignInManager<Tenant, Role, User>
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="userManager"></param>
+        /// <param name="contextAccessor"></param>
+        /// <param name="claimsFactory"></param>
+        /// <param name="optionsAccessor"></param>
+        /// <param name="logger"></param>
+        /// <param name="unitOfWorkManager"></param>
+        /// <param name="settingManager"></param>
         public SignInManager(
             UserManager userManager, 
             IHttpContextAccessor contextAccessor,

@@ -18,6 +18,9 @@ namespace DFF.Freedom.Sessions.Dto
         /// </summary>
         public DateTime ReleaseDate { get; set; }
 
+        /// <summary>
+        /// 特征
+        /// </summary>
         public Dictionary<string, bool> Features { get; set; }
     }
 }

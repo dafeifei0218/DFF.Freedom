@@ -67,6 +67,7 @@ namespace DFF.Freedom.Authorization.Accounts.Dto
             {
                 if (!UserName.Equals(EmailAddress) && ValidationHelper.IsEmail(UserName))
                 {
+                    //用户名不能是电子邮箱地址，除非与您的电子邮件地址相同！
                     yield return new ValidationResult("Username cannot be an email address unless it's same with your email address !");
                 }
             }

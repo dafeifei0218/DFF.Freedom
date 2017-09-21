@@ -38,7 +38,7 @@ namespace DFF.Freedom
         /// <summary>
         /// 构造函数
         /// </summary>
-        /// <param name="env"></param>
+        /// <param name="env">宿主环境</param>
         public FreedomWebCoreModule(IHostingEnvironment env)
         {
             _env = env;

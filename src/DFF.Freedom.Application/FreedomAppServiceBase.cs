@@ -42,6 +42,7 @@ namespace DFF.Freedom
             var user = UserManager.FindByIdAsync(AbpSession.GetUserId().ToString());
             if (user == null)
             {
+                //没有当前用户！
                 throw new Exception("There is no current user!");
             }
 

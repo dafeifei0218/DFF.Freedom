@@ -7,8 +7,15 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace DFF.Freedom.Identity
 {
+    /// <summary>
+    /// 认证注册
+    /// </summary>
     public static class IdentityRegistrar
     {
+        /// <summary>
+        /// 注册
+        /// </summary>
+        /// <param name="services"></param>
         public static void Register(IServiceCollection services)
         {
             services.AddLogging();

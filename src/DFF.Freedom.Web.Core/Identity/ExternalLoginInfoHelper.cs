@@ -5,8 +5,16 @@ using Abp.Extensions;
 
 namespace DFF.Freedom.Identity
 {
+    /// <summary>
+    /// 外部登录信息 帮助类
+    /// </summary>
     public class ExternalLoginInfoHelper
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="claims"></param>
+        /// <returns></returns>
         public static (string name, string surname) GetNameAndSurnameFromClaims(List<Claim> claims)
         {
             string name = null;

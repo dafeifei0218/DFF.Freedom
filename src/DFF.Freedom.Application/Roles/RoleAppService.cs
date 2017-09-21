@@ -37,6 +37,11 @@ namespace DFF.Freedom.Roles
             _userManager = userManager;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
         public override async Task<RoleDto> Create(CreateRoleDto input)
         {
             CheckCreatePermission();

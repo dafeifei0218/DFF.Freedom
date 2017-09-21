@@ -33,17 +33,18 @@ namespace DFF.Freedom.MultiTenancy
         /// <summary>
         /// 构造函数
         /// </summary>
+        /// <param name="repository">仓储</param>
         /// <param name="tenantManager">租户管理</param>
-        /// <param name="roleManager">角色管理</param>
         /// <param name="editionManager">版本管理</param>
+        /// <param name="userManager"></param>
+        /// <param name="roleManager">角色管理</param>
         /// <param name="abpZeroDbMigrator">AbpZero数据迁移</param>
+        /// <param name="passwordHasher"></param>
         public TenantAppService(
             IRepository<Tenant, int> repository, 
-
             TenantManager tenantManager, 
             EditionManager editionManager,
-            UserManager userManager,
-            
+            UserManager userManager,            
             RoleManager roleManager, 
             IAbpZeroDbMigrator abpZeroDbMigrator, 
             IPasswordHasher<User> passwordHasher
@@ -117,6 +118,11 @@ namespace DFF.Freedom.MultiTenancy
             return MapToEntityDto(tenant);
         }
 
+        /// <summary>
+        /// 转换为实体
+        /// </summary>
+        /// <param name="updateInput">更新租户 输入模型</param>
+        /// <param name="entity">租户实体</param>
         protected override void MapToEntity(TenantDto updateInput, Tenant entity)
         {
             //Manually mapped since TenantDto contains non-editable properties too.
@@ -125,6 +131,11 @@ namespace DFF.Freedom.MultiTenancy
             entity.IsActive = updateInput.IsActive;
         }
 
+        /// <summary>
+        /// 删除
+        /// </summary>
+        /// <param name="input">实体 输入模型</param>
+        /// <returns></returns>
         public override async Task Delete(EntityDto<int> input)
         {
             CheckDeletePermission();
@@ -133,6 +144,10 @@ namespace DFF.Freedom.MultiTenancy
             await _tenantManager.DeleteAsync(tenant);
         }
 
+        /// <summary>
+        /// 检查错误
+        /// </summary>
+        /// <param name="identityResult">认证结果</param>
         private void CheckErrors(IdentityResult identityResult)
         {
             identityResult.CheckErrors(LocalizationManager);

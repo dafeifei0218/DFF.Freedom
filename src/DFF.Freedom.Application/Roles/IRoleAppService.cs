@@ -10,6 +10,10 @@ namespace DFF.Freedom.Roles
     /// </summary>
     public interface IRoleAppService : IAsyncCrudAppService<RoleDto, int, PagedResultRequestDto, CreateRoleDto, RoleDto>
     {
+        /// <summary>
+        /// 获取全部权限
+        /// </summary>
+        /// <returns></returns>
         Task<ListResultDto<PermissionDto>> GetAllPermissions();
     }
 }
