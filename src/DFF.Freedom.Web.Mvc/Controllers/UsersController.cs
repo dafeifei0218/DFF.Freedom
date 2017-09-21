@@ -9,16 +9,27 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace DFF.Freedom.Web.Controllers
 {
+    /// <summary>
+    /// 用户 控制器
+    /// </summary>
     [AbpMvcAuthorize(PermissionNames.Pages_Users)]
     public class UsersController : FreedomControllerBase
     {
         private readonly IUserAppService _userAppService;
-
+        
+        /// <summary>
+        /// 构造函数
+        /// </summary>
+        /// <param name="userAppService"></param>
         public UsersController(IUserAppService userAppService)
         {
             _userAppService = userAppService;
         }
 
+        /// <summary>
+        /// 管理页面
+        /// </summary>
+        /// <returns></returns>
         public async Task<ActionResult> Index()
         {
             var users = (await _userAppService.GetAll(new PagedResultRequestDto {MaxResultCount = int.MaxValue})).Items; //Paging not implemented yet
@@ -31,6 +42,11 @@ namespace DFF.Freedom.Web.Controllers
             return View(model);
         }
 
+        /// <summary>
+        /// 编辑用户模态窗口
+        /// </summary>
+        /// <param name="userId">用户Id</param>
+        /// <returns></returns>
         public async Task<ActionResult> EditUserModal(long userId)
         {
             var user = await _userAppService.Get(new EntityDto<long>(userId));

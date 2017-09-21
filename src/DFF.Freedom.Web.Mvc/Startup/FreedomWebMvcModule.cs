@@ -19,7 +19,7 @@ namespace DFF.Freedom.Web.Startup
         /// <summary>
         /// 构造函数
         /// </summary>
-        /// <param name="env"></param>
+        /// <param name="env">宿主机环境</param>
         public FreedomWebMvcModule(IHostingEnvironment env)
         {
             _env = env;

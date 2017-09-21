@@ -7,10 +7,17 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace DFF.Freedom.Web.Controllers
 {
+    /// <summary>
+    /// 错误 控制器
+    /// </summary>
     public class ErrorController : AbpController
     {
         private readonly IErrorInfoBuilder _errorInfoBuilder;
 
+        /// <summary>
+        /// 构造函数
+        /// </summary>
+        /// <param name="errorInfoBuilder"></param>
         public ErrorController(IErrorInfoBuilder errorInfoBuilder)
         {
             _errorInfoBuilder = errorInfoBuilder;

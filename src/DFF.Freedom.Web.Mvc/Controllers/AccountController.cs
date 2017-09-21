@@ -125,7 +125,7 @@ namespace DFF.Freedom.Web.Controllers
         /// 登录
         /// </summary>
         /// <param name="loginModel"></param>
-        /// <param name="returnUrl"></param>
+        /// <param name="returnUrl">返回链接</param>
         /// <param name="returnUrlHash"></param>
         /// <returns></returns>
         [HttpPost]
@@ -159,9 +159,9 @@ namespace DFF.Freedom.Web.Controllers
         /// <summary>
         /// 获取登录结果-异步
         /// </summary>
-        /// <param name="usernameOrEmailAddress"></param>
-        /// <param name="password"></param>
-        /// <param name="tenancyName"></param>
+        /// <param name="usernameOrEmailAddress">用户名或Email地址</param>
+        /// <param name="password">密码</param>
+        /// <param name="tenancyName">租户名称</param>
         /// <returns></returns>
         private async Task<AbpLoginResult<Tenant, User>> GetLoginResultAsync(string usernameOrEmailAddress, string password, string tenancyName)
         {
@@ -192,11 +192,11 @@ namespace DFF.Freedom.Web.Controllers
         /// <summary>
         /// 注册视图
         /// </summary>
-        /// <param name="model"></param>
+        /// <param name="model">注册视图模型</param>
         /// <returns></returns>
         private ActionResult RegisterView(RegisterViewModel model)
         {
-            ViewBag.IsMultiTenancyEnabled = _multiTenancyConfig.IsEnabled;
+            ViewBag.IsMultiTenancyEnabled = _multiTenancyConfig.IsEnabled; //多租户是否启用。
 
             return View("Register", model);
         }
@@ -208,7 +208,7 @@ namespace DFF.Freedom.Web.Controllers
         private bool IsSelfRegistrationEnabled()
         {
             if (!AbpSession.TenantId.HasValue)
-            {
+            { //如果租户Id不为空
                 return false; //No registration enabled for host users! 无法为主机用户启用注册！
             }
 
@@ -231,18 +231,18 @@ namespace DFF.Freedom.Web.Controllers
                 {
                     externalLoginInfo = await _signInManager.GetExternalLoginInfoAsync();
                     if (externalLoginInfo == null)
-                    {
-                        throw new Exception("Can not external login!");
+                    { //外部登录信息为空
+                        throw new Exception("Can not external login!"); //不能外部登录
                     }
 
                     model.UserName = model.EmailAddress;
-                    model.Password = Authorization.Users.User.CreateRandomPassword();
+                    model.Password = Authorization.Users.User.CreateRandomPassword(); //创建随机密码
                 }
                 else
                 {
                     if (model.UserName.IsNullOrEmpty() || model.Password.IsNullOrEmpty())
-                    {
-                        throw new UserFriendlyException(L("FormIsNotValidMessage"));
+                    { //如果用户名或密码为空
+                        throw new UserFriendlyException(L("FormIsNotValidMessage")); //表单不是有效的消息
                     }
                 }
 
@@ -256,6 +256,7 @@ namespace DFF.Freedom.Web.Controllers
                 );
 
                 //Getting tenant-specific settings
+                //获取特定租户的设置
                 var isEmailConfirmationRequiredForLogin = await SettingManager.GetSettingValueAsync<bool>(AbpZeroSettingNames.UserManagement.IsEmailConfirmationRequiredForLogin);
 
                 if (model.IsExternalLogin)
@@ -285,6 +286,7 @@ namespace DFF.Freedom.Web.Controllers
                 var tenant = await _tenantManager.GetByIdAsync(user.TenantId.Value);
 
                 //Directly login if possible
+                //如果可能的话直接登录
                 if (user.IsActive && (user.IsEmailConfirmed || !isEmailConfirmationRequiredForLogin))
                 {
                     AbpLoginResult<Tenant, User> loginResult;
@@ -333,7 +335,7 @@ namespace DFF.Freedom.Web.Controllers
         /// 外部登录
         /// </summary>
         /// <param name="provider"></param>
-        /// <param name="returnUrl"></param>
+        /// <param name="returnUrl">返回链接</param>
         /// <returns></returns>
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -359,9 +361,9 @@ namespace DFF.Freedom.Web.Controllers
         }
 
         /// <summary>
-        /// 
+        /// 外部登录回调函数
         /// </summary>
-        /// <param name="returnUrl"></param>
+        /// <param name="returnUrl">返回链接</param>
         /// <param name="authSchema"></param>
         /// <param name="remoteError"></param>
         /// <returns></returns>
@@ -406,9 +408,9 @@ namespace DFF.Freedom.Web.Controllers
         }
 
         /// <summary>
-        /// 
+        /// 外部登录注册
         /// </summary>
-        /// <param name="externalLoginInfo"></param>
+        /// <param name="externalLoginInfo">外部登录注册信息</param>
         /// <returns></returns>
         private async Task<ActionResult> RegisterForExternalLogin(ExternalLoginInfo externalLoginInfo)
         {
@@ -437,7 +439,7 @@ namespace DFF.Freedom.Web.Controllers
         /// <summary>
         /// 
         /// </summary>
-        /// <param name="login"></param>
+        /// <param name="login">用户登录信息</param>
         /// <returns></returns>
         [UnitOfWork]
         protected virtual async Task<List<Tenant>> FindPossibleTenantsOfUserAsync(UserLoginInfo login)
@@ -504,7 +506,7 @@ namespace DFF.Freedom.Web.Controllers
         private string GetTenancyNameOrNull()
         {
             if (!AbpSession.TenantId.HasValue)
-            {
+            { //如果租户Id不为空
                 return null;
             }
 
@@ -515,7 +517,7 @@ namespace DFF.Freedom.Web.Controllers
         /// 规范返回的Url
         /// </summary>
         /// <param name="returnUrl">返回的Url</param>
-        /// <param name="defaultValueBuilder"></param>
+        /// <param name="defaultValueBuilder">默认值建造者</param>
         /// <returns></returns>
         private string NormalizeReturnUrl(string returnUrl, Func<string> defaultValueBuilder = null)
         {

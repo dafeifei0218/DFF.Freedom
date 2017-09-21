@@ -51,6 +51,7 @@ namespace DFF.Freedom.Web.Startup
 
             IdentityRegistrar.Register(services);
 
+            //网站资源加载
             services.AddScoped<IWebResourceManager, WebResourceManager>();
 
             //Configure Abp and Dependency Injection
@@ -66,14 +67,14 @@ namespace DFF.Freedom.Web.Startup
         }
 
         /// <summary>
-        /// 
+        /// 配置
         /// </summary>
-        /// <param name="app"></param>
-        /// <param name="env"></param>
-        /// <param name="loggerFactory"></param>
+        /// <param name="app">应用程序建造者</param>
+        /// <param name="env">宿主机环境</param>
+        /// <param name="loggerFactory">日志工厂</param>
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
-            app.UseAbp(); //Initializes ABP framework.
+            app.UseAbp(); //Initializes ABP framework. 初始化ABP框架。
 
             if (env.IsDevelopment())
             {

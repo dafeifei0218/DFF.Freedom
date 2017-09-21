@@ -13,7 +13,7 @@ namespace DFF.Freedom.Web.Views.Shared.Components.SideBarUserArea
         public GetCurrentLoginInformationsOutput LoginInformations { get; set; }
 
         /// <summary>
-        /// 是否启用多租户
+        /// 多租户是否启用
         /// </summary>
         public bool IsMultiTenancyEnabled { get; set; }
 

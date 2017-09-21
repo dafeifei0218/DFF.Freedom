@@ -6,9 +6,14 @@ namespace DFF.Freedom.Web.Startup
 {
     /// <summary>
     /// This class defines menus for the application.
+    /// 定义应用程序菜单
     /// </summary>
     public class FreedomNavigationProvider : NavigationProvider
     {
+        /// <summary>
+        /// 设置导航
+        /// </summary>
+        /// <param name="context">导航提供者上下文</param>
         public override void SetNavigation(INavigationProviderContext context)
         {
             context.Manager.MainMenu

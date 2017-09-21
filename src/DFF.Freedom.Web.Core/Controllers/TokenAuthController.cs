@@ -216,7 +216,7 @@ namespace DFF.Freedom.Controllers
         private string GetTenancyNameOrNull()
         {
             if (!AbpSession.TenantId.HasValue)
-            {
+            { //如果租户Id不为空
                 return null;
             }
 

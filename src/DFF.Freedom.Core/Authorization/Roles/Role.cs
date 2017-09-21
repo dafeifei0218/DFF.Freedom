@@ -9,6 +9,7 @@ namespace DFF.Freedom.Authorization.Roles
     /// </summary>
     public class Role : AbpRole<User>
     {
+        //最大描述长度
         public const int MaxDescriptionLength = 5000;
 
         /// <summary>
@@ -41,7 +42,10 @@ namespace DFF.Freedom.Authorization.Roles
 
         }
 
+        /// <summary>
+        /// 描述
+        /// </summary>
         [MaxLength(MaxDescriptionLength)]
-        public string Description {get; set;}
+        public string Description { get; set; }
     }
 }

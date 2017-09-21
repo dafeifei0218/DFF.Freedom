@@ -96,7 +96,7 @@ namespace DFF.Freedom.Authorization.Users
         private void CheckForTenant()
         {
             if (!AbpSession.TenantId.HasValue)
-            {
+            { //如果租户Id不为空
                 //无法注册host用户
                 throw new InvalidOperationException("Can not register host users!");
             }
@@ -109,7 +109,7 @@ namespace DFF.Freedom.Authorization.Users
         private async Task<Tenant> GetActiveTenantAsync()
         {
             if (!AbpSession.TenantId.HasValue)
-            {
+            { //如果租户Id不为空
                 return null;
             }
 

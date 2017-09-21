@@ -29,9 +29,9 @@ namespace DFF.Freedom.Authorization
         /// <param name="userLoginAttemptRepository">用户登录尝试仓储</param>
         /// <param name="userManagementConfig">用户管理配置</param>
         /// <param name="iocResolver">IOC控制反转解析器</param>
-		/// <param></param>		
+		/// <param name="passwordHasher"></param>
         /// <param name="roleManager">角色管理</param>
-		/// <param></param>		
+		/// <param name="claimsPrincipalFactory"></param>		
         public LogInManager(
             UserManager userManager, 
             IMultiTenancyConfig multiTenancyConfig,

@@ -13,7 +13,7 @@ namespace DFF.Freedom.Authorization.Roles
         /// <summary>
         /// 构造函数
         /// </summary>
-        /// <param name="unitOfWorkManager"></param>
+        /// <param name="unitOfWorkManager">工作单元管理类</param>
         /// <param name="roleRepository">角色仓储</param>
         /// <param name="rolePermissionSettingRepository">角色权限设置仓储</param>
         public RoleStore(

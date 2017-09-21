@@ -20,11 +20,11 @@ namespace DFF.Freedom.Authorization.Roles
         /// 构造函数
         /// </summary>
         /// <param name="store">角色存储</param>
-        /// <param name=""></param>
-        /// <param name=""></param>
-        /// <param name=""></param>
-        /// <param name=""></param>
-        /// <param name=""></param>
+        /// <param name="roleValidators"></param>
+        /// <param name="keyNormalizer"></param>
+        /// <param name="errors"></param>
+        /// <param name="logger"></param>
+        /// <param name="contextAccessor"></param>
         /// <param name="permissionManager">权限管理</param>
         /// <param name="cacheManager">缓存管理</param>
         /// <param name="unitOfWorkManager">工作单元管理</param>

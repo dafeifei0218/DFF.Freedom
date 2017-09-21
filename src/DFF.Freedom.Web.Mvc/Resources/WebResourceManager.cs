@@ -18,7 +18,7 @@ namespace DFF.Freedom.Web.Resources
         /// <summary>
         /// 构造函数
         /// </summary>
-        /// <param name="environment"></param>
+        /// <param name="environment">宿主机环境</param>
         public WebResourceManager(IHostingEnvironment environment)
         {
             _environment = environment;
@@ -28,7 +28,7 @@ namespace DFF.Freedom.Web.Resources
         /// <summary>
         /// 添加Script脚本
         /// </summary>
-        /// <param name="url"></param>
+        /// <param name="url">url连接</param>
         /// <param name="addMinifiedOnProd"></param>
         public void AddScript(string url, bool addMinifiedOnProd = true)
         {
@@ -63,7 +63,7 @@ namespace DFF.Freedom.Web.Resources
         /// 规范的Url
         /// </summary>
         /// <param name="url">Url连接</param>
-        /// <param name="ext">后缀</param>
+        /// <param name="ext">后缀名</param>
         /// <returns></returns>
         private string NormalizeUrl(string url, string ext)
         {
