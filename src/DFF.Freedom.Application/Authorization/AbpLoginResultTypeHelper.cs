@@ -56,7 +56,7 @@ namespace DFF.Freedom.Authorization
         /// 为失败的登录尝试创建本地化消息。
         /// </summary>
         /// <param name="result">Abp登录结果类型</param>
-        /// <param name="usernameOrEmailAddress"></param>
+        /// <param name="usernameOrEmailAddress">用户名称或邮件地址</param>
         /// <param name="tenancyName">租户名称</param>
         /// <returns></returns>
         public string CreateLocalizedMessageForFailedLoginAttempt(AbpLoginResultType result, string usernameOrEmailAddress, string tenancyName)

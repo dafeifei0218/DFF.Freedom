@@ -73,7 +73,7 @@ namespace DFF.Freedom.Users
         /// <returns></returns>
         public override async Task<UserDto> Update(UserDto input)
         {
-            CheckUpdatePermission();
+            CheckUpdatePermission(); //检查更新权限
 
             var user = await _userManager.GetUserByIdAsync(input.Id);
 
@@ -92,7 +92,7 @@ namespace DFF.Freedom.Users
         /// <summary>
         /// 删除用户
         /// </summary>
-        /// <param name="input"></param>
+        /// <param name="input">被删除的实体数据传输对象</param>
         /// <returns></returns>
         public override async Task Delete(EntityDto<long> input)
         {
@@ -113,7 +113,7 @@ namespace DFF.Freedom.Users
         /// <summary>
         /// 转换为实体
         /// </summary>
-        /// <param name="createInput"></param>
+        /// <param name="createInput">创建用户数据传输对象</param>
         /// <returns></returns>
         protected override User MapToEntity(CreateUserDto createInput)
         {
@@ -125,8 +125,8 @@ namespace DFF.Freedom.Users
         /// <summary>
         /// 转换为实体
         /// </summary>
-        /// <param name="input"></param>
-        /// <param name="user"></param>
+        /// <param name="input">用户数据传输对象</param>
+        /// <param name="user">用户实体</param>
         protected override void MapToEntity(UserDto input, User user)
         {
             ObjectMapper.Map(input, user);
@@ -136,7 +136,7 @@ namespace DFF.Freedom.Users
         /// <summary>
         /// 创建过滤查询
         /// </summary>
-        /// <param name="input"></param>
+        /// <param name="input">分页结果请求数据传输对象</param>
         /// <returns></returns>
         protected override IQueryable<User> CreateFilteredQuery(PagedResultRequestDto input)
         {
@@ -146,18 +146,18 @@ namespace DFF.Freedom.Users
         /// <summary>
         /// 根据Id获取实体 异步方法
         /// </summary>
-        /// <param name="id"></param>
+        /// <param name="id">主键</param>
         /// <returns></returns>
         protected override async Task<User> GetEntityByIdAsync(long id)
         {
             return await Repository.GetAllIncluding(x => x.Roles).FirstOrDefaultAsync(x => x.Id == id);
         }
-        
+
         /// <summary>
-        /// 申请排序
+        /// 应用排序
         /// </summary>
-        /// <param name="query"></param>
-        /// <param name="input"></param>
+        /// <param name="query">用户查询结果</param>
+        /// <param name="input">分页结果请求数据传输对象</param>
         /// <returns></returns>
         protected override IQueryable<User> ApplySorting(IQueryable<User> query, PagedResultRequestDto input)
         {

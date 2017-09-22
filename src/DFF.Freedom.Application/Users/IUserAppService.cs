@@ -14,7 +14,7 @@ namespace DFF.Freedom.Users
         /// <summary>
         /// 获取角色列表
         /// </summary>
-        /// <returns></returns>
+        /// <returns>返回 角色数据传输对象列表</returns>
         Task<ListResultDto<RoleDto>> GetRoles();
     }
 }

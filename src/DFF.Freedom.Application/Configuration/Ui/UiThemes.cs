@@ -3,17 +3,17 @@
 namespace DFF.Freedom.Configuration.Ui
 {
     /// <summary>
-    /// 
+    /// UI主题
     /// </summary>
     public static class UiThemes
     {
         /// <summary>
-        /// 
+        /// 全部UI主题
         /// </summary>
         public static List<UiThemeInfo> All { get; }
 
         /// <summary>
-        /// 
+        /// 静态构造函数
         /// </summary>
         static UiThemes()
         {

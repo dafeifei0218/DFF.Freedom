@@ -47,7 +47,7 @@ namespace DFF.Freedom.Web.Host.Startup
         /// <summary>
         /// 配置服务
         /// </summary>
-        /// <param name="services">服务集合</param>
+        /// <param name="services">服务集合接口</param>
         /// <returns></returns>
         public IServiceProvider ConfigureServices(IServiceCollection services)
         {
@@ -67,6 +67,7 @@ namespace DFF.Freedom.Web.Host.Startup
                 options.AddPolicy(DefaultCorsPolicyName, builder =>
                 {
                     //App:CorsOrigins in appsettings.json can contain more than one address with splitted by comma.
+                    //应用：CorsOrigins在appsettings.json可以包含多个地址，用逗号分割。
                     builder
                         .WithOrigins(_appConfiguration["App:CorsOrigins"].Split(",", StringSplitOptions.RemoveEmptyEntries).Select(o => o.RemovePostFix("/")).ToArray())
                         .AllowAnyHeader()
@@ -75,6 +76,7 @@ namespace DFF.Freedom.Web.Host.Startup
             });
 
             //Swagger - Enable this line and the related lines in Configure method to enable swagger UI
+            //Swagger - 在配置方法中启用这一行和相关行，以便启用swagger UI。
             services.AddSwaggerGen(options =>
             {
                 options.SwaggerDoc("v1", new Info { Title = "Freedom API", Version = "v1" });
@@ -101,9 +103,9 @@ namespace DFF.Freedom.Web.Host.Startup
         /// <param name="loggerFactory">日志工厂</param>
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
-            app.UseAbp(); //Initializes ABP framework.
+            app.UseAbp(); //Initializes ABP framework. 初始化ABP框架
 
-            app.UseCors(DefaultCorsPolicyName); //Enable CORS!
+            app.UseCors(DefaultCorsPolicyName); //Enable CORS! 启用CORS！
 
             AuthConfigurer.Configure(app, _appConfiguration);
 

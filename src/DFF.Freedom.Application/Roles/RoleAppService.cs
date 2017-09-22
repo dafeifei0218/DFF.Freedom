@@ -38,9 +38,9 @@ namespace DFF.Freedom.Roles
         }
 
         /// <summary>
-        /// 
+        /// 创建角色
         /// </summary>
-        /// <param name="input"></param>
+        /// <param name="input">创建角色数据传输对象</param>
         /// <returns></returns>
         public override async Task<RoleDto> Create(CreateRoleDto input)
         {
@@ -61,6 +61,11 @@ namespace DFF.Freedom.Roles
             return MapToEntityDto(role);
         }
 
+        /// <summary>
+        /// 更新角色
+        /// </summary>
+        /// <param name="input">角色数据传输对象</param>
+        /// <returns></returns>
         public override async Task<RoleDto> Update(RoleDto input)
         {
             CheckUpdatePermission();
@@ -81,6 +86,11 @@ namespace DFF.Freedom.Roles
             return MapToEntityDto(role);
         }
 
+        /// <summary>
+        /// 删除角色
+        /// </summary>
+        /// <param name="input">被删除的实体数据传输对象</param>
+        /// <returns></returns>
         public override async Task Delete(EntityDto<int> input)
         {
             CheckDeletePermission();
@@ -101,6 +111,10 @@ namespace DFF.Freedom.Roles
             CheckErrors(await _roleManager.DeleteAsync(role));
         }
 
+        /// <summary>
+        /// 获取全部权限
+        /// </summary>
+        /// <returns></returns>
         public Task<ListResultDto<PermissionDto>> GetAllPermissions()
         {
             var permissions = PermissionManager.GetAllPermissions();
@@ -110,21 +124,41 @@ namespace DFF.Freedom.Roles
             ));
         }
 
+        /// <summary>
+        /// 创建过滤查询
+        /// </summary>
+        /// <param name="input">分页结果请求数据传输对象</param>
+        /// <returns></returns>
         protected override IQueryable<Role> CreateFilteredQuery(PagedResultRequestDto input)
         {
             return Repository.GetAllIncluding(x => x.Permissions);
         }
 
+        /// <summary>
+        /// 根据Id获取实体
+        /// </summary>
+        /// <param name="id">主键</param>
+        /// <returns></returns>
         protected override async Task<Role> GetEntityByIdAsync(int id)
         {
             return await Repository.GetAllIncluding(x => x.Permissions).FirstOrDefaultAsync(x => x.Id == id);
         }
 
+        /// <summary>
+        /// 应用排序
+        /// </summary>
+        /// <param name="query">角色查询结果</param>
+        /// <param name="input">分页结果请求数据传输对象</param>
+        /// <returns></returns>
         protected override IQueryable<Role> ApplySorting(IQueryable<Role> query, PagedResultRequestDto input)
         {
             return query.OrderBy(r => r.DisplayName);
         }
 
+        /// <summary>
+        /// 错误信息
+        /// </summary>
+        /// <param name="identityResult">认证结果</param>
         protected virtual void CheckErrors(IdentityResult identityResult)
         {
             identityResult.CheckErrors(LocalizationManager);

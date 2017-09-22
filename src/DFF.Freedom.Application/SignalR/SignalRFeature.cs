@@ -6,7 +6,7 @@
     public static class SignalRFeature
     {
         /// <summary>
-        /// 是否激活
+        /// 是否激活，true：激活；false：未激活
         /// </summary>
         public static bool IsAvailable
         {

@@ -25,12 +25,12 @@ namespace DFF.Freedom.Authorization.Users
         /// </summary>
         /// <param name="roleManager">角色管理</param>
         /// <param name="store">用户昂出</param>
-        /// <param name="optionsAccessor"></param>
-        /// <param name="passwordHasher"></param>
+        /// <param name="optionsAccessor">选项访问器</param>
+        /// <param name="passwordHasher">密码处理逻辑</param>
         /// <param name="userValidators"></param>
         /// <param name="passwordValidators"></param>
         /// <param name="keyNormalizer"></param>
-        /// <param name="errors"></param>
+        /// <param name="errors">错误信息</param>
         /// <param name="services">服务提供者</param>
         /// <param name="logger">日志</param>
         /// <param name="permissionManager">权限管理</param>

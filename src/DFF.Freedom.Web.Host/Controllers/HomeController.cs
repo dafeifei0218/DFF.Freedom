@@ -9,7 +9,7 @@ using Abp.Extensions;
 namespace DFF.Freedom.Web.Host.Controllers
 {
     /// <summary>
-    /// 
+    /// Ö÷Ò³ ¿ØÖÆÆ÷
     /// </summary>
     public class HomeController : FreedomControllerBase
     {

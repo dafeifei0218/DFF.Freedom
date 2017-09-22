@@ -27,6 +27,9 @@ namespace DFF.Freedom.Web.Host.Startup
             _appConfiguration = env.GetAppConfiguration();
         }
 
+        /// <summary>
+        /// 初始化方法
+        /// </summary>
         public override void Initialize()
         {
             IocManager.RegisterAssemblyByConvention(typeof(FreedomWebHostModule).GetAssembly());
