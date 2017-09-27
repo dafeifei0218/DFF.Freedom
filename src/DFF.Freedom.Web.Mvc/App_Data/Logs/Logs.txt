@@ -16142,3 +16142,363 @@ DEBUG 2017-09-11 09:46:03,740 [3    ] Microsoft.AspNetCore.Server.Kestrel      -
 DEBUG 2017-09-11 09:46:03,740 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7OMKKA87AL" sending FIN.
 DEBUG 2017-09-11 09:46:03,741 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7OMKKA87AL" sent FIN with status "0".
 DEBUG 2017-09-11 09:46:03,741 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL7OMKKA87AL" stopped.
+DEBUG 2017-09-22 13:15:26,010 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-09-22 13:15:26,634 [1    ] Abp.Modules.AbpModuleManager             - Found 14 ABP modules in total.
+DEBUG 2017-09-22 13:15:26,765 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DFF.Freedom.Web.Startup.FreedomWebMvcModule, DFF.Freedom.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-09-22 13:15:26,769 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DFF.Freedom.FreedomWebCoreModule, DFF.Freedom.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-09-22 13:15:26,770 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DFF.Freedom.FreedomApplicationModule, DFF.Freedom.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-09-22 13:15:26,770 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DFF.Freedom.FreedomCoreModule, DFF.Freedom.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-09-22 13:15:26,771 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-09-22 13:15:26,771 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-09-22 13:15:26,772 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-09-22 13:15:26,772 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-09-22 13:15:26,773 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DFF.Freedom.EntityFrameworkCore.FreedomEntityFrameworkModule, DFF.Freedom.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-09-22 13:15:26,773 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-09-22 13:15:26,774 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-09-22 13:15:26,774 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-09-22 13:15:26,774 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-09-22 13:15:26,775 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-09-22 13:15:26,780 [1    ] Abp.Modules.AbpModuleManager             - 14 modules loaded.
+DEBUG 2017-09-22 13:15:26,910 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-09-22 13:15:26,910 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-09-22 13:15:26,910 [1    ] o.Configuration.LanguageManagementConfig - Converted Freedom (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-09-22 13:15:26,910 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-09-22 13:15:27,905 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: DFF.Freedom.EntityFrameworkCore.FreedomDbContext, DFF.Freedom.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-09-22 13:15:29,961 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2017-09-22 13:15:30,159 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-09-22 13:15:30,169 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2017-09-22 13:15:30,175 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Freedom
+DEBUG 2017-09-22 13:15:30,176 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-09-22 13:15:30,598 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-09-22 13:15:30,737 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 12 classes define auto mapping attributes
+DEBUG 2017-09-22 13:15:30,737 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2017-09-22 13:15:30,743 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.Users.Dto.CreateUserDto
+DEBUG 2017-09-22 13:15:30,744 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.Users.Dto.UserDto
+DEBUG 2017-09-22 13:15:30,744 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2017-09-22 13:15:30,744 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.Sessions.Dto.UserLoginInfoDto
+DEBUG 2017-09-22 13:15:30,744 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.Roles.Dto.CreateRoleDto
+DEBUG 2017-09-22 13:15:30,744 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.Roles.Dto.PermissionDto
+DEBUG 2017-09-22 13:15:30,744 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.Roles.Dto.RoleDto
+DEBUG 2017-09-22 13:15:30,744 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2017-09-22 13:15:30,744 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.MultiTenancy.Dto.EditTenantDto
+DEBUG 2017-09-22 13:15:30,744 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.MultiTenancy.Dto.TenantDto
+DEBUG 2017-09-22 13:15:30,745 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DFF.Freedom.Web.Views.Shared.Components.TenantChange.TenantChangeViewModel
+INFO  2017-09-22 13:15:39,194 [1    ] pendencyInjection.DataProtectionServices - User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+DEBUG 2017-09-22 13:15:39,323 [1    ] soft.AspNetCore.Hosting.Internal.WebHost - Hosting starting
+DEBUG 2017-09-22 13:15:39,599 [1    ] soft.AspNetCore.Hosting.Internal.WebHost - Hosting started
+DEBUG 2017-09-22 13:15:39,765 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AP" started.
+DEBUG 2017-09-22 13:15:39,765 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AO" started.
+DEBUG 2017-09-22 13:15:39,781 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AO" reset.
+DEBUG 2017-09-22 13:15:39,815 [3    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AO" disconnecting.
+DEBUG 2017-09-22 13:15:39,832 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AO" stopped.
+INFO  2017-09-22 13:15:39,988 [4    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/  
+DEBUG 2017-09-22 13:15:40,381 [4    ] NetCore.StaticFiles.StaticFileMiddleware - The request path / does not match a supported file type
+DEBUG 2017-09-22 13:15:40,989 [4    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-09-22 13:15:47,015 [4    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action DFF.Freedom.Web.Controllers.HomeController.Index (DFF.Freedom.Web.Mvc)
+WARN  2017-09-22 13:15:48,183 [4    ] Mvc.Authorization.AbpAuthorizationFilter - Abp.Authorization.AbpAuthorizationException: 当前用户没有登录到系统！
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter.<OnAuthorizationAsync>d__8.MoveNext()
+Abp.Authorization.AbpAuthorizationException: 当前用户没有登录到系统！
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter.<OnAuthorizationAsync>d__8.MoveNext()
+INFO  2017-09-22 13:15:48,203 [4    ] ore.Mvc.Internal.ControllerActionInvoker - Authorization failed for the request at filter 'Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter'.
+INFO  2017-09-22 13:15:48,213 [4    ] Microsoft.AspNetCore.Mvc.ChallengeResult - Executing ChallengeResult with authentication schemes ().
+INFO  2017-09-22 13:15:48,251 [4    ] entication.JwtBearer.JwtBearerMiddleware - AuthenticationScheme: Bearer was challenged.
+INFO  2017-09-22 13:15:48,284 [4    ] n.Cookies.CookieAuthenticationMiddleware - AuthenticationScheme: Identity.Application was challenged.
+INFO  2017-09-22 13:15:48,288 [4    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action DFF.Freedom.Web.Controllers.HomeController.Index (DFF.Freedom.Web.Mvc) in 1269.4192ms
+DEBUG 2017-09-22 13:15:48,408 [4    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AP" completed keep alive response.
+INFO  2017-09-22 13:15:48,414 [4    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 8472.1974ms 302 
+INFO  2017-09-22 13:15:48,445 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/Account/Login?ReturnUrl=%2F  
+DEBUG 2017-09-22 13:15:48,449 [8    ] NetCore.StaticFiles.StaticFileMiddleware - The request path /Account/Login does not match a supported file type
+DEBUG 2017-09-22 13:15:48,450 [8    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-09-22 13:15:48,451 [8    ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-09-22 13:15:48,452 [8    ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-09-22 13:15:48,467 [8    ] t.AspNetCore.Mvc.Internal.ActionSelector - Action 'DFF.Freedom.Web.Controllers.AccountController.Login (DFF.Freedom.Web.Mvc)' with id '4f479587-1183-4e7b-9d1c-1f2cfed01ab5' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+DEBUG 2017-09-22 13:15:48,477 [8    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action DFF.Freedom.Web.Controllers.AccountController.Login (DFF.Freedom.Web.Mvc)
+INFO  2017-09-22 13:15:53,319 [8    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method DFF.Freedom.Web.Controllers.AccountController.Login (DFF.Freedom.Web.Mvc) with arguments (, /, ) - ModelState is Valid
+DEBUG 2017-09-22 13:15:53,330 [8    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method DFF.Freedom.Web.Controllers.AccountController.Login (DFF.Freedom.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult.
+DEBUG 2017-09-22 13:15:54,220 [4    ] oft.AspNetCore.Mvc.Razor.RazorViewEngine - View lookup cache miss for view 'Login' in controller 'Account'.
+DEBUG 2017-09-22 13:15:54,253 [4    ] c.Razor.Internal.RazorCompilationService - Code generation for the Razor file at '/Views/Account/Login.cshtml' started.
+DEBUG 2017-09-22 13:15:55,218 [4    ] c.Razor.Internal.RazorCompilationService - Code generation for the Razor file at '/Views/Account/Login.cshtml' completed in 964.5938ms.
+DEBUG 2017-09-22 13:15:55,222 [4    ] Internal.DefaultRoslynCompilationService - Compilation of the generated code for the Razor file at '/Views/Account/Login.cshtml' started.
+DEBUG 2017-09-22 13:15:59,052 [4    ] Internal.DefaultRoslynCompilationService - Compilation of the generated code for the Razor file at '/Views/Account/Login.cshtml' completed in 3829.6786ms.
+DEBUG 2017-09-22 13:15:59,061 [4    ] c.Razor.Internal.RazorCompilationService - Code generation for the Razor file at '/Views/Account/_ViewStart.cshtml' started.
+DEBUG 2017-09-22 13:15:59,080 [4    ] c.Razor.Internal.RazorCompilationService - Code generation for the Razor file at '/Views/Account/_ViewStart.cshtml' completed in 19.2504ms.
+DEBUG 2017-09-22 13:15:59,081 [4    ] Internal.DefaultRoslynCompilationService - Compilation of the generated code for the Razor file at '/Views/Account/_ViewStart.cshtml' started.
+DEBUG 2017-09-22 13:15:59,217 [4    ] Internal.DefaultRoslynCompilationService - Compilation of the generated code for the Razor file at '/Views/Account/_ViewStart.cshtml' completed in 136.9311ms.
+DEBUG 2017-09-22 13:15:59,221 [4    ] c.Razor.Internal.RazorCompilationService - Code generation for the Razor file at '/Views/_ViewStart.cshtml' started.
+DEBUG 2017-09-22 13:15:59,238 [4    ] c.Razor.Internal.RazorCompilationService - Code generation for the Razor file at '/Views/_ViewStart.cshtml' completed in 16.5994ms.
+DEBUG 2017-09-22 13:15:59,238 [4    ] Internal.DefaultRoslynCompilationService - Compilation of the generated code for the Razor file at '/Views/_ViewStart.cshtml' started.
+DEBUG 2017-09-22 13:15:59,324 [4    ] Internal.DefaultRoslynCompilationService - Compilation of the generated code for the Razor file at '/Views/_ViewStart.cshtml' completed in 85.6059ms.
+DEBUG 2017-09-22 13:15:59,335 [4    ] ViewFeatures.Internal.ViewResultExecutor - The view 'Login' was found.
+INFO  2017-09-22 13:15:59,337 [4    ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/Account/Login.cshtml.
+DEBUG 2017-09-22 13:15:59,639 [4    ] ion.Repositories.FileSystemXmlRepository - Reading data from file 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys\key-08fe9723-d7a5-4f16-80d4-eb143113bd27.xml'.
+DEBUG 2017-09-22 13:15:59,665 [4    ] ion.Repositories.FileSystemXmlRepository - Reading data from file 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys\key-495febb0-3c9a-468f-84ac-18f66460c01f.xml'.
+DEBUG 2017-09-22 13:15:59,689 [4    ] ion.Repositories.FileSystemXmlRepository - Reading data from file 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys\key-cb9e4675-ff2f-4523-906f-64e06a80fd99.xml'.
+DEBUG 2017-09-22 13:15:59,727 [4    ] taProtection.KeyManagement.XmlKeyManager - Found key {08fe9723-d7a5-4f16-80d4-eb143113bd27}.
+DEBUG 2017-09-22 13:15:59,737 [4    ] taProtection.KeyManagement.XmlKeyManager - Found key {495febb0-3c9a-468f-84ac-18f66460c01f}.
+DEBUG 2017-09-22 13:15:59,737 [4    ] taProtection.KeyManagement.XmlKeyManager - Found key {cb9e4675-ff2f-4523-906f-64e06a80fd99}.
+DEBUG 2017-09-22 13:15:59,755 [4    ] tection.KeyManagement.DefaultKeyResolver - Considering key {08fe9723-d7a5-4f16-80d4-eb143113bd27} with expiration date 2017-10-29 07:13:34Z as default key.
+DEBUG 2017-09-22 13:15:59,769 [4    ] otection.XmlEncryption.DpapiXmlDecryptor - Decrypting secret element using Windows DPAPI.
+DEBUG 2017-09-22 13:15:59,785 [4    ] l.CngCbcAuthenticatedEncryptorDescriptor - Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+DEBUG 2017-09-22 13:15:59,796 [4    ] l.CngCbcAuthenticatedEncryptorDescriptor - Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+DEBUG 2017-09-22 13:15:59,813 [4    ] Protection.KeyManagement.KeyRingProvider - Using key {08fe9723-d7a5-4f16-80d4-eb143113bd27} as the default key.
+DEBUG 2017-09-22 13:15:59,820 [4    ] .KeyManagement.KeyRingBasedDataProtector - Performing protect operation to key {08fe9723-d7a5-4f16-80d4-eb143113bd27} with purposes ('F:\GitHub\DFF.Freedom\src\DFF.Freedom.Web.Mvc', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1').
+DEBUG 2017-09-22 13:15:59,832 [4    ] .KeyManagement.KeyRingBasedDataProtector - Performing protect operation to key {08fe9723-d7a5-4f16-80d4-eb143113bd27} with purposes ('F:\GitHub\DFF.Freedom\src\DFF.Freedom.Web.Mvc', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1').
+DEBUG 2017-09-22 13:15:59,849 [4    ] .Antiforgery.Internal.DefaultAntiforgery - A new antiforgery cookie token was created.
+DEBUG 2017-09-22 13:16:00,111 [4    ] c.Razor.Internal.RazorCompilationService - Code generation for the Razor file at '/Views/Account/_Layout.cshtml' started.
+DEBUG 2017-09-22 13:16:00,219 [4    ] c.Razor.Internal.RazorCompilationService - Code generation for the Razor file at '/Views/Account/_Layout.cshtml' completed in 108.2663ms.
+DEBUG 2017-09-22 13:16:00,220 [4    ] Internal.DefaultRoslynCompilationService - Compilation of the generated code for the Razor file at '/Views/Account/_Layout.cshtml' started.
+DEBUG 2017-09-22 13:16:00,593 [4    ] Internal.DefaultRoslynCompilationService - Compilation of the generated code for the Razor file at '/Views/Account/_Layout.cshtml' completed in 373.3893ms.
+DEBUG 2017-09-22 13:16:00,901 [4    ] ewComponents.DefaultViewComponentInvoker - Executing view component DFF.Freedom.Web.Views.Shared.Components.TenantChange.TenantChangeViewComponent with arguments ().
+DEBUG 2017-09-22 13:16:00,955 [4    ] ewComponents.DefaultViewComponentInvoker - Executed view component DFF.Freedom.Web.Views.Shared.Components.TenantChange.TenantChangeViewComponent in 51.4724ms and returned Microsoft.AspNetCore.Mvc.ViewComponents.ViewViewComponentResult
+DEBUG 2017-09-22 13:16:00,961 [4    ] oft.AspNetCore.Mvc.Razor.RazorViewEngine - View lookup cache miss for view 'Components/TenantChange/Default' in controller 'Account'.
+DEBUG 2017-09-22 13:16:00,961 [4    ] c.Razor.Internal.RazorCompilationService - Code generation for the Razor file at '/Views/Shared/Components/TenantChange/Default.cshtml' started.
+DEBUG 2017-09-22 13:16:01,003 [4    ] c.Razor.Internal.RazorCompilationService - Code generation for the Razor file at '/Views/Shared/Components/TenantChange/Default.cshtml' completed in 41.7799ms.
+DEBUG 2017-09-22 13:16:01,003 [4    ] Internal.DefaultRoslynCompilationService - Compilation of the generated code for the Razor file at '/Views/Shared/Components/TenantChange/Default.cshtml' started.
+DEBUG 2017-09-22 13:16:01,151 [4    ] Internal.DefaultRoslynCompilationService - Compilation of the generated code for the Razor file at '/Views/Shared/Components/TenantChange/Default.cshtml' completed in 147.1211ms.
+DEBUG 2017-09-22 13:16:01,219 [4    ] ewComponents.DefaultViewComponentInvoker - Executing view component DFF.Freedom.Web.Views.Shared.Components.AccountLanguages.AccountLanguagesViewComponent with arguments ().
+DEBUG 2017-09-22 13:16:01,226 [4    ] ewComponents.DefaultViewComponentInvoker - Executed view component DFF.Freedom.Web.Views.Shared.Components.AccountLanguages.AccountLanguagesViewComponent in 6.5723ms and returned Microsoft.AspNetCore.Mvc.ViewComponents.ViewViewComponentResult
+DEBUG 2017-09-22 13:16:01,226 [4    ] oft.AspNetCore.Mvc.Razor.RazorViewEngine - View lookup cache miss for view 'Components/AccountLanguages/Default' in controller 'Account'.
+DEBUG 2017-09-22 13:16:01,226 [4    ] c.Razor.Internal.RazorCompilationService - Code generation for the Razor file at '/Views/Shared/Components/AccountLanguages/Default.cshtml' started.
+DEBUG 2017-09-22 13:16:01,260 [4    ] c.Razor.Internal.RazorCompilationService - Code generation for the Razor file at '/Views/Shared/Components/AccountLanguages/Default.cshtml' completed in 33.491ms.
+DEBUG 2017-09-22 13:16:01,260 [4    ] Internal.DefaultRoslynCompilationService - Compilation of the generated code for the Razor file at '/Views/Shared/Components/AccountLanguages/Default.cshtml' started.
+DEBUG 2017-09-22 13:16:01,401 [4    ] Internal.DefaultRoslynCompilationService - Compilation of the generated code for the Razor file at '/Views/Shared/Components/AccountLanguages/Default.cshtml' completed in 141.5781ms.
+INFO  2017-09-22 13:16:01,810 [4    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action DFF.Freedom.Web.Controllers.AccountController.Login (DFF.Freedom.Web.Mvc) in 13331.84ms
+DEBUG 2017-09-22 13:16:01,832 [4    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AP" completed keep alive response.
+INFO  2017-09-22 13:16:01,832 [4    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 13386.8299ms 200 text/html; charset=utf-8
+INFO  2017-09-22 13:16:01,886 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/toastr/toastr.css?v=W8a9WvLyUO7CXtOC4f9LoUMwkywM7JSq-Xm5kNsYW08  
+DEBUG 2017-09-22 13:16:01,888 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AQ" started.
+DEBUG 2017-09-22 13:16:01,889 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AR" started.
+INFO  2017-09-22 13:16:01,891 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/bootstrap/dist/css/bootstrap.css?v=rYUBh-J0b_zGCzbG02wJhid-ncHyd0BsoUYpjLLSowk  
+INFO  2017-09-22 13:16:01,891 [4    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/sweetalert/dist/sweetalert.css?v=k66BSDvi6XBdtM2RH6QQvCz2wk81XcWsiZ3kn6uFTmM  
+DEBUG 2017-09-22 13:16:01,893 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AS" started.
+DEBUG 2017-09-22 13:16:01,895 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AT" started.
+INFO  2017-09-22 13:16:01,897 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/fonts/material-icons/materialicons.css?v=itf5z7ZYEw2uY0m8Ok4hfuPi_GrumbGhHPlqyC4LWzw  
+DEBUG 2017-09-22 13:16:01,899 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AU" started.
+INFO  2017-09-22 13:16:01,911 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.css'. Physical path: 'F:\GitHub\DFF.Freedom\src\DFF.Freedom.Web.Mvc\wwwroot\lib\bootstrap\dist\css\bootstrap.css'
+INFO  2017-09-22 13:16:01,911 [8    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/toastr/toastr.css'. Physical path: 'F:\GitHub\DFF.Freedom\src\DFF.Freedom.Web.Mvc\wwwroot\lib\toastr\toastr.css'
+INFO  2017-09-22 13:16:01,911 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/fonts/material-icons/materialicons.css'. Physical path: 'F:\GitHub\DFF.Freedom\src\DFF.Freedom.Web.Mvc\wwwroot\fonts\material-icons\materialicons.css'
+INFO  2017-09-22 13:16:01,911 [4    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/sweetalert/dist/sweetalert.css'. Physical path: 'F:\GitHub\DFF.Freedom\src\DFF.Freedom.Web.Mvc\wwwroot\lib\sweetalert\dist\sweetalert.css'
+INFO  2017-09-22 13:16:01,976 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/fonts/roboto/roboto.css?v=DWPiEyLnt8XZ68WQeudmZPGSejowhmQNUUhaX8dYF1Q  
+INFO  2017-09-22 13:16:01,977 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/fonts/roboto/roboto.css'. Physical path: 'F:\GitHub\DFF.Freedom\src\DFF.Freedom.Web.Mvc\wwwroot\fonts\roboto\roboto.css'
+DEBUG 2017-09-22 13:16:01,979 [9    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AS" completed keep alive response.
+INFO  2017-09-22 13:16:01,979 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3.0821ms 200 text/css
+INFO  2017-09-22 13:16:01,981 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/famfamfam-flags/dist/sprite/famfamfam-flags.css?v=l7wu43l7XpKWzFn29hiH8AFe4I_CNzbCPmaAQivPYMg  
+DEBUG 2017-09-22 13:16:01,981 [8    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AP" completed keep alive response.
+INFO  2017-09-22 13:16:01,981 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 95.747ms 200 text/css
+INFO  2017-09-22 13:16:01,981 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/famfamfam-flags/dist/sprite/famfamfam-flags.css'. Physical path: 'F:\GitHub\DFF.Freedom\src\DFF.Freedom.Web.Mvc\wwwroot\lib\famfamfam-flags\dist\sprite\famfamfam-flags.css'
+DEBUG 2017-09-22 13:16:02,003 [9    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AU" completed keep alive response.
+INFO  2017-09-22 13:16:02,003 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 22.4563ms 200 text/css
+DEBUG 2017-09-22 13:16:02,004 [8    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AT" completed keep alive response.
+INFO  2017-09-22 13:16:02,005 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 107.7815ms 200 text/css
+DEBUG 2017-09-22 13:16:02,011 [8    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AQ" completed keep alive response.
+INFO  2017-09-22 13:16:02,011 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 120.4391ms 200 text/css
+INFO  2017-09-22 13:16:02,013 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/Waves/dist/waves.css?v=0zP86LzXedNkkBjePtKrMTAPuIy6EzHfGlyYvsmGLBw  
+INFO  2017-09-22 13:16:02,013 [8    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/Waves/dist/waves.css'. Physical path: 'F:\GitHub\DFF.Freedom\src\DFF.Freedom.Web.Mvc\wwwroot\lib\Waves\dist\waves.css'
+DEBUG 2017-09-22 13:16:02,030 [8    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AS" completed keep alive response.
+INFO  2017-09-22 13:16:02,030 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 17.6191ms 200 text/css
+INFO  2017-09-22 13:16:02,031 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/animate.css/animate.css?v=00w68NO3TLuHjKRHJmjrrgJBDtG_6OhbJEu1gtHcsuo  
+INFO  2017-09-22 13:16:02,031 [8    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/animate.css/animate.css'. Physical path: 'F:\GitHub\DFF.Freedom\src\DFF.Freedom.Web.Mvc\wwwroot\lib\animate.css\animate.css'
+INFO  2017-09-22 13:16:02,040 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/css/materialize.css?v=OdWlipUYj8b9Oa4RyT45njteIcxH-4pGocqe0r0V8js  
+INFO  2017-09-22 13:16:02,041 [8    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/css/materialize.css'. Physical path: 'F:\GitHub\DFF.Freedom\src\DFF.Freedom.Web.Mvc\wwwroot\css\materialize.css'
+DEBUG 2017-09-22 13:16:02,047 [8    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AQ" completed keep alive response.
+INFO  2017-09-22 13:16:02,047 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 7.0306ms 200 text/css
+INFO  2017-09-22 13:16:02,051 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/css/style.css?v=yL1_ikVC9k-ZNukgUJ_Jk9cK0TBzvJLMIohPbHrAf0g  
+INFO  2017-09-22 13:16:02,051 [4    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Account/_Layout.css?v=vIEtxnpR3ZrYbYcueRr_mJ9XuJJzDprh4sMCwvRBcqk  
+INFO  2017-09-22 13:16:02,051 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/css/style.css'. Physical path: 'F:\GitHub\DFF.Freedom\src\DFF.Freedom.Web.Mvc\wwwroot\css\style.css'
+INFO  2017-09-22 13:16:02,051 [4    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Account/_Layout.css'. Physical path: 'F:\GitHub\DFF.Freedom\src\DFF.Freedom.Web.Mvc\wwwroot\view-resources\Views\Account\_Layout.css'
+DEBUG 2017-09-22 13:16:02,056 [8    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AP" completed keep alive response.
+INFO  2017-09-22 13:16:02,056 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 25.6314ms 200 text/css
+INFO  2017-09-22 13:16:02,059 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/font-awesome/css/font-awesome.css?v=uXf0U0UCIqBp2J3S53b28h-fpC9uFcA8f-b_NNmiwVk  
+INFO  2017-09-22 13:16:02,059 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/font-awesome/css/font-awesome.css'. Physical path: 'F:\GitHub\DFF.Freedom\src\DFF.Freedom.Web.Mvc\wwwroot\lib\font-awesome\css\font-awesome.css'
+DEBUG 2017-09-22 13:16:02,062 [4    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AS" completed keep alive response.
+DEBUG 2017-09-22 13:16:02,062 [10   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AR" completed keep alive response.
+INFO  2017-09-22 13:16:02,062 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 171.4509ms 200 text/css
+INFO  2017-09-22 13:16:02,062 [4    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 11.0093ms 200 text/css
+DEBUG 2017-09-22 13:16:02,062 [10   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AT" completed keep alive response.
+INFO  2017-09-22 13:16:02,111 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 51.9367ms 200 text/css
+INFO  2017-09-22 13:16:02,111 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/bootstrap/dist/js/bootstrap.js?v=3vw5dArBhZ2OJ4XtRzIIQJYn6Hrd1fePLeqsuToS1R0  
+INFO  2017-09-22 13:16:02,119 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.js'. Physical path: 'F:\GitHub\DFF.Freedom\src\DFF.Freedom.Web.Mvc\wwwroot\lib\bootstrap\dist\js\bootstrap.js'
+INFO  2017-09-22 13:16:02,119 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Account/Login.css?v=Hq5aBVr9vqsOYI_zoZha7PxZnLUdiilICi-gjP3RrfU  
+INFO  2017-09-22 13:16:02,120 [8    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Account/Login.css'. Physical path: 'F:\GitHub\DFF.Freedom\src\DFF.Freedom.Web.Mvc\wwwroot\view-resources\Views\Account\Login.css'
+INFO  2017-09-22 13:16:02,191 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/json2/json2.js?v=EZJ68U7eUi8uSP0MRRUalYten2eOlhREE9kJOIbIeYg  
+INFO  2017-09-22 13:16:02,203 [3    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/moment/min/moment-with-locales.js?v=7CN4bWPV0U57HDA4YjdCBKCAynhqdWErjNn-5rrsW_I  
+INFO  2017-09-22 13:16:02,203 [16   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/json2/json2.js'. Physical path: 'F:\GitHub\DFF.Freedom\src\DFF.Freedom.Web.Mvc\wwwroot\lib\json2\json2.js'
+INFO  2017-09-22 13:16:02,203 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/jquery/dist/jquery.js?v=oYqpLeqZe9cetUDV-TFiBZHp3uJ-X4F5eLs4W6uSTSE  
+INFO  2017-09-22 13:16:02,216 [3    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/moment/min/moment-with-locales.js'. Physical path: 'F:\GitHub\DFF.Freedom\src\DFF.Freedom.Web.Mvc\wwwroot\lib\moment\min\moment-with-locales.js'
+INFO  2017-09-22 13:16:02,216 [17   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/jquery/dist/jquery.js'. Physical path: 'F:\GitHub\DFF.Freedom\src\DFF.Freedom.Web.Mvc\wwwroot\lib\jquery\dist\jquery.js'
+DEBUG 2017-09-22 13:16:02,268 [15   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AU" completed keep alive response.
+INFO  2017-09-22 13:16:02,268 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 217.8537ms 200 text/css
+INFO  2017-09-22 13:16:02,269 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/toastr/toastr.js?v=C7DJ6LzTt1Hvj9fd-yRnySs3I4T2B8XmQ3TqXQjc00g  
+INFO  2017-09-22 13:16:02,269 [15   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/toastr/toastr.js'. Physical path: 'F:\GitHub\DFF.Freedom\src\DFF.Freedom.Web.Mvc\wwwroot\lib\toastr\toastr.js'
+DEBUG 2017-09-22 13:16:02,398 [8    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AQ" completed keep alive response.
+INFO  2017-09-22 13:16:02,399 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 279.0236ms 200 text/css
+INFO  2017-09-22 13:16:02,399 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/blockUI/jquery.blockUI.js?v=oQaw-JJuUcJQ9QVYMcFnPxICDT-hv8-kuxT2FNzTGhc  
+INFO  2017-09-22 13:16:02,400 [8    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/blockUI/jquery.blockUI.js'. Physical path: 'F:\GitHub\DFF.Freedom\src\DFF.Freedom.Web.Mvc\wwwroot\lib\blockUI\jquery.blockUI.js'
+DEBUG 2017-09-22 13:16:02,483 [19   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AT" completed keep alive response.
+INFO  2017-09-22 13:16:02,483 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 372.7197ms 200 application/javascript
+DEBUG 2017-09-22 13:16:02,485 [9    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AS" completed keep alive response.
+INFO  2017-09-22 13:16:02,485 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 294.3425ms 200 application/javascript
+INFO  2017-09-22 13:16:02,486 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/jquery-validation/dist/jquery.validate.js?v=KuzD50lDGNI5jq_ipt4hwDpSJk3fhseTR1jdvaBoZLs  
+INFO  2017-09-22 13:16:02,487 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/jquery-validation/dist/jquery.validate.js'. Physical path: 'F:\GitHub\DFF.Freedom\src\DFF.Freedom.Web.Mvc\wwwroot\lib\jquery-validation\dist\jquery.validate.js'
+DEBUG 2017-09-22 13:16:02,491 [9    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AS" completed keep alive response.
+INFO  2017-09-22 13:16:02,491 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 5.4385ms 200 application/javascript
+DEBUG 2017-09-22 13:16:02,570 [14   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AR" completed keep alive response.
+INFO  2017-09-22 13:16:02,570 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 367.7992ms 200 application/javascript
+INFO  2017-09-22 13:16:02,570 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/spin.js/spin.js?v=GySbz3oZXNlwoawo5PpYy0iM38B-q3jyi_HLw00uxy0  
+INFO  2017-09-22 13:16:02,571 [4    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/Waves/dist/waves.js?v=Lar7zQhqgdoUsaqhuwkgnWgsC-eRWIxHhJPV-QtrDog  
+INFO  2017-09-22 13:16:02,571 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/spin.js/spin.js'. Physical path: 'F:\GitHub\DFF.Freedom\src\DFF.Freedom.Web.Mvc\wwwroot\lib\spin.js\spin.js'
+INFO  2017-09-22 13:16:02,571 [4    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/Waves/dist/waves.js'. Physical path: 'F:\GitHub\DFF.Freedom\src\DFF.Freedom.Web.Mvc\wwwroot\lib\Waves\dist\waves.js'
+DEBUG 2017-09-22 13:16:02,571 [9    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AT" completed keep alive response.
+INFO  2017-09-22 13:16:02,598 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 27.2471ms 200 application/javascript
+DEBUG 2017-09-22 13:16:02,597 [19   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AU" completed keep alive response.
+INFO  2017-09-22 13:16:02,598 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 329.4606ms 200 application/javascript
+INFO  2017-09-22 13:16:02,598 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.jquery.js?v=771dB7tcVPQ85juFv9xx_A0lO72U1T_oU40LcTzFUno  
+INFO  2017-09-22 13:16:02,598 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/sweetalert/dist/sweetalert-dev.js?v=Y6AEuvugryve80FgzPE3e2EONgfiYPcaSaqF-vIFGIA  
+INFO  2017-09-22 13:16:02,599 [19   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/sweetalert/dist/sweetalert-dev.js'. Physical path: 'F:\GitHub\DFF.Freedom\src\DFF.Freedom.Web.Mvc\wwwroot\lib\sweetalert\dist\sweetalert-dev.js'
+INFO  2017-09-22 13:16:02,600 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.jquery.js'. Physical path: 'F:\GitHub\DFF.Freedom\src\DFF.Freedom.Web.Mvc\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\libs\abp.jquery.js'
+DEBUG 2017-09-22 13:16:02,596 [23   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AP" completed keep alive response.
+INFO  2017-09-22 13:16:02,649 [23   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 446.7343ms 200 application/javascript
+DEBUG 2017-09-22 13:16:02,590 [24   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AQ" completed keep alive response.
+INFO  2017-09-22 13:16:02,650 [24   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 250.7525ms 200 application/javascript
+INFO  2017-09-22 13:16:02,650 [24   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/spin.js/jquery.spin.js?v=EG38bUU5b2M64hy9cNAzu_cQBEsiBYsDifOcoHqNd2k  
+INFO  2017-09-22 13:16:02,650 [24   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/spin.js/jquery.spin.js'. Physical path: 'F:\GitHub\DFF.Freedom\src\DFF.Freedom.Web.Mvc\wwwroot\lib\spin.js\jquery.spin.js'
+INFO  2017-09-22 13:16:02,591 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/abp.js?v=8Fv5Ryar8BgkV6_q_U-zsW2dA57HxErdoXVKogeTUy4  
+DEBUG 2017-09-22 13:16:02,652 [24   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AQ" completed keep alive response.
+INFO  2017-09-22 13:16:02,652 [24   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2.6051ms 200 application/javascript
+INFO  2017-09-22 13:16:02,653 [21   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/abp.js'. Physical path: 'F:\GitHub\DFF.Freedom\src\DFF.Freedom.Web.Mvc\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\abp.js'
+DEBUG 2017-09-22 13:16:02,656 [21   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AR" completed keep alive response.
+INFO  2017-09-22 13:16:02,656 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 65.8772ms 200 application/javascript
+INFO  2017-09-22 13:16:02,660 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.blockUI.js?v=Y3zoG-hSFKmbS3BHKo_wFWRPbyzJXKoNrnF73uFdtqU  
+INFO  2017-09-22 13:16:02,661 [21   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.blockUI.js'. Physical path: 'F:\GitHub\DFF.Freedom\src\DFF.Freedom.Web.Mvc\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\libs\abp.blockUI.js'
+INFO  2017-09-22 13:16:02,688 [24   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.sweet-alert.js?v=pHFl_MDwwZLcdWvFBdIWQRNd1TYnlLqWz81WI3l1bNA  
+DEBUG 2017-09-22 13:16:02,688 [23   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AU" completed keep alive response.
+INFO  2017-09-22 13:16:02,688 [23   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 90.0519ms 200 application/javascript
+INFO  2017-09-22 13:16:02,688 [24   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.sweet-alert.js'. Physical path: 'F:\GitHub\DFF.Freedom\src\DFF.Freedom.Web.Mvc\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\libs\abp.sweet-alert.js'
+DEBUG 2017-09-22 13:16:02,688 [21   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AP" completed keep alive response.
+INFO  2017-09-22 13:16:02,689 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 28.1352ms 200 application/javascript
+INFO  2017-09-22 13:16:02,689 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.spin.js?v=RJuGDX616JN_UziXsmKnth0alpECKCx0gtxKZVrZWxY  
+INFO  2017-09-22 13:16:02,689 [21   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.spin.js'. Physical path: 'F:\GitHub\DFF.Freedom\src\DFF.Freedom.Web.Mvc\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\libs\abp.spin.js'
+DEBUG 2017-09-22 13:16:02,595 [4    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AS" completed keep alive response.
+INFO  2017-09-22 13:16:02,715 [4    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 144.4441ms 200 application/javascript
+INFO  2017-09-22 13:16:02,715 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/js/main.js?v=NLQ67WPST5q5HyOztusW745VOFFu6b_jB_lyxAICdFU  
+INFO  2017-09-22 13:16:02,715 [4    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.toastr.js?v=ImopdkB8alCil1HigOwW3CDqWKsLZXyplf7TXBbjRnE  
+INFO  2017-09-22 13:16:02,716 [4    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.toastr.js'. Physical path: 'F:\GitHub\DFF.Freedom\src\DFF.Freedom.Web.Mvc\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\libs\abp.toastr.js'
+INFO  2017-09-22 13:16:02,716 [8    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/js/main.js'. Physical path: 'F:\GitHub\DFF.Freedom\src\DFF.Freedom.Web.Mvc\wwwroot\js\main.js'
+DEBUG 2017-09-22 13:16:02,695 [24   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AR" completed keep alive response.
+INFO  2017-09-22 13:16:02,741 [24   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 52.913ms 200 application/javascript
+DEBUG 2017-09-22 13:16:02,741 [23   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AS" completed keep alive response.
+DEBUG 2017-09-22 13:16:02,692 [21   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AQ" completed keep alive response.
+INFO  2017-09-22 13:16:02,741 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 52.1317ms 200 application/javascript
+INFO  2017-09-22 13:16:02,741 [23   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 25.6441ms 200 application/javascript
+INFO  2017-09-22 13:16:02,742 [23   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=636416829306010296  
+DEBUG 2017-09-22 13:16:02,742 [23   ] NetCore.StaticFiles.StaticFileMiddleware - The request path /AbpScripts/GetScripts does not match a supported file type
+DEBUG 2017-09-22 13:16:02,743 [23   ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-09-22 13:16:02,743 [23   ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-09-22 13:16:02,743 [23   ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+INFO  2017-09-22 13:16:02,714 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/js/admin.js?v=tVnerWKWo6Bi-SXoAqQMoiI16S5Ta0AzFUZerddubZE  
+INFO  2017-09-22 13:16:02,746 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/js/admin.js'. Physical path: 'F:\GitHub\DFF.Freedom\src\DFF.Freedom.Web.Mvc\wwwroot\js\admin.js'
+DEBUG 2017-09-22 13:16:02,746 [10   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AP" completed keep alive response.
+INFO  2017-09-22 13:16:02,746 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 32.3282ms 200 application/javascript
+INFO  2017-09-22 13:16:02,747 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=636416829306010296  
+DEBUG 2017-09-22 13:16:02,750 [10   ] NetCore.StaticFiles.StaticFileMiddleware - The request path /AbpServiceProxies/GetAll does not match a supported file type
+DEBUG 2017-09-22 13:16:02,750 [10   ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'defaultWithArea' and template '{area}/{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-09-22 13:16:02,750 [10   ] .AspNetCore.Mvc.Internal.MvcRouteHandler - No actions matched the current request
+DEBUG 2017-09-22 13:16:02,750 [10   ] Microsoft.AspNetCore.Routing.RouteBase   - Request successfully matched the route with name 'default' and template '{controller=Home}/{action=Index}/{id?}'.
+DEBUG 2017-09-22 13:16:02,709 [9    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AT" completed keep alive response.
+INFO  2017-09-22 13:16:02,758 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 160.5352ms 200 application/javascript
+INFO  2017-09-22 13:16:02,758 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Shared/Components/TenantChange/Default.js  
+DEBUG 2017-09-22 13:16:02,760 [8    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AU" completed keep alive response.
+INFO  2017-09-22 13:16:02,760 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 45.287ms 200 application/javascript
+DEBUG 2017-09-22 13:16:02,770 [23   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2017-09-22 13:16:02,771 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Shared/Components/TenantChange/Default.js'. Physical path: 'F:\GitHub\DFF.Freedom\src\DFF.Freedom.Web.Mvc\wwwroot\view-resources\Views\Shared\Components\TenantChange\Default.js'
+DEBUG 2017-09-22 13:16:02,772 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2017-09-22 13:16:02,772 [4    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Account/Login.js?v=o2PUQBkwW7VjtzD5RNxKPa3oShr3fMFHds_2dwIAV5M  
+INFO  2017-09-22 13:16:02,772 [4    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Account/Login.js'. Physical path: 'F:\GitHub\DFF.Freedom\src\DFF.Freedom.Web.Mvc\wwwroot\view-resources\Views\Account\Login.js'
+DEBUG 2017-09-22 13:16:02,773 [9    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AT" completed keep alive response.
+DEBUG 2017-09-22 13:16:02,786 [4    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AS" completed keep alive response.
+INFO  2017-09-22 13:16:02,786 [4    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 14.5756ms 200 application/javascript
+INFO  2017-09-22 13:16:02,803 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 14.354ms 200 application/javascript
+INFO  2017-09-22 13:16:02,803 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/fonts/material-icons/materialicons.woff2  
+INFO  2017-09-22 13:16:02,803 [4    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/fonts/roboto/d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2  
+INFO  2017-09-22 13:16:02,804 [8    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/fonts/material-icons/materialicons.woff2'. Physical path: 'F:\GitHub\DFF.Freedom\src\DFF.Freedom.Web.Mvc\wwwroot\fonts\material-icons\materialicons.woff2'
+INFO  2017-09-22 13:16:02,804 [4    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/fonts/roboto/d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2'. Physical path: 'F:\GitHub\DFF.Freedom\src\DFF.Freedom.Web.Mvc\wwwroot\fonts\roboto\d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2'
+INFO  2017-09-22 13:16:02,814 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/famfamfam-flags/dist/sprite/famfamfam-flags.png  
+INFO  2017-09-22 13:16:02,815 [21   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/famfamfam-flags/dist/sprite/famfamfam-flags.png'. Physical path: 'F:\GitHub\DFF.Freedom\src\DFF.Freedom.Web.Mvc\wwwroot\lib\famfamfam-flags\dist\sprite\famfamfam-flags.png'
+INFO  2017-09-22 13:16:02,879 [23   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments () - ModelState is Valid
+DEBUG 2017-09-22 13:16:02,892 [21   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AS" completed keep alive response.
+INFO  2017-09-22 13:16:02,892 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 77.8755ms 200 image/png
+DEBUG 2017-09-22 13:16:02,902 [21   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AU" completed keep alive response.
+INFO  2017-09-22 13:16:02,902 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 99.2826ms 200 application/font-woff2
+DEBUG 2017-09-22 13:16:02,908 [8    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AP" completed keep alive response.
+INFO  2017-09-22 13:16:02,908 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 104.7145ms 200 application/font-woff2
+INFO  2017-09-22 13:16:03,542 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - ModelState is Valid
+DEBUG 2017-09-22 13:16:03,631 [23   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult.
+INFO  2017-09-22 13:16:03,640 [23   ] tCore.Mvc.Internal.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2017-09-22 13:16:03,641 [23   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 870.1635ms
+DEBUG 2017-09-22 13:16:03,641 [23   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AQ" completed keep alive response.
+INFO  2017-09-22 13:16:03,642 [23   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 899.3782ms 200 application/x-javascript; charset=utf-8
+DEBUG 2017-09-22 13:16:03,796 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ObjectResult.
+DEBUG 2017-09-22 13:16:03,827 [10   ] etCore.Mvc.Internal.ObjectResultExecutor - No information found on request to perform content negotiation.
+DEBUG 2017-09-22 13:16:03,836 [10   ] etCore.Mvc.Internal.ObjectResultExecutor - Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/javascript' to write the response.
+INFO  2017-09-22 13:16:03,837 [10   ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-09-22 13:16:03,850 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 1077.9848ms
+DEBUG 2017-09-22 13:16:03,851 [10   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AR" completed keep alive response.
+INFO  2017-09-22 13:16:03,851 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1103.8155ms 200 text/javascript; charset=utf-8
+INFO  2017-09-22 13:16:04,039 [3    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/favicon.ico  
+INFO  2017-09-22 13:16:04,040 [3    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/favicon.ico'. Physical path: 'F:\GitHub\DFF.Freedom\src\DFF.Freedom.Web.Mvc\wwwroot\favicon.ico'
+DEBUG 2017-09-22 13:16:04,068 [4    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AT" completed keep alive response.
+INFO  2017-09-22 13:16:04,068 [4    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 28.9593ms 200 image/x-icon
+DEBUG 2017-09-22 13:17:30,248 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AP" received FIN.
+DEBUG 2017-09-22 13:17:30,248 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AR" received FIN.
+DEBUG 2017-09-22 13:17:30,248 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AT" received FIN.
+DEBUG 2017-09-22 13:17:30,248 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AS" received FIN.
+DEBUG 2017-09-22 13:17:30,249 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AU" received FIN.
+DEBUG 2017-09-22 13:17:30,249 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AQ" received FIN.
+DEBUG 2017-09-22 13:17:30,249 [8    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AR" disconnecting.
+DEBUG 2017-09-22 13:17:30,250 [8    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AU" disconnecting.
+DEBUG 2017-09-22 13:17:30,250 [8    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AQ" disconnecting.
+DEBUG 2017-09-22 13:17:30,250 [9    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AT" disconnecting.
+DEBUG 2017-09-22 13:17:30,253 [10   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AS" disconnecting.
+DEBUG 2017-09-22 13:17:30,250 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AU" sending FIN.
+DEBUG 2017-09-22 13:17:30,250 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AR" sending FIN.
+DEBUG 2017-09-22 13:17:30,249 [3    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AP" disconnecting.
+DEBUG 2017-09-22 13:17:30,264 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AQ" sending FIN.
+DEBUG 2017-09-22 13:17:30,264 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AS" sending FIN.
+DEBUG 2017-09-22 13:17:30,264 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AP" sending FIN.
+DEBUG 2017-09-22 13:17:30,264 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AT" sending FIN.
+DEBUG 2017-09-22 13:17:30,268 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AP" sent FIN with status "0".
+DEBUG 2017-09-22 13:17:30,268 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AT" sent FIN with status "0".
+DEBUG 2017-09-22 13:17:30,269 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AP" stopped.
+DEBUG 2017-09-22 13:17:30,269 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AT" stopped.
+DEBUG 2017-09-22 13:17:30,270 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AS" sent FIN with status "0".
+DEBUG 2017-09-22 13:17:30,279 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AR" sent FIN with status "0".
+DEBUG 2017-09-22 13:17:30,279 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AS" stopped.
+DEBUG 2017-09-22 13:17:30,279 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AR" stopped.
+DEBUG 2017-09-22 13:17:30,280 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AQ" sent FIN with status "0".
+DEBUG 2017-09-22 13:17:30,280 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AQ" stopped.
+DEBUG 2017-09-22 13:17:30,281 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AU" sent FIN with status "0".
+DEBUG 2017-09-22 13:17:30,281 [libuv] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HL81F3RIJ6AU" stopped.

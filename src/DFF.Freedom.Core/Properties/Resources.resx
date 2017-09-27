@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ApplicationUninitializedExceptionMsg" xml:space="preserve">
+    <value>当前应用程序未初始化，请按照统一应用程序功能说明进行配置。</value>
+  </data>
+  <data name="ArrayParaLengthZeroExceptionMsg" xml:space="preserve">
+    <value>数组参数“{0}”必须为拥有一个元素。</value>
+  </data>
+  <data name="AutoTaskWrapModelStringFormat" xml:space="preserve">
+    <value>业务处理逻辑“{0}”，任务对象“{1}”。</value>
+  </data>
+  <data name="CmdWaitPromptMsg" xml:space="preserve">
+    <value>按任意键退出......</value>
+  </data>
+  <data name="EnumDescriptionInfoNotExistExceptionMsg" xml:space="preserve">
+    <value>在枚举类型“{0}”的枚举项上未发现定义的附加信息，请检查此枚举类型的附加信息定义。</value>
+  </data>
+  <data name="EnumDescriptionInfoRepeatExceptionMsg" xml:space="preserve">
+    <value>在枚举类型“{0}”的枚举项“{1}”上定义了多个关键字为“{2}”的附加信息。</value>
+  </data>
+  <data name="EnumParaNotMatchExceptionMsg" xml:space="preserve">
+    <value>参数“{0}”必须为枚举类型。</value>
+  </data>
+  <data name="ExpressionCategoryNotMatchExceptionMsg" xml:space="preserve">
+    <value>给定的表达式类别与预期不匹配，预期为“{0}”类别，实际为“{1}”类别。</value>
+  </data>
+  <data name="KernelTransactionNotFoundExceptionMsg" xml:space="preserve">
+    <value>当前的 IO 操作属于事务性操作，但在当前上下文中未找到相关的核心事务对象。</value>
+  </data>
+  <data name="LoggingAdapterTypeNotExist" xml:space="preserve">
+    <value>日志适配器提供程序“{0}”未找到，请检查程序集是否存在。</value>
+  </data>
+  <data name="NotCanReadPropertyInType" xml:space="preserve">
+    <value>在类“{0}”中定义的公共属性“{1}”没有 get 定义或 get 访问级别不足。</value>
+  </data>
+  <data name="NotCanWritePropertyInType" xml:space="preserve">
+    <value>在类“{0}”中定义的公共属性“{1}”没有 set 定义或 set 访问级别不足。</value>
+  </data>
+  <data name="NotExistCtorInType" xml:space="preserve">
+    <value>类型“{0}”不包含参数列表为“{1}”的公共构造方法。</value>
+  </data>
+  <data name="NotExistNotParamCtorInType" xml:space="preserve">
+    <value>类型“{0}”不包含无参数的公共构造方法。</value>
+  </data>
+  <data name="NotExistPropertyInModel" xml:space="preserve">
+    <value>属性“{0}”在模型“{1}”中不存在。</value>
+  </data>
+  <data name="NotExistPropertyInType" xml:space="preserve">
+    <value>在类型“{0}”中未找到公共属性“{1}”的定义。</value>
+  </data>
+  <data name="NotPositiveIntegerParaExceptionMsg" xml:space="preserve">
+    <value>参数“{0}”不能为非正整数。</value>
+  </data>
+  <data name="NotSupportedRestartManagerMsg" xml:space="preserve">
+    <value>在当前操作系统中不支持 Restart Manager 特性。请参考 https://msdn.microsoft.com/en-us/library/windows/desktop/cc948910(v=vs.85).aspx</value>
+  </data>
+  <data name="ObjectMartAdapterTypeNotExist" xml:space="preserve">
+    <value>对象容器适配器提供程序"{0}"未找到，请检查程序集是否存在。</value>
+  </data>
+  <data name="ParameterChoiceScopeOverflowExceptionMsg" xml:space="preserve">
+    <value>参数”{0}“给定的值内容超出了以下有效范围：{1}。</value>
+  </data>
+  <data name="ParaNullExceptionMsg" xml:space="preserve">
+    <value>参数“{0}”不能为空引用(null)。</value>
+  </data>
+  <data name="PathArgumentNotFoundExceptionMsg" xml:space="preserve">
+    <value>参数“{0}”提供的路径信息在实际磁盘中找不到。</value>
+  </data>
+  <data name="PathNotDirectoryExceptionMsg" xml:space="preserve">
+    <value>指定的路径“{0}”必须是一个文件，不能为目录。</value>
+  </data>
+  <data name="ProcessLogicExceptionMsg" xml:space="preserve">
+    <value>业务处理逻辑（容器：{0}，标识：{1}）发生异常，信息为：{2}。</value>
+  </data>
+  <data name="PublicKey" xml:space="preserve">
+    <value>0024000004800000940000000602000000240000525341310004000001000100255851f99521ea25af7a3e19ffbd38a0f5b5769a93cb6fb05f71d7c809f3aab2a26d67acd77845b47b58b4e5afe0ee0ca61f1958f153d76badba0ffdc3faa9c333f86fbf024ce0b936d446024d8c59d3327931fee87391c8c8c6c19bec3a9fb6532de42570707614357fa49e946ef2a8db054ab8e92146a6f8cd6f86f666acc9</value>
+  </data>
+  <data name="PublicKeyToken" xml:space="preserve">
+    <value>40064b2782c60d97</value>
+  </data>
+  <data name="RestartManagerGetListFailMsg" xml:space="preserve">
+    <value>通过 Restart Manager 特性获取应用程序及服务进程信息时发生错误，失败代码“{0}”。请参考 https://msdn.microsoft.com/en-us/library/windows/desktop/cc948910(v=vs.85).aspx</value>
+  </data>
+  <data name="RestartManagerRegisterFailMsg" xml:space="preserve">
+    <value>通过 Restart Manager 特性注册资源时失败，失败代码“{0}”，请参考 https://msdn.microsoft.com/en-us/library/windows/desktop/cc948910(v=vs.85).aspx</value>
+  </data>
+  <data name="RunConditionNotEnough" xml:space="preserve">
+    <value>在执行当前处理前，请首先运行方法“{0}”。</value>
+  </data>
+  <data name="SectionGroupNotExist" xml:space="preserve">
+    <value>当前操作需要配置节组“{0}”的支持，请在当前应用程序配置文件中进行设置。</value>
+  </data>
+  <data name="SectionNotExist" xml:space="preserve">
+    <value>当前操作需要配置节“{0}”的支持，请在当前应用程序配置文件中进行设置。</value>
+  </data>
+  <data name="StringParaEmptyOrNullExceptionMsg" xml:space="preserve">
+    <value>参数“{0}”不能为空字符串（String.Empty）或空引用（null）。</value>
+  </data>
+  <data name="StringParaNotMatchExceptionMsg" xml:space="preserve">
+    <value>参数“{0}”的内容必须与正则表达式“{1}”匹配。</value>
+  </data>
+  <data name="TypeNotMatchExceptionMsg" xml:space="preserve">
+    <value>参数“{0}”或其类型与预期的类型不匹配。</value>
+  </data>
+  <data name="UndefineDbFieldAttributeExceptionMsg" xml:space="preserve">
+    <value>数据实体接口“{0}”中数据字段“{1}”缺少特性“{2}”标记。</value>
+  </data>
+  <data name="UndefineDbTableAttributeExceptionMsg" xml:space="preserve">
+    <value>在数据实体接口“{0}”中缺少特性“{1}”标记。</value>
+  </data>
+  <data name="UnrecognizedParentExpression" xml:space="preserve">
+    <value>无法识别的父表达式，当前表达式的父表达式必须为“{0}“类别。</value>
+  </data>
+  <data name="ValueParaNotMatchExceptionMsg" xml:space="preserve">
+    <value>参数“{0}”的类型必须为值类型。</value>
+  </data>
+</root>
