@@ -1,7 +1,7 @@
 ﻿(function () {
     $('.tenant-change-component a')
         .click(function (e) {
-            e.preventDefault();
+            e.preventDefault(); //阻止元素发生默认的行为
             $.ajax({
                 url: abp.appPath + 'Account/TenantChangeModal',
                 type: 'POST',

@@ -60,10 +60,11 @@
             <a href="javascript:void(0);">Freedom</a>
         </div>
 
-        @* 是否启用多租户 *@
+        @* 是否启用多租户，DFF.Freedom.Core模块的FreedomCoreModule.cs类中有设置 *@
         @if (MultiTenancyConfig.IsEnabled)
         {
             <div class="tenant-change-box">
+                @* 租户变更组件，使用/Views/Shared/Components/TenantChange/Default.cshtml *@
                 <vc:tenant-change></vc:tenant-change>
             </div>
         }
@@ -78,7 +79,6 @@
                 <small>&copy; @DateTime.Now.Year Freedom. <b>Version </b> @AppVersionHelper.Version [@AppVersionHelper.ReleaseDate.ToString("yyyyMMdd")]</small>
             </div>
         </div>
-
     </div>
 
     <environment names="Development">

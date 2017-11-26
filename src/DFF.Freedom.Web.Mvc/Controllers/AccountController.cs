@@ -99,7 +99,7 @@ namespace DFF.Freedom.Web.Controllers
         #region Login / Logout
 
         /// <summary>
-        /// 登录
+        /// 登录页面浏览
         /// </summary>
         /// <param name="userNameOrEmailAddress">用户名或Email地址</param>
         /// <param name="returnUrl">返回链接</param>
@@ -122,11 +122,11 @@ namespace DFF.Freedom.Web.Controllers
         }
 
         /// <summary>
-        /// 登录
+        /// 登录 按钮单击方法，提交表单进入这个方法
         /// </summary>
-        /// <param name="loginModel"></param>
+        /// <param name="loginModel">登录视图模型</param>
         /// <param name="returnUrl">返回链接</param>
-        /// <param name="returnUrlHash"></param>
+        /// <param name="returnUrlHash">返回链接Hash</param>
         /// <returns></returns>
         [HttpPost]
         [UnitOfWork]
@@ -149,7 +149,7 @@ namespace DFF.Freedom.Web.Controllers
         /// <summary>
         /// 退出、注销
         /// </summary>
-        /// <returns></returns>
+        /// <returns>跳转到视图</returns>
         public async Task<ActionResult> Logout()
         {
             await _signInManager.SignOutAsync();
@@ -181,7 +181,7 @@ namespace DFF.Freedom.Web.Controllers
         #region Register
 
         /// <summary>
-        /// 注册
+        /// 注册视图
         /// </summary>
         /// <returns></returns>
         public ActionResult Register()
@@ -216,7 +216,7 @@ namespace DFF.Freedom.Web.Controllers
         }
 
         /// <summary>
-        /// 注册
+        /// 注册视图
         /// </summary>
         /// <param name="model">注册视图模型</param>
         /// <returns></returns>

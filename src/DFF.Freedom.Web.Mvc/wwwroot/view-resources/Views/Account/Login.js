@@ -3,13 +3,17 @@
 
     var $loginForm = $('#LoginForm');
 
+    //验证方法
     $loginForm.validate({
+        //高亮方法
         highlight: function (input) {
             $(input).parents('.form-line').addClass('error');
         },
+        //取消高亮方法
         unhighlight: function (input) {
             $(input).parents('.form-line').removeClass('error');
         },
+        //错误提示方法
         errorPlacement: function (error, element) {
             $(element).parents('.input-group').append(error);
         }
